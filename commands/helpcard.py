@@ -9,11 +9,11 @@ class HscriptHelpcardCommand(sublime_plugin.TextCommand):
     '''Show documentation for function under cursor.'''
 
     def __init__(self, *args, **kwargs):
+        self.css = sublime.load_resource('Packages/HScript/commands/helpcard.css')
+        self.helpcards = json.loads(sublime.load_resource('Packages/HScript/commands/helpcards.json'))
         super().__init__(*args, **kwargs)
 
     def run(self, edit):
-        self.css = sublime.load_resource('Packages/HScript/commands/helpcard.css')
-        self.helpcards = json.loads(sublime.load_resource('Packages/HScript/commands/helpcards.json'))
         # Expand to full token under cursor.
         first_sel = self.view.sel()[0].a
         word = self.view.substr(self.view.word(first_sel))
