@@ -1,49 +1,49 @@
 {
-    "scope": "source.hscript",
+    "scope": "source.hscript -string",
     "completions": [
         {
             "trigger": "abs(number)",
-            "contents": "abs(${1:float number})"
+            "contents": "abs(${1:number})"
         },
         {
             "trigger": "acos(number)",
-            "contents": "acos(${1:float number})"
+            "contents": "acos(${1:number})"
         },
         {
             "trigger": "angvel(rot1, rot2, time)",
-            "contents": "angvel(${1:vector rot1}, ${2:vector rot2}, ${3:float time})"
+            "contents": "angvel(${1:rot1}, ${2:rot2}, ${3:time})"
         },
         {
             "trigger": "arclen(surface_node, prim_num, ustart, ustop)",
-            "contents": "arclen(${1:string surface_node}, ${2:float prim_num}, ${3:float ustart}, ${4:float ustop})"
+            "contents": "arclen(${1:surface_node}, ${2:prim_num}, ${3:ustart}, ${4:ustop})"
         },
         {
             "trigger": "arg(line, argNum)",
-            "contents": "arg(${1:string line}, ${2:float argNum})"
+            "contents": "arg(${1:line}, ${2:argNum})"
         },
         {
             "trigger": "argc(line)",
-            "contents": "argc(${1:string line})"
+            "contents": "argc(${1:line})"
         },
         {
             "trigger": "asin(number)",
-            "contents": "asin(${1:float number})"
+            "contents": "asin(${1:number})"
         },
         {
             "trigger": "atan(number)",
-            "contents": "atan(${1:float number})"
+            "contents": "atan(${1:number})"
         },
         {
             "trigger": "atan2(y, x)",
-            "contents": "atan2(${1:float y}, ${2:float x})"
+            "contents": "atan2(${1:y}, ${2:x})"
         },
         {
             "trigger": "atof(source)",
-            "contents": "atof(${1:string source})"
+            "contents": "atof(${1:source})"
         },
         {
             "trigger": "bbox(surface_node, type)",
-            "contents": "bbox(${1:string surface_node}, ${2:float type})"
+            "contents": "bbox(${1:surface_node}, ${2:type})"
         },
         {
             "trigger": "bezier()",
@@ -51,123 +51,135 @@
         },
         {
             "trigger": "boneangle(bone1, bone2)",
-            "contents": "boneangle(${1:string bone1}, ${2:string bone2})"
+            "contents": "boneangle(${1:bone1}, ${2:bone2})"
         },
         {
             "trigger": "ceil(number)",
-            "contents": "ceil(${1:float number})"
+            "contents": "ceil(${1:number})"
         },
         {
             "trigger": "centroid(surface_node, type)",
-            "contents": "centroid(${1:string surface_node}, ${2:float type})"
+            "contents": "centroid(${1:surface_node}, ${2:type})"
         },
         {
             "trigger": "ch(channel)",
-            "contents": "ch(${1:string channel})"
+            "contents": "ch(${1:channel})"
         },
         {
             "trigger": "chexist(channel_name)",
-            "contents": "chexist(${1:string channel_name})"
+            "contents": "chexist(${1:channel_name})"
+        },
+        {
+            "trigger": "chexpr(channel, new_expr_function)",
+            "contents": "chexpr(${1:channel}, ${2:new_expr_function})"
+        },
+        {
+            "trigger": "chexprf(channel, new_expr_function, frame)",
+            "contents": "chexprf(${1:channel}, ${2:new_expr_function}, ${3:frame})"
+        },
+        {
+            "trigger": "chexprt(channel, new_expr_function, time)",
+            "contents": "chexprt(${1:channel}, ${2:new_expr_function}, ${3:time})"
         },
         {
             "trigger": "chf(channel, frame)",
-            "contents": "chf(${1:string channel}, ${2:float frame})"
+            "contents": "chf(${1:channel}, ${2:frame})"
         },
         {
             "trigger": "chgroup(group_name)",
-            "contents": "chgroup(${1:string group_name})"
+            "contents": "chgroup(${1:group_name})"
         },
         {
             "trigger": "chop(channel)",
-            "contents": "chop(${1:string channel})"
+            "contents": "chop(${1:channel})"
         },
         {
             "trigger": "chopcf(CHOP, channel_index, frame)",
-            "contents": "chopcf(${1:string CHOP}, ${2:float channel_index}, ${3:float frame})"
+            "contents": "chopcf(${1:CHOP}, ${2:channel_index}, ${3:frame})"
         },
         {
             "trigger": "chopci(CHOP, channel_index, index)",
-            "contents": "chopci(${1:string CHOP}, ${2:float channel_index}, ${3:float index})"
+            "contents": "chopci(${1:CHOP}, ${2:channel_index}, ${3:index})"
         },
         {
             "trigger": "chopct(CHOP, channel_index, time)",
-            "contents": "chopct(${1:string CHOP}, ${2:float channel_index}, ${3:float time})"
+            "contents": "chopct(${1:CHOP}, ${2:channel_index}, ${3:time})"
         },
         {
             "trigger": "chope(CHOP)",
-            "contents": "chope(${1:string CHOP})"
+            "contents": "chope(${1:CHOP})"
         },
         {
             "trigger": "chopf(channel, frame)",
-            "contents": "chopf(${1:string channel}, ${2:float frame})"
+            "contents": "chopf(${1:channel}, ${2:frame})"
         },
         {
             "trigger": "chopi(channel, index)",
-            "contents": "chopi(${1:string channel}, ${2:float index})"
+            "contents": "chopi(${1:channel}, ${2:index})"
         },
         {
             "trigger": "chopl(CHOP)",
-            "contents": "chopl(${1:string CHOP})"
+            "contents": "chopl(${1:CHOP})"
         },
         {
             "trigger": "chopn(CHOP)",
-            "contents": "chopn(${1:string CHOP})"
+            "contents": "chopn(${1:CHOP})"
         },
         {
             "trigger": "chopr(CHOP)",
-            "contents": "chopr(${1:string CHOP})"
+            "contents": "chopr(${1:CHOP})"
         },
         {
             "trigger": "chops(CHOP)",
-            "contents": "chops(${1:string CHOP})"
+            "contents": "chops(${1:CHOP})"
         },
         {
             "trigger": "chopstr(channel)",
-            "contents": "chopstr(${1:string channel})"
+            "contents": "chopstr(${1:channel})"
         },
         {
             "trigger": "chopt(channel, time)",
-            "contents": "chopt(${1:string channel}, ${2:float time})"
+            "contents": "chopt(${1:channel}, ${2:time})"
         },
         {
             "trigger": "chramp(ramp_path, position, component_index)",
-            "contents": "chramp(${1:string ramp_path}, ${2:float position}, ${3:float component_index})"
+            "contents": "chramp(${1:ramp_path}, ${2:position}, ${3:component_index})"
         },
         {
             "trigger": "chrampf(ramp_path, position, component_index, frame)",
-            "contents": "chrampf(${1:string ramp_path}, ${2:float position}, ${3:float component_index}, ${4:float frame})"
+            "contents": "chrampf(${1:ramp_path}, ${2:position}, ${3:component_index}, ${4:frame})"
         },
         {
             "trigger": "chrampt(ramp_path, position, component_index, time)",
-            "contents": "chrampt(${1:string ramp_path}, ${2:float position}, ${3:float component_index}, ${4:float time})"
+            "contents": "chrampt(${1:ramp_path}, ${2:position}, ${3:component_index}, ${4:time})"
         },
         {
             "trigger": "chs(channel)",
-            "contents": "chs(${1:string channel})"
+            "contents": "chs(${1:channel})"
         },
         {
             "trigger": "chsop(path)",
-            "contents": "chsop(${1:string path})"
+            "contents": "chsop(${1:path})"
         },
         {
             "trigger": "chsoplist(path)",
-            "contents": "chsoplist(${1:string path})"
+            "contents": "chsoplist(${1:path})"
         },
         {
             "trigger": "chsraw(channel)",
-            "contents": "chsraw(${1:string channel})"
+            "contents": "chsraw(${1:channel})"
         },
         {
             "trigger": "cht(channel, time)",
-            "contents": "cht(${1:string channel}, ${2:float time})"
+            "contents": "cht(${1:channel}, ${2:time})"
         },
         {
             "trigger": "clamp(value, minimum, maximum)",
-            "contents": "clamp(${1:float value}, ${2:float minimum}, ${3:float maximum})"
+            "contents": "clamp(${1:value}, ${2:minimum}, ${3:maximum})"
         },
         {
             "trigger": "clamptosphere(x, y, z, min_radius, max_radius, constant_type)",
-            "contents": "clamptosphere(${1:float x}, ${2:float y}, ${3:float z}, ${4:float min_radius}, ${5:float max_radius}, ${6:string constant_type})"
+            "contents": "clamptosphere(${1:x}, ${2:y}, ${3:z}, ${4:min_radius}, ${5:max_radius}, ${6:constant_type})"
         },
         {
             "trigger": "constant()",
@@ -175,27 +187,27 @@
         },
         {
             "trigger": "cophasmeta(compositing_node, metadata_name)",
-            "contents": "cophasmeta(${1:string compositing_node}, ${2:string metadata_name})"
+            "contents": "cophasmeta(${1:compositing_node}, ${2:metadata_name})"
         },
         {
             "trigger": "copmeta(compositing_node, metadata_name, index)",
-            "contents": "copmeta(${1:string compositing_node}, ${2:string metadata_name}, ${3:float index})"
+            "contents": "copmeta(${1:compositing_node}, ${2:metadata_name}, ${3:index})"
         },
         {
             "trigger": "copmetas(compositing_node, metadata_name)",
-            "contents": "copmetas(${1:string compositing_node}, ${2:string metadata_name})"
+            "contents": "copmetas(${1:compositing_node}, ${2:metadata_name})"
         },
         {
             "trigger": "cos(number)",
-            "contents": "cos(${1:float number})"
+            "contents": "cos(${1:number})"
         },
         {
             "trigger": "cosh(number)",
-            "contents": "cosh(${1:float number})"
+            "contents": "cosh(${1:number})"
         },
         {
             "trigger": "cross(v1, v2)",
-            "contents": "cross(${1:vector v1}, ${2:vector v2})"
+            "contents": "cross(${1:v1}, ${2:v2})"
         },
         {
             "trigger": "cubic()",
@@ -203,167 +215,167 @@
         },
         {
             "trigger": "curvature(surface_node, prim_num, u, v)",
-            "contents": "curvature(${1:string surface_node}, ${2:float prim_num}, ${3:float u}, ${4:float v})"
+            "contents": "curvature(${1:surface_node}, ${2:prim_num}, ${3:u}, ${4:v})"
         },
         {
             "trigger": "cycle(f1, f2)",
-            "contents": "cycle(${1:float f1}, ${2:float f2})"
+            "contents": "cycle(${1:f1}, ${2:f2})"
         },
         {
             "trigger": "cycleoffset(f1, f2)",
-            "contents": "cycleoffset(${1:float f1}, ${2:float f2})"
+            "contents": "cycleoffset(${1:f1}, ${2:f2})"
         },
         {
             "trigger": "cycleoffsett(t1, t2)",
-            "contents": "cycleoffsett(${1:float t1}, ${2:float t2})"
+            "contents": "cycleoffsett(${1:t1}, ${2:t2})"
         },
         {
             "trigger": "cyclet(t1, t2)",
-            "contents": "cyclet(${1:float t1}, ${2:float t2})"
+            "contents": "cyclet(${1:t1}, ${2:t2})"
         },
         {
             "trigger": "deg(radians)",
-            "contents": "deg(${1:float radians})"
+            "contents": "deg(${1:radians})"
         },
         {
             "trigger": "degree(surface_node, prim_num, du_or_dv)",
-            "contents": "degree(${1:string surface_node}, ${2:float prim_num}, ${3:float du_or_dv})"
+            "contents": "degree(${1:surface_node}, ${2:prim_num}, ${3:du_or_dv})"
         },
         {
             "trigger": "detail(surface_node, attrib_name, attrib_index)",
-            "contents": "detail(${1:string surface_node}, ${2:string attrib_name}, ${3:float attrib_index})"
+            "contents": "detail(${1:surface_node}, ${2:attrib_name}, ${3:attrib_index})"
         },
         {
             "trigger": "detailattribsize(surface_node, attribute)",
-            "contents": "detailattribsize(${1:string surface_node}, ${2:string attribute})"
+            "contents": "detailattribsize(${1:surface_node}, ${2:attribute})"
         },
         {
             "trigger": "detailattribtype(surface_node, attribute)",
-            "contents": "detailattribtype(${1:string surface_node}, ${2:string attribute})"
+            "contents": "detailattribtype(${1:surface_node}, ${2:attribute})"
         },
         {
             "trigger": "details(surface_node, attribute)",
-            "contents": "details(${1:string surface_node}, ${2:string attribute})"
+            "contents": "details(${1:surface_node}, ${2:attribute})"
         },
         {
             "trigger": "detailsmap(surface_node, attribute, index)",
-            "contents": "detailsmap(${1:string surface_node}, ${2:string attribute}, ${3:float index})"
+            "contents": "detailsmap(${1:surface_node}, ${2:attribute}, ${3:index})"
         },
         {
             "trigger": "detailsnummap(surface_node, attribute)",
-            "contents": "detailsnummap(${1:string surface_node}, ${2:string attribute})"
+            "contents": "detailsnummap(${1:surface_node}, ${2:attribute})"
         },
         {
             "trigger": "determinant(mat)",
-            "contents": "determinant(${1:matrix mat})"
+            "contents": "determinant(${1:mat})"
         },
         {
             "trigger": "dihedral(v0, v1)",
-            "contents": "dihedral(${1:vector v0}, ${2:vector v1})"
+            "contents": "dihedral(${1:v0}, ${2:v1})"
         },
         {
             "trigger": "distance(x1, y1, z1, x2, y2, z2)",
-            "contents": "distance(${1:float x1}, ${2:float y1}, ${3:float z1}, ${4:float x2}, ${5:float y2}, ${6:float z2})"
+            "contents": "distance(${1:x1}, ${2:y1}, ${3:z1}, ${4:x2}, ${5:y2}, ${6:z2})"
         },
         {
             "trigger": "dopallfields(dop, objectSpec, subDataName, recordType)",
-            "contents": "dopallfields(${1:string dop}, ${2:string objectSpec}, ${3:string subDataName}, ${4:string recordType})"
+            "contents": "dopallfields(${1:dop}, ${2:objectSpec}, ${3:subDataName}, ${4:recordType})"
         },
         {
             "trigger": "dopcontextgeo(name, index)",
-            "contents": "dopcontextgeo(${1:string name}, ${2:float index})"
+            "contents": "dopcontextgeo(${1:name}, ${2:index})"
         },
         {
             "trigger": "dopcountslices(dop, objectFilter, subDataName)",
-            "contents": "dopcountslices(${1:string dop}, ${2:string objectFilter}, ${3:string subDataName})"
+            "contents": "dopcountslices(${1:dop}, ${2:objectFilter}, ${3:subDataName})"
         },
         {
             "trigger": "dopfield(dop, objectSpec, subDataName, recordType, recordNum, fieldName)",
-            "contents": "dopfield(${1:string dop}, ${2:string objectSpec}, ${3:string subDataName}, ${4:string recordType}, ${5:float recordNum}, ${6:string fieldName})"
+            "contents": "dopfield(${1:dop}, ${2:objectSpec}, ${3:subDataName}, ${4:recordType}, ${5:recordNum}, ${6:fieldName})"
         },
         {
             "trigger": "dopfieldname(dop, objectSpec, subDataName, recordType, fieldNum)",
-            "contents": "dopfieldname(${1:string dop}, ${2:string objectSpec}, ${3:string subDataName}, ${4:string recordType}, ${5:float fieldNum})"
+            "contents": "dopfieldname(${1:dop}, ${2:objectSpec}, ${3:subDataName}, ${4:recordType}, ${5:fieldNum})"
         },
         {
             "trigger": "dopfields(dop, objectSpec, subDataName, recordType, recordNum, fieldName)",
-            "contents": "dopfields(${1:string dop}, ${2:string objectSpec}, ${3:string subDataName}, ${4:string recordType}, ${5:float recordNum}, ${6:string fieldName})"
+            "contents": "dopfields(${1:dop}, ${2:objectSpec}, ${3:subDataName}, ${4:recordType}, ${5:recordNum}, ${6:fieldName})"
         },
         {
             "trigger": "dopfieldtype(dop, objectSpec, subDataName, recordType, fieldNum)",
-            "contents": "dopfieldtype(${1:string dop}, ${2:string objectSpec}, ${3:string subDataName}, ${4:string recordType}, ${5:float fieldNum})"
+            "contents": "dopfieldtype(${1:dop}, ${2:objectSpec}, ${3:subDataName}, ${4:recordType}, ${5:fieldNum})"
         },
         {
             "trigger": "dopframe(dop)",
-            "contents": "dopframe(${1:string dop})"
+            "contents": "dopframe(${1:dop})"
         },
         {
             "trigger": "dopframetost(dop, simulationframe)",
-            "contents": "dopframetost(${1:string dop}, ${2:float simulationframe})"
+            "contents": "dopframetost(${1:dop}, ${2:simulationframe})"
         },
         {
             "trigger": "dopgrouphasobject(dop, objectSpec, group)",
-            "contents": "dopgrouphasobject(${1:string dop}, ${2:string objectSpec}, ${3:string group})"
+            "contents": "dopgrouphasobject(${1:dop}, ${2:objectSpec}, ${3:group})"
         },
         {
             "trigger": "dopgrouplist(dop)",
-            "contents": "dopgrouplist(${1:string dop})"
+            "contents": "dopgrouplist(${1:dop})"
         },
         {
             "trigger": "dophasfield(dop, objectSpec, subDataName, recordType, recordNum, fieldName)",
-            "contents": "dophasfield(${1:string dop}, ${2:string objectSpec}, ${3:string subDataName}, ${4:string recordType}, ${5:float recordNum}, ${6:string fieldName})"
+            "contents": "dophasfield(${1:dop}, ${2:objectSpec}, ${3:subDataName}, ${4:recordType}, ${5:recordNum}, ${6:fieldName})"
         },
         {
             "trigger": "dophassubdata(dop, objectSpec, subDataName)",
-            "contents": "dophassubdata(${1:string dop}, ${2:string objectSpec}, ${3:string subDataName})"
+            "contents": "dophassubdata(${1:dop}, ${2:objectSpec}, ${3:subDataName})"
         },
         {
             "trigger": "dopnodeobjs(dop)",
-            "contents": "dopnodeobjs(${1:string dop})"
+            "contents": "dopnodeobjs(${1:dop})"
         },
         {
             "trigger": "dopnumfields(dop, objectSpec, subDataName, recordType)",
-            "contents": "dopnumfields(${1:string dop}, ${2:string objectSpec}, ${3:string subDataName}, ${4:string recordType})"
+            "contents": "dopnumfields(${1:dop}, ${2:objectSpec}, ${3:subDataName}, ${4:recordType})"
         },
         {
             "trigger": "dopnumobjects(dop, objectFilter)",
-            "contents": "dopnumobjects(${1:string dop}, ${2:string objectFilter})"
+            "contents": "dopnumobjects(${1:dop}, ${2:objectFilter})"
         },
         {
             "trigger": "dopnumrecords(dop, objectFilter, subDataName, recordType)",
-            "contents": "dopnumrecords(${1:string dop}, ${2:string objectFilter}, ${3:string subDataName}, ${4:string recordType})"
+            "contents": "dopnumrecords(${1:dop}, ${2:objectFilter}, ${3:subDataName}, ${4:recordType})"
         },
         {
             "trigger": "dopnumrecordtypes(dop, objectSpec, subDataName)",
-            "contents": "dopnumrecordtypes(${1:string dop}, ${2:string objectSpec}, ${3:string subDataName})"
+            "contents": "dopnumrecordtypes(${1:dop}, ${2:objectSpec}, ${3:subDataName})"
         },
         {
             "trigger": "dopnumsubdata(dop, objectSpec, subDataName)",
-            "contents": "dopnumsubdata(${1:string dop}, ${2:string objectSpec}, ${3:string subDataName})"
+            "contents": "dopnumsubdata(${1:dop}, ${2:objectSpec}, ${3:subDataName})"
         },
         {
             "trigger": "dopobjectlist(dop, objectSpec, listNames)",
-            "contents": "dopobjectlist(${1:string dop}, ${2:string objectSpec}, ${3:float listNames})"
+            "contents": "dopobjectlist(${1:dop}, ${2:objectSpec}, ${3:listNames})"
         },
         {
             "trigger": "dopobjectsareaffectors(dop, objectSpec, affectors)",
-            "contents": "dopobjectsareaffectors(${1:string dop}, ${2:string objectSpec}, ${3:string affectors})"
+            "contents": "dopobjectsareaffectors(${1:dop}, ${2:objectSpec}, ${3:affectors})"
         },
         {
             "trigger": "dopobjscreatedby(dop)",
-            "contents": "dopobjscreatedby(${1:string dop})"
+            "contents": "dopobjscreatedby(${1:dop})"
         },
         {
             "trigger": "dopoption(dop, objectSpec, subDataName, fieldName)",
-            "contents": "dopoption(${1:string dop}, ${2:string objectSpec}, ${3:string subDataName}, ${4:string fieldName})"
+            "contents": "dopoption(${1:dop}, ${2:objectSpec}, ${3:subDataName}, ${4:fieldName})"
         },
         {
             "trigger": "dopoptions(dop, objectSpec, subDataName, fieldName)",
-            "contents": "dopoptions(${1:string dop}, ${2:string objectSpec}, ${3:string subDataName}, ${4:string fieldName})"
+            "contents": "dopoptions(${1:dop}, ${2:objectSpec}, ${3:subDataName}, ${4:fieldName})"
         },
         {
             "trigger": "doprecordtypename(dop, objectSpec, subDataName, recordTypeNum)",
-            "contents": "doprecordtypename(${1:string dop}, ${2:string objectSpec}, ${3:string subDataName}, ${4:float recordTypeNum})"
+            "contents": "doprecordtypename(${1:dop}, ${2:objectSpec}, ${3:subDataName}, ${4:recordTypeNum})"
         },
         {
             "trigger": "dopsolvedopnet()",
@@ -371,7 +383,7 @@
         },
         {
             "trigger": "dopsolvenewobject(object_index)",
-            "contents": "dopsolvenewobject(${1:float object_index})"
+            "contents": "dopsolvenewobject(${1:object_index})"
         },
         {
             "trigger": "dopsolvenumnewobjects()",
@@ -383,7 +395,7 @@
         },
         {
             "trigger": "dopsolveobject(object_index)",
-            "contents": "dopsolveobject(${1:float object_index})"
+            "contents": "dopsolveobject(${1:object_index})"
         },
         {
             "trigger": "dopsolvetimestep()",
@@ -391,35 +403,35 @@
         },
         {
             "trigger": "dopsttoframe(dop, simulationtime)",
-            "contents": "dopsttoframe(${1:string dop}, ${2:float simulationtime})"
+            "contents": "dopsttoframe(${1:dop}, ${2:simulationtime})"
         },
         {
             "trigger": "dopsttot(dop, simulationtime)",
-            "contents": "dopsttot(${1:string dop}, ${2:float simulationtime})"
+            "contents": "dopsttot(${1:dop}, ${2:simulationtime})"
         },
         {
             "trigger": "dopsubdataname(dop, objectSpec, subDataName, subDataNum)",
-            "contents": "dopsubdataname(${1:string dop}, ${2:string objectSpec}, ${3:string subDataName}, ${4:float subDataNum})"
+            "contents": "dopsubdataname(${1:dop}, ${2:objectSpec}, ${3:subDataName}, ${4:subDataNum})"
         },
         {
             "trigger": "doptime(dop)",
-            "contents": "doptime(${1:string dop})"
+            "contents": "doptime(${1:dop})"
         },
         {
             "trigger": "doptransform(dop, objectSpec, subDataName)",
-            "contents": "doptransform(${1:string dop}, ${2:string objectSpec}, ${3:string subDataName})"
+            "contents": "doptransform(${1:dop}, ${2:objectSpec}, ${3:subDataName})"
         },
         {
             "trigger": "dopttost(dop, globaltime)",
-            "contents": "dopttost(${1:string dop}, ${2:float globaltime})"
+            "contents": "dopttost(${1:dop}, ${2:globaltime})"
         },
         {
             "trigger": "dopvelatpos(dop, objectSpec, posx, posy, posz, usevolumevelocity, usepointvelocity)",
-            "contents": "dopvelatpos(${1:string dop}, ${2:string objectSpec}, ${3:float posx}, ${4:float posy}, ${5:float posz}, ${6:float usevolumevelocity}, ${7:float usepointvelocity})"
+            "contents": "dopvelatpos(${1:dop}, ${2:objectSpec}, ${3:posx}, ${4:posy}, ${5:posz}, ${6:usevolumevelocity}, ${7:usepointvelocity})"
         },
         {
             "trigger": "dot(v0, v1)",
-            "contents": "dot(${1:vector v0}, ${2:vector v1})"
+            "contents": "dot(${1:v0}, ${2:v1})"
         },
         {
             "trigger": "ease()",
@@ -431,7 +443,7 @@
         },
         {
             "trigger": "easeinp(number)",
-            "contents": "easeinp(${1:float number})"
+            "contents": "easeinp(${1:number})"
         },
         {
             "trigger": "easeout()",
@@ -439,179 +451,183 @@
         },
         {
             "trigger": "easeoutp(number)",
-            "contents": "easeoutp(${1:float number})"
+            "contents": "easeoutp(${1:number})"
         },
         {
             "trigger": "easep(number)",
-            "contents": "easep(${1:float number})"
+            "contents": "easep(${1:number})"
         },
         {
             "trigger": "edgegrouplist(surface_node)",
-            "contents": "edgegrouplist(${1:string surface_node})"
+            "contents": "edgegrouplist(${1:surface_node})"
         },
         {
             "trigger": "edgegroupmask(surface_node, pattern)",
-            "contents": "edgegroupmask(${1:string surface_node}, ${2:string pattern})"
+            "contents": "edgegroupmask(${1:surface_node}, ${2:pattern})"
         },
         {
             "trigger": "eval(expression)",
-            "contents": "eval(${1:string expression})"
+            "contents": "eval(${1:expression})"
         },
         {
             "trigger": "evals(expression)",
-            "contents": "evals(${1:string expression})"
+            "contents": "evals(${1:expression})"
         },
         {
             "trigger": "execute(command)",
-            "contents": "execute(${1:string command})"
+            "contents": "execute(${1:command})"
         },
         {
             "trigger": "executeb(command)",
-            "contents": "executeb(${1:string command})"
+            "contents": "executeb(${1:command})"
         },
         {
             "trigger": "executee(command)",
-            "contents": "executee(${1:string command})"
+            "contents": "executee(${1:command})"
         },
         {
             "trigger": "exp(number)",
-            "contents": "exp(${1:float number})"
+            "contents": "exp(${1:number})"
         },
         {
             "trigger": "explodematrix(mat, trs, xyz, component)",
-            "contents": "explodematrix(${1:matrix mat}, ${2:string trs}, ${3:string xyz}, ${4:string component})"
+            "contents": "explodematrix(${1:mat}, ${2:trs}, ${3:xyz}, ${4:component})"
         },
         {
             "trigger": "explodematrixp(mat, p, trs, xyz, component)",
-            "contents": "explodematrixp(${1:matrix mat}, ${2:vector p}, ${3:string trs}, ${4:string xyz}, ${5:string component})"
+            "contents": "explodematrixp(${1:mat}, ${2:p}, ${3:trs}, ${4:xyz}, ${5:component})"
+        },
+        {
+            "trigger": "explodematrixpr(mat, p, pr, trs, xyz, component)",
+            "contents": "explodematrixpr(${1:mat}, ${2:p}, ${3:pr}, ${4:trs}, ${5:xyz}, ${6:component})"
         },
         {
             "trigger": "findfile(filename)",
-            "contents": "findfile(${1:string filename})"
+            "contents": "findfile(${1:filename})"
         },
         {
             "trigger": "findfiles(filename, separator)",
-            "contents": "findfiles(${1:string filename}, ${2:string separator})"
+            "contents": "findfiles(${1:filename}, ${2:separator})"
         },
         {
             "trigger": "fit(num, oldmin, oldmax, newmin, newmax)",
-            "contents": "fit(${1:float num}, ${2:float oldmin}, ${3:float oldmax}, ${4:float newmin}, ${5:float newmax})"
+            "contents": "fit(${1:num}, ${2:oldmin}, ${3:oldmax}, ${4:newmin}, ${5:newmax})"
         },
         {
             "trigger": "fit01(num, newmin, newmax)",
-            "contents": "fit01(${1:float num}, ${2:float newmin}, ${3:float newmax})"
+            "contents": "fit01(${1:num}, ${2:newmin}, ${3:newmax})"
         },
         {
             "trigger": "fit10(num, newmin, newmax)",
-            "contents": "fit10(${1:float num}, ${2:float newmin}, ${3:float newmax})"
+            "contents": "fit10(${1:num}, ${2:newmin}, ${3:newmax})"
         },
         {
             "trigger": "fit11(num, newmin, newmax)",
-            "contents": "fit11(${1:float num}, ${2:float newmin}, ${3:float newmax})"
+            "contents": "fit11(${1:num}, ${2:newmin}, ${3:newmax})"
         },
         {
             "trigger": "floor(number)",
-            "contents": "floor(${1:float number})"
+            "contents": "floor(${1:number})"
         },
         {
             "trigger": "frac(number)",
-            "contents": "frac(${1:float number})"
+            "contents": "frac(${1:number})"
         },
         {
             "trigger": "ftoa(number)",
-            "contents": "ftoa(${1:float number})"
+            "contents": "ftoa(${1:number})"
         },
         {
             "trigger": "groupbyval(surface_node, class, attribute, id)",
-            "contents": "groupbyval(${1:string surface_node}, ${2:float class}, ${3:string attribute}, ${4:float id})"
+            "contents": "groupbyval(${1:surface_node}, ${2:class}, ${3:attribute}, ${4:id})"
         },
         {
             "trigger": "groupbyvals(surface_node, class, attribute, id)",
-            "contents": "groupbyvals(${1:string surface_node}, ${2:float class}, ${3:string attribute}, ${4:string id})"
+            "contents": "groupbyvals(${1:surface_node}, ${2:class}, ${3:attribute}, ${4:id})"
         },
         {
             "trigger": "hasdetailattrib(surface_node, attribute)",
-            "contents": "hasdetailattrib(${1:string surface_node}, ${2:string attribute})"
+            "contents": "hasdetailattrib(${1:surface_node}, ${2:attribute})"
         },
         {
             "trigger": "haspoint(group_name, surface_node, point_num)",
-            "contents": "haspoint(${1:string group_name}, ${2:string surface_node}, ${3:float point_num})"
+            "contents": "haspoint(${1:group_name}, ${2:surface_node}, ${3:point_num})"
         },
         {
             "trigger": "haspointattrib(surface_node, attribute)",
-            "contents": "haspointattrib(${1:string surface_node}, ${2:string attribute})"
+            "contents": "haspointattrib(${1:surface_node}, ${2:attribute})"
         },
         {
             "trigger": "hasprim(group_name, surface_node, prim_num)",
-            "contents": "hasprim(${1:string group_name}, ${2:string surface_node}, ${3:float prim_num})"
+            "contents": "hasprim(${1:group_name}, ${2:surface_node}, ${3:prim_num})"
         },
         {
             "trigger": "hasprimattrib(surface_node, attribute)",
-            "contents": "hasprimattrib(${1:string surface_node}, ${2:string attribute})"
+            "contents": "hasprimattrib(${1:surface_node}, ${2:attribute})"
         },
         {
             "trigger": "hasvertexattrib(surface_node, attribute)",
-            "contents": "hasvertexattrib(${1:string surface_node}, ${2:string attribute})"
+            "contents": "hasvertexattrib(${1:surface_node}, ${2:attribute})"
         },
         {
             "trigger": "hextoint(value)",
-            "contents": "hextoint(${1:string value})"
+            "contents": "hextoint(${1:value})"
         },
         {
             "trigger": "hsv(red, green, blue, component)",
-            "contents": "hsv(${1:float red}, ${2:float green}, ${3:float blue}, ${4:string component})"
+            "contents": "hsv(${1:red}, ${2:green}, ${3:blue}, ${4:component})"
         },
         {
             "trigger": "ic(input_index, channel_index, index)",
-            "contents": "ic(${1:float input_index}, ${2:float channel_index}, ${3:float index})"
+            "contents": "ic(${1:input_index}, ${2:channel_index}, ${3:index})"
         },
         {
             "trigger": "ice(input_index)",
-            "contents": "ice(${1:float input_index})"
+            "contents": "ice(${1:input_index})"
         },
         {
             "trigger": "icl(input_index)",
-            "contents": "icl(${1:float input_index})"
+            "contents": "icl(${1:input_index})"
         },
         {
             "trigger": "icmax(input_index, channel_index)",
-            "contents": "icmax(${1:float input_index}, ${2:float channel_index})"
+            "contents": "icmax(${1:input_index}, ${2:channel_index})"
         },
         {
             "trigger": "icmin(input_index, channel_index)",
-            "contents": "icmin(${1:float input_index}, ${2:float channel_index})"
+            "contents": "icmin(${1:input_index}, ${2:channel_index})"
         },
         {
             "trigger": "icn(input_index)",
-            "contents": "icn(${1:float input_index})"
+            "contents": "icn(${1:input_index})"
         },
         {
             "trigger": "icr(input_index)",
-            "contents": "icr(${1:float input_index})"
+            "contents": "icr(${1:input_index})"
         },
         {
             "trigger": "ics(input_index)",
-            "contents": "ics(${1:float input_index})"
+            "contents": "ics(${1:input_index})"
         },
         {
             "trigger": "identity(size)",
-            "contents": "identity(${1:float size})"
+            "contents": "identity(${1:size})"
         },
         {
             "trigger": "if(expression, true_value, false_value)",
-            "contents": "if(${1:float expression}, ${2:float true_value}, ${3:float false_value})"
+            "contents": "if(${1:expression}, ${2:true_value}, ${3:false_value})"
         },
         {
             "trigger": "ifs(expression, true_value, false_value)",
-            "contents": "ifs(${1:float expression}, ${2:string true_value}, ${3:string false_value})"
+            "contents": "ifs(${1:expression}, ${2:true_value}, ${3:false_value})"
         },
         {
             "trigger": "imgbounds(foo, bar, baz, qux)",
-            "contents": "imgbounds(${1:string foo}, ${2:string bar}, ${3:string baz}, ${4:float qux})"
+            "contents": "imgbounds(${1:foo}, ${2:bar}, ${3:baz}, ${4:qux})"
         },
         {
             "trigger": "index(source, pattern)",
-            "contents": "index(${1:string source}, ${2:string pattern})"
+            "contents": "index(${1:source}, ${2:pattern})"
         },
         {
             "trigger": "instancepoint()",
@@ -619,59 +635,59 @@
         },
         {
             "trigger": "int(number)",
-            "contents": "int(${1:float number})"
+            "contents": "int(${1:number})"
         },
         {
             "trigger": "inttohex(value)",
-            "contents": "inttohex(${1:float value})"
+            "contents": "inttohex(${1:value})"
         },
         {
             "trigger": "invert(mat)",
-            "contents": "invert(${1:matrix mat})"
+            "contents": "invert(${1:mat})"
         },
         {
             "trigger": "iprquery(query, pane, x, y)",
-            "contents": "iprquery(${1:string query}, ${2:string pane}, ${3:float x}, ${4:float y})"
+            "contents": "iprquery(${1:query}, ${2:pane}, ${3:x}, ${4:y})"
         },
         {
             "trigger": "iprquerys(query, pane, x, y)",
-            "contents": "iprquerys(${1:string query}, ${2:string pane}, ${3:float x}, ${4:float y})"
+            "contents": "iprquerys(${1:query}, ${2:pane}, ${3:x}, ${4:y})"
         },
         {
             "trigger": "isclosed(surface_node, prim_num)",
-            "contents": "isclosed(${1:string surface_node}, ${2:float prim_num})"
+            "contents": "isclosed(${1:surface_node}, ${2:prim_num})"
         },
         {
             "trigger": "iscollided(surface_node, pointnumber)",
-            "contents": "iscollided(${1:string surface_node}, ${2:float pointnumber})"
+            "contents": "iscollided(${1:surface_node}, ${2:pointnumber})"
         },
         {
             "trigger": "ishvariable(variable_name)",
-            "contents": "ishvariable(${1:string variable_name})"
+            "contents": "ishvariable(${1:variable_name})"
         },
         {
             "trigger": "isspline(surface_node, prim_num)",
-            "contents": "isspline(${1:string surface_node}, ${2:float prim_num})"
+            "contents": "isspline(${1:surface_node}, ${2:prim_num})"
         },
         {
             "trigger": "isstuck(surface_node, pointnumber)",
-            "contents": "isstuck(${1:string surface_node}, ${2:float pointnumber})"
+            "contents": "isstuck(${1:surface_node}, ${2:pointnumber})"
         },
         {
             "trigger": "isvariable(variable_name)",
-            "contents": "isvariable(${1:string variable_name})"
+            "contents": "isvariable(${1:variable_name})"
         },
         {
             "trigger": "iswrapu(surface_node, prim_num)",
-            "contents": "iswrapu(${1:string surface_node}, ${2:float prim_num})"
+            "contents": "iswrapu(${1:surface_node}, ${2:prim_num})"
         },
         {
             "trigger": "iswrapv(surface_node, prim_num)",
-            "contents": "iswrapv(${1:string surface_node}, ${2:float prim_num})"
+            "contents": "iswrapv(${1:surface_node}, ${2:prim_num})"
         },
         {
             "trigger": "length(x, y, z)",
-            "contents": "length(${1:float x}, ${2:float y}, ${3:float z})"
+            "contents": "length(${1:x}, ${2:y}, ${3:z})"
         },
         {
             "trigger": "linear()",
@@ -679,23 +695,23 @@
         },
         {
             "trigger": "listbyval(surface_node, class, attribute, id)",
-            "contents": "listbyval(${1:string surface_node}, ${2:float class}, ${3:string attribute}, ${4:float id})"
+            "contents": "listbyval(${1:surface_node}, ${2:class}, ${3:attribute}, ${4:id})"
         },
         {
             "trigger": "listbyvals(surface_node, class, attribute, id)",
-            "contents": "listbyvals(${1:string surface_node}, ${2:float class}, ${3:string attribute}, ${4:string id})"
+            "contents": "listbyvals(${1:surface_node}, ${2:class}, ${3:attribute}, ${4:id})"
         },
         {
             "trigger": "lock(float)",
-            "contents": "lock(${1:float float})"
+            "contents": "lock(${1:float})"
         },
         {
             "trigger": "log(number)",
-            "contents": "log(${1:float number})"
+            "contents": "log(${1:number})"
         },
         {
             "trigger": "log10(number)",
-            "contents": "log10(${1:float number})"
+            "contents": "log10(${1:number})"
         },
         {
             "trigger": "match()",
@@ -711,51 +727,51 @@
         },
         {
             "trigger": "matrix(pattern)",
-            "contents": "matrix(${1:string pattern})"
+            "contents": "matrix(${1:pattern})"
         },
         {
             "trigger": "matrixtoquat(m)",
-            "contents": "matrixtoquat(${1:matrix m})"
+            "contents": "matrixtoquat(${1:m})"
         },
         {
             "trigger": "max(value1, value2)",
-            "contents": "max(${1:float value1}, ${2:float value2})"
+            "contents": "max(${1:value1}, ${2:value2})"
         },
         {
             "trigger": "mcols(mat)",
-            "contents": "mcols(${1:matrix mat})"
+            "contents": "mcols(${1:mat})"
         },
         {
             "trigger": "metaweight(surface_node, x, y, z)",
-            "contents": "metaweight(${1:string surface_node}, ${2:float x}, ${3:float y}, ${4:float z})"
+            "contents": "metaweight(${1:surface_node}, ${2:x}, ${3:y}, ${4:z})"
         },
         {
             "trigger": "min(value1, value2)",
-            "contents": "min(${1:float value1}, ${2:float value2})"
+            "contents": "min(${1:value1}, ${2:value2})"
         },
         {
             "trigger": "mindist(surface_node, point_num, surface_node, prim_num, return_type)",
-            "contents": "mindist(${1:string surface_node}, ${2:float point_num}, ${3:string surface_node}, ${4:float prim_num}, ${5:float return_type})"
+            "contents": "mindist(${1:surface_node}, ${2:point_num}, ${3:surface_node}, ${4:prim_num}, ${5:return_type})"
         },
         {
             "trigger": "mlookat(v1, v2)",
-            "contents": "mlookat(${1:vector v1}, ${2:vector v2})"
+            "contents": "mlookat(${1:v1}, ${2:v2})"
         },
         {
             "trigger": "mlookatup(v1, v2, upv)",
-            "contents": "mlookatup(${1:vector v1}, ${2:vector v2}, ${3:vector upv})"
+            "contents": "mlookatup(${1:v1}, ${2:v2}, ${3:upv})"
         },
         {
             "trigger": "mobjlookat(base_node, target_node, upv)",
-            "contents": "mobjlookat(${1:string base_node}, ${2:string target_node}, ${3:vector upv})"
+            "contents": "mobjlookat(${1:base_node}, ${2:target_node}, ${3:upv})"
         },
         {
             "trigger": "modblend(val1, val2, length, weight)",
-            "contents": "modblend(${1:float val1}, ${2:float val2}, ${3:float length}, ${4:float weight})"
+            "contents": "modblend(${1:val1}, ${2:val2}, ${3:length}, ${4:weight})"
         },
         {
             "trigger": "morient(zaxis, yaxis)",
-            "contents": "morient(${1:vector zaxis}, ${2:vector yaxis})"
+            "contents": "morient(${1:zaxis}, ${2:yaxis})"
         },
         {
             "trigger": "mousepane()",
@@ -767,47 +783,47 @@
         },
         {
             "trigger": "mrows(mat)",
-            "contents": "mrows(${1:matrix mat})"
+            "contents": "mrows(${1:mat})"
         },
         {
             "trigger": "mzero(mat)",
-            "contents": "mzero(${1:matrix mat})"
+            "contents": "mzero(${1:mat})"
         },
         {
             "trigger": "nearpoint(surface_node, x, y, z)",
-            "contents": "nearpoint(${1:string surface_node}, ${2:float x}, ${3:float y}, ${4:float z})"
+            "contents": "nearpoint(${1:surface_node}, ${2:x}, ${3:y}, ${4:z})"
         },
         {
             "trigger": "noise(X, Y, Z)",
-            "contents": "noise(${1:float X}, ${2:float Y}, ${3:float Z})"
+            "contents": "noise(${1:X}, ${2:Y}, ${3:Z})"
         },
         {
             "trigger": "normal(surface_node, prim_num, u, v, index)",
-            "contents": "normal(${1:string surface_node}, ${2:float prim_num}, ${3:float u}, ${4:float v}, ${5:float index})"
+            "contents": "normal(${1:surface_node}, ${2:prim_num}, ${3:u}, ${4:v}, ${5:index})"
         },
         {
             "trigger": "normalize(v)",
-            "contents": "normalize(${1:vector v})"
+            "contents": "normalize(${1:v})"
         },
         {
             "trigger": "npoints(surface_node)",
-            "contents": "npoints(${1:string surface_node})"
+            "contents": "npoints(${1:surface_node})"
         },
         {
             "trigger": "npointsgroup(surface_node, group_name)",
-            "contents": "npointsgroup(${1:string surface_node}, ${2:string group_name})"
+            "contents": "npointsgroup(${1:surface_node}, ${2:group_name})"
         },
         {
             "trigger": "nprims(name)",
-            "contents": "nprims(${1:string name})"
+            "contents": "nprims(${1:name})"
         },
         {
             "trigger": "nprimsgroup(surface_node, group_name)",
-            "contents": "nprimsgroup(${1:string surface_node}, ${2:string group_name})"
+            "contents": "nprimsgroup(${1:surface_node}, ${2:group_name})"
         },
         {
             "trigger": "nuniquevals(surface_node, class, attribute)",
-            "contents": "nuniquevals(${1:string surface_node}, ${2:float class}, ${3:string attribute})"
+            "contents": "nuniquevals(${1:surface_node}, ${2:class}, ${3:attribute})"
         },
         {
             "trigger": "objkinoverride()",
@@ -815,63 +831,63 @@
         },
         {
             "trigger": "objlightmask(geometry, options)",
-            "contents": "objlightmask(${1:string geometry}, ${2:string options})"
+            "contents": "objlightmask(${1:geometry}, ${2:options})"
         },
         {
             "trigger": "objlookat(base_node, target_node, upv)",
-            "contents": "objlookat(${1:string base_node}, ${2:string target_node}, ${3:vector upv})"
+            "contents": "objlookat(${1:base_node}, ${2:target_node}, ${3:upv})"
         },
         {
             "trigger": "objpretransform(object_name)",
-            "contents": "objpretransform(${1:string object_name})"
+            "contents": "objpretransform(${1:object_name})"
         },
         {
             "trigger": "oc(output_channel_index, index)",
-            "contents": "oc(${1:float output_channel_index}, ${2:float index})"
+            "contents": "oc(${1:output_channel_index}, ${2:index})"
         },
         {
             "trigger": "oldrand(value)",
-            "contents": "oldrand(${1:float value})"
+            "contents": "oldrand(${1:value})"
         },
         {
             "trigger": "opblist(bundle_name)",
-            "contents": "opblist(${1:string bundle_name})"
+            "contents": "opblist(${1:bundle_name})"
         },
         {
             "trigger": "opcreator(name)",
-            "contents": "opcreator(${1:string name})"
+            "contents": "opcreator(${1:name})"
         },
         {
             "trigger": "opdigits(name)",
-            "contents": "opdigits(${1:string name})"
+            "contents": "opdigits(${1:name})"
         },
         {
             "trigger": "opexist(op_name)",
-            "contents": "opexist(${1:string op_name})"
+            "contents": "opexist(${1:op_name})"
         },
         {
             "trigger": "opflag(network, flag)",
-            "contents": "opflag(${1:string network}, ${2:string flag})"
+            "contents": "opflag(${1:network}, ${2:flag})"
         },
         {
             "trigger": "opfullpath(relpath)",
-            "contents": "opfullpath(${1:string relpath})"
+            "contents": "opfullpath(${1:relpath})"
         },
         {
             "trigger": "opfullpathfrom(node, basenode)",
-            "contents": "opfullpathfrom(${1:string node}, ${2:string basenode})"
+            "contents": "opfullpathfrom(${1:node}, ${2:basenode})"
         },
         {
             "trigger": "opid(name)",
-            "contents": "opid(${1:string name})"
+            "contents": "opid(${1:name})"
         },
         {
             "trigger": "opinput(name, index)",
-            "contents": "opinput(${1:string name}, ${2:float index})"
+            "contents": "opinput(${1:name}, ${2:index})"
         },
         {
             "trigger": "opinputpath(name, index)",
-            "contents": "opinputpath(${1:string name}, ${2:float index})"
+            "contents": "opinputpath(${1:name}, ${2:index})"
         },
         {
             "trigger": "opisloading()",
@@ -883,35 +899,39 @@
         },
         {
             "trigger": "oplightmask(geometry)",
-            "contents": "oplightmask(${1:string geometry})"
+            "contents": "oplightmask(${1:geometry})"
+        },
+        {
+            "trigger": "oplistsort(path)",
+            "contents": "oplistsort(${1:path})"
         },
         {
             "trigger": "opname(name)",
-            "contents": "opname(${1:string name})"
+            "contents": "opname(${1:name})"
         },
         {
             "trigger": "opnchildren(name)",
-            "contents": "opnchildren(${1:string name})"
+            "contents": "opnchildren(${1:name})"
         },
         {
             "trigger": "opninputs(name)",
-            "contents": "opninputs(${1:string name})"
+            "contents": "opninputs(${1:name})"
         },
         {
             "trigger": "opnoutputs(name)",
-            "contents": "opnoutputs(${1:string name})"
+            "contents": "opnoutputs(${1:name})"
         },
         {
             "trigger": "opoutput(name, index)",
-            "contents": "opoutput(${1:string name}, ${2:float index})"
+            "contents": "opoutput(${1:name}, ${2:index})"
         },
         {
             "trigger": "opoutputpath(name, index)",
-            "contents": "opoutputpath(${1:string name}, ${2:float index})"
+            "contents": "opoutputpath(${1:name}, ${2:index})"
         },
         {
             "trigger": "oppinput(name, index)",
-            "contents": "oppinput(${1:string name}, ${2:float index})"
+            "contents": "oppinput(${1:name}, ${2:index})"
         },
         {
             "trigger": "oppwd()",
@@ -923,255 +943,255 @@
         },
         {
             "trigger": "oprelativepath(srcpath, destpath)",
-            "contents": "oprelativepath(${1:string srcpath}, ${2:string destpath})"
+            "contents": "oprelativepath(${1:srcpath}, ${2:destpath})"
         },
         {
             "trigger": "opselect(network)",
-            "contents": "opselect(${1:string network})"
+            "contents": "opselect(${1:network})"
         },
         {
             "trigger": "opselectpath(network)",
-            "contents": "opselectpath(${1:string network})"
+            "contents": "opselectpath(${1:network})"
         },
         {
             "trigger": "opselectrecurse(network, flag)",
-            "contents": "opselectrecurse(${1:string network}, ${2:float flag})"
+            "contents": "opselectrecurse(${1:network}, ${2:flag})"
         },
         {
             "trigger": "opselectrecursepath(network, flag)",
-            "contents": "opselectrecursepath(${1:string network}, ${2:float flag})"
+            "contents": "opselectrecursepath(${1:network}, ${2:flag})"
         },
         {
             "trigger": "opstreamname(nodepath)",
-            "contents": "opstreamname(${1:string nodepath})"
+            "contents": "opstreamname(${1:nodepath})"
         },
         {
             "trigger": "opsubpath(node)",
-            "contents": "opsubpath(${1:string node})"
+            "contents": "opsubpath(${1:node})"
         },
         {
             "trigger": "optransform(object_name)",
-            "contents": "optransform(${1:string object_name})"
+            "contents": "optransform(${1:object_name})"
         },
         {
             "trigger": "optype(name)",
-            "contents": "optype(${1:string name})"
+            "contents": "optype(${1:name})"
         },
         {
             "trigger": "optypeinfo(name, pattern)",
-            "contents": "optypeinfo(${1:string name}, ${2:string pattern})"
+            "contents": "optypeinfo(${1:name}, ${2:pattern})"
         },
         {
             "trigger": "origin(obj1, obj2, constant_type)",
-            "contents": "origin(${1:string obj1}, ${2:string obj2}, ${3:string constant_type})"
+            "contents": "origin(${1:obj1}, ${2:obj2}, ${3:constant_type})"
         },
         {
             "trigger": "originoffset(obj1, pos1, obj2, pos2, constant_type)",
-            "contents": "originoffset(${1:string obj1}, ${2:vector pos1}, ${3:string obj2}, ${4:vector pos2}, ${5:string constant_type})"
+            "contents": "originoffset(${1:obj1}, ${2:pos1}, ${3:obj2}, ${4:pos2}, ${5:constant_type})"
         },
         {
             "trigger": "padzero(size, value)",
-            "contents": "padzero(${1:float size}, ${2:float value})"
+            "contents": "padzero(${1:size}, ${2:value})"
         },
         {
             "trigger": "param(token, value)",
-            "contents": "param(${1:string token}, ${2:float value})"
+            "contents": "param(${1:token}, ${2:value})"
         },
         {
             "trigger": "parmisstring(parameter_name)",
-            "contents": "parmisstring(${1:string parameter_name})"
+            "contents": "parmisstring(${1:parameter_name})"
         },
         {
             "trigger": "pic(copname, U, V, color_type)",
-            "contents": "pic(${1:string copname}, ${2:float U}, ${3:float V}, ${4:float color_type})"
+            "contents": "pic(${1:copname}, ${2:U}, ${3:V}, ${4:color_type})"
         },
         {
             "trigger": "picni(copname, U, V, color_type)",
-            "contents": "picni(${1:string copname}, ${2:float U}, ${3:float V}, ${4:float color_type})"
+            "contents": "picni(${1:copname}, ${2:U}, ${3:V}, ${4:color_type})"
         },
         {
             "trigger": "pluralize(s)",
-            "contents": "pluralize(${1:string s})"
+            "contents": "pluralize(${1:s})"
         },
         {
             "trigger": "point(surface_node, point_number, attribute, index)",
-            "contents": "point(${1:string surface_node}, ${2:float point_number}, ${3:string attribute}, ${4:float index})"
+            "contents": "point(${1:surface_node}, ${2:point_number}, ${3:attribute}, ${4:index})"
         },
         {
             "trigger": "pointattribsize(surface_node, attribute)",
-            "contents": "pointattribsize(${1:string surface_node}, ${2:string attribute})"
+            "contents": "pointattribsize(${1:surface_node}, ${2:attribute})"
         },
         {
             "trigger": "pointattribtype(surface_node, attribute)",
-            "contents": "pointattribtype(${1:string surface_node}, ${2:string attribute})"
+            "contents": "pointattribtype(${1:surface_node}, ${2:attribute})"
         },
         {
             "trigger": "pointavg(surface_node, attribute, index)",
-            "contents": "pointavg(${1:string surface_node}, ${2:string attribute}, ${3:float index})"
+            "contents": "pointavg(${1:surface_node}, ${2:attribute}, ${3:index})"
         },
         {
             "trigger": "pointdist(surface_node, point_num, surface_node, prim_num, return_type)",
-            "contents": "pointdist(${1:string surface_node}, ${2:float point_num}, ${3:string surface_node}, ${4:float prim_num}, ${5:float return_type})"
+            "contents": "pointdist(${1:surface_node}, ${2:point_num}, ${3:surface_node}, ${4:prim_num}, ${5:return_type})"
         },
         {
             "trigger": "pointgrouplist(surface_node)",
-            "contents": "pointgrouplist(${1:string surface_node})"
+            "contents": "pointgrouplist(${1:surface_node})"
         },
         {
             "trigger": "pointgroupmask(surface_node, pattern)",
-            "contents": "pointgroupmask(${1:string surface_node}, ${2:string pattern})"
+            "contents": "pointgroupmask(${1:surface_node}, ${2:pattern})"
         },
         {
             "trigger": "pointlist(surface_node, group_name)",
-            "contents": "pointlist(${1:string surface_node}, ${2:string group_name})"
+            "contents": "pointlist(${1:surface_node}, ${2:group_name})"
         },
         {
             "trigger": "pointneighbours(surface_node, point_num, num_shared_prims)",
-            "contents": "pointneighbours(${1:string surface_node}, ${2:float point_num}, ${3:float num_shared_prims})"
+            "contents": "pointneighbours(${1:surface_node}, ${2:point_num}, ${3:num_shared_prims})"
         },
         {
             "trigger": "pointpattern(surface_node, pattern)",
-            "contents": "pointpattern(${1:string surface_node}, ${2:string pattern})"
+            "contents": "pointpattern(${1:surface_node}, ${2:pattern})"
         },
         {
             "trigger": "points(surface_node, point_number, attribute)",
-            "contents": "points(${1:string surface_node}, ${2:float point_number}, ${3:string attribute})"
+            "contents": "points(${1:surface_node}, ${2:point_number}, ${3:attribute})"
         },
         {
             "trigger": "pointsmap(surface_node, attribute, index)",
-            "contents": "pointsmap(${1:string surface_node}, ${2:string attribute}, ${3:float index})"
+            "contents": "pointsmap(${1:surface_node}, ${2:attribute}, ${3:index})"
         },
         {
             "trigger": "pointsnummap(surface_node, attribute)",
-            "contents": "pointsnummap(${1:string surface_node}, ${2:string attribute})"
+            "contents": "pointsnummap(${1:surface_node}, ${2:attribute})"
         },
         {
             "trigger": "popcontextgeo(index)",
-            "contents": "popcontextgeo(${1:float index})"
+            "contents": "popcontextgeo(${1:index})"
         },
         {
             "trigger": "popevent(event_name)",
-            "contents": "popevent(${1:string event_name})"
+            "contents": "popevent(${1:event_name})"
         },
         {
             "trigger": "popeventtime(event_name)",
-            "contents": "popeventtime(${1:string event_name})"
+            "contents": "popeventtime(${1:event_name})"
         },
         {
             "trigger": "poppoint(point_number, attribute, index)",
-            "contents": "poppoint(${1:float point_number}, ${2:string attribute}, ${3:float index})"
+            "contents": "poppoint(${1:point_number}, ${2:attribute}, ${3:index})"
         },
         {
             "trigger": "poppointid(particle_id, attribute, index)",
-            "contents": "poppointid(${1:float particle_id}, ${2:string attribute}, ${3:float index})"
+            "contents": "poppointid(${1:particle_id}, ${2:attribute}, ${3:index})"
         },
         {
             "trigger": "poppointnum(particle_id)",
-            "contents": "poppointnum(${1:float particle_id})"
+            "contents": "poppointnum(${1:particle_id})"
         },
         {
             "trigger": "poppoints(point_number, attribute)",
-            "contents": "poppoints(${1:float point_number}, ${2:string attribute})"
+            "contents": "poppoints(${1:point_number}, ${2:attribute})"
         },
         {
             "trigger": "poppointsid(particle_id, attribute)",
-            "contents": "poppointsid(${1:float particle_id}, ${2:string attribute})"
+            "contents": "poppointsid(${1:particle_id}, ${2:attribute})"
         },
         {
             "trigger": "pow(base, exponent)",
-            "contents": "pow(${1:float base}, ${2:float exponent})"
+            "contents": "pow(${1:base}, ${2:exponent})"
         },
         {
             "trigger": "prim(surface_node, prim_num, attrib_name, attrib_index)",
-            "contents": "prim(${1:string surface_node}, ${2:float prim_num}, ${3:string attrib_name}, ${4:float attrib_index})"
+            "contents": "prim(${1:surface_node}, ${2:prim_num}, ${3:attrib_name}, ${4:attrib_index})"
         },
         {
             "trigger": "primattribsize(surface_node, attribute)",
-            "contents": "primattribsize(${1:string surface_node}, ${2:string attribute})"
+            "contents": "primattribsize(${1:surface_node}, ${2:attribute})"
         },
         {
             "trigger": "primattribtype(surface_node, attribute)",
-            "contents": "primattribtype(${1:string surface_node}, ${2:string attribute})"
+            "contents": "primattribtype(${1:surface_node}, ${2:attribute})"
         },
         {
             "trigger": "primdist(surface_node, prim1_num, surface_node, prim2_num, return_type)",
-            "contents": "primdist(${1:string surface_node}, ${2:float prim1_num}, ${3:string surface_node}, ${4:float prim2_num}, ${5:float return_type})"
+            "contents": "primdist(${1:surface_node}, ${2:prim1_num}, ${3:surface_node}, ${4:prim2_num}, ${5:return_type})"
         },
         {
             "trigger": "primduv(surface_node, prim_num, attrib_name, attrib_index, u, v, du, dv)",
-            "contents": "primduv(${1:string surface_node}, ${2:float prim_num}, ${3:string attrib_name}, ${4:float attrib_index}, ${5:float u}, ${6:float v}, ${7:float du}, ${8:float dv})"
+            "contents": "primduv(${1:surface_node}, ${2:prim_num}, ${3:attrib_name}, ${4:attrib_index}, ${5:u}, ${6:v}, ${7:du}, ${8:dv})"
         },
         {
             "trigger": "primgrouplist(surface_node)",
-            "contents": "primgrouplist(${1:string surface_node})"
+            "contents": "primgrouplist(${1:surface_node})"
         },
         {
             "trigger": "primgroupmask(surface_node, pattern)",
-            "contents": "primgroupmask(${1:string surface_node}, ${2:string pattern})"
+            "contents": "primgroupmask(${1:surface_node}, ${2:pattern})"
         },
         {
             "trigger": "primlist(surface_node, group_name)",
-            "contents": "primlist(${1:string surface_node}, ${2:string group_name})"
+            "contents": "primlist(${1:surface_node}, ${2:group_name})"
         },
         {
             "trigger": "primneighbours(surface_node, prim_num, num_shared_pts)",
-            "contents": "primneighbours(${1:string surface_node}, ${2:float prim_num}, ${3:float num_shared_pts})"
+            "contents": "primneighbours(${1:surface_node}, ${2:prim_num}, ${3:num_shared_pts})"
         },
         {
             "trigger": "prims(surface_node, primitive_number, attribute)",
-            "contents": "prims(${1:string surface_node}, ${2:float primitive_number}, ${3:string attribute})"
+            "contents": "prims(${1:surface_node}, ${2:primitive_number}, ${3:attribute})"
         },
         {
             "trigger": "primsmap(surface_node, attribute, index)",
-            "contents": "primsmap(${1:string surface_node}, ${2:string attribute}, ${3:float index})"
+            "contents": "primsmap(${1:surface_node}, ${2:attribute}, ${3:index})"
         },
         {
             "trigger": "primsnummap(surface_node, attribute)",
-            "contents": "primsnummap(${1:string surface_node}, ${2:string attribute})"
+            "contents": "primsnummap(${1:surface_node}, ${2:attribute})"
         },
         {
             "trigger": "primuv(surface_node, prim_num, attrib_name, attrib_index, u, v)",
-            "contents": "primuv(${1:string surface_node}, ${2:float prim_num}, ${3:string attrib_name}, ${4:float attrib_index}, ${5:float u}, ${6:float v})"
+            "contents": "primuv(${1:surface_node}, ${2:prim_num}, ${3:attrib_name}, ${4:attrib_index}, ${5:u}, ${6:v})"
         },
         {
             "trigger": "print(label, expression)",
-            "contents": "print(${1:string label}, ${2:float expression})"
+            "contents": "print(${1:label}, ${2:expression})"
         },
         {
             "trigger": "property(foo, bar)",
-            "contents": "property(${1:string foo}, ${2:float bar})"
+            "contents": "property(${1:foo}, ${2:bar})"
         },
         {
             "trigger": "propertyf(foo, bar, baz)",
-            "contents": "propertyf(${1:string foo}, ${2:float bar}, ${3:float baz})"
+            "contents": "propertyf(${1:foo}, ${2:bar}, ${3:baz})"
         },
         {
             "trigger": "propertys(foo, bar)",
-            "contents": "propertys(${1:string foo}, ${2:string bar})"
+            "contents": "propertys(${1:foo}, ${2:bar})"
         },
         {
             "trigger": "propertysop(foo, bar)",
-            "contents": "propertysop(${1:string foo}, ${2:string bar})"
+            "contents": "propertysop(${1:foo}, ${2:bar})"
         },
         {
             "trigger": "propertysraw(foo, bar)",
-            "contents": "propertysraw(${1:string foo}, ${2:string bar})"
+            "contents": "propertysraw(${1:foo}, ${2:bar})"
         },
         {
             "trigger": "propertyt(foo, bar, baz)",
-            "contents": "propertyt(${1:string foo}, ${2:float bar}, ${3:float baz})"
+            "contents": "propertyt(${1:foo}, ${2:bar}, ${3:baz})"
         },
         {
             "trigger": "pulse(value, start, end)",
-            "contents": "pulse(${1:float value}, ${2:float start}, ${3:float end})"
+            "contents": "pulse(${1:value}, ${2:start}, ${3:end})"
         },
         {
             "trigger": "pythonexprf(expression)",
-            "contents": "pythonexprf(${1:string expression})"
+            "contents": "pythonexprf(${1:expression})"
         },
         {
             "trigger": "pythonexprs(expression)",
-            "contents": "pythonexprs(${1:string expression})"
+            "contents": "pythonexprs(${1:expression})"
         },
         {
             "trigger": "qlinear()",
@@ -1179,7 +1199,7 @@
         },
         {
             "trigger": "quattomatrix(q)",
-            "contents": "quattomatrix(${1:vector q})"
+            "contents": "quattomatrix(${1:q})"
         },
         {
             "trigger": "quintic()",
@@ -1187,111 +1207,111 @@
         },
         {
             "trigger": "rad(number)",
-            "contents": "rad(${1:float number})"
+            "contents": "rad(${1:number})"
         },
         {
             "trigger": "rand(value)",
-            "contents": "rand(${1:float value})"
+            "contents": "rand(${1:value})"
         },
         {
             "trigger": "realuv(surface_node, prim_num, uv_unit, D_U|D_V)",
-            "contents": "realuv(${1:string surface_node}, ${2:float prim_num}, ${3:float uv_unit}, ${4:float D_U|D_V})"
+            "contents": "realuv(${1:surface_node}, ${2:prim_num}, ${3:uv_unit}, ${4:D_U|D_V})"
         },
         {
             "trigger": "repeat(f1, f2)",
-            "contents": "repeat(${1:float f1}, ${2:float f2})"
+            "contents": "repeat(${1:f1}, ${2:f2})"
         },
         {
             "trigger": "repeatt(t1, t2)",
-            "contents": "repeatt(${1:float t1}, ${2:float t2})"
+            "contents": "repeatt(${1:t1}, ${2:t2})"
         },
         {
             "trigger": "res(compositing_node, res_type)",
-            "contents": "res(${1:string compositing_node}, ${2:float res_type})"
+            "contents": "res(${1:compositing_node}, ${2:res_type})"
         },
         {
             "trigger": "rgb(hue, saturation, value, component)",
-            "contents": "rgb(${1:float hue}, ${2:float saturation}, ${3:float value}, ${4:string component})"
+            "contents": "rgb(${1:hue}, ${2:saturation}, ${3:value}, ${4:component})"
         },
         {
             "trigger": "rindex(source, pattern)",
-            "contents": "rindex(${1:string source}, ${2:string pattern})"
+            "contents": "rindex(${1:source}, ${2:pattern})"
         },
         {
             "trigger": "rint(number)",
-            "contents": "rint(${1:float number})"
+            "contents": "rint(${1:number})"
         },
         {
             "trigger": "rotate(angle, axis)",
-            "contents": "rotate(${1:float angle}, ${2:string axis})"
+            "contents": "rotate(${1:angle}, ${2:axis})"
         },
         {
             "trigger": "rotaxis(angle, axisv)",
-            "contents": "rotaxis(${1:float angle}, ${2:vector axisv})"
+            "contents": "rotaxis(${1:angle}, ${2:axisv})"
         },
         {
             "trigger": "round(number)",
-            "contents": "round(${1:float number})"
+            "contents": "round(${1:number})"
         },
         {
             "trigger": "run(command)",
-            "contents": "run(${1:string command})"
+            "contents": "run(${1:command})"
         },
         {
             "trigger": "runb(command)",
-            "contents": "runb(${1:string command})"
+            "contents": "runb(${1:command})"
         },
         {
             "trigger": "rune(command)",
-            "contents": "rune(${1:string command})"
+            "contents": "rune(${1:command})"
         },
         {
             "trigger": "scale(sx, sy, sz)",
-            "contents": "scale(${1:float sx}, ${2:float sy}, ${3:float sz})"
+            "contents": "scale(${1:sx}, ${2:sy}, ${3:sz})"
         },
         {
             "trigger": "seqanim(compositing_node)",
-            "contents": "seqanim(${1:string compositing_node})"
+            "contents": "seqanim(${1:compositing_node})"
         },
         {
             "trigger": "seqend(compositing_node)",
-            "contents": "seqend(${1:string compositing_node})"
+            "contents": "seqend(${1:compositing_node})"
         },
         {
             "trigger": "seqlength(compositing_node)",
-            "contents": "seqlength(${1:string compositing_node})"
+            "contents": "seqlength(${1:compositing_node})"
         },
         {
             "trigger": "seqstart(compositing_node)",
-            "contents": "seqstart(${1:string compositing_node})"
+            "contents": "seqstart(${1:compositing_node})"
         },
         {
             "trigger": "shopstring(shop_path, render_type)",
-            "contents": "shopstring(${1:string shop_path}, ${2:string render_type})"
+            "contents": "shopstring(${1:shop_path}, ${2:render_type})"
         },
         {
             "trigger": "sign(value)",
-            "contents": "sign(${1:float value})"
+            "contents": "sign(${1:value})"
         },
         {
             "trigger": "sin(number)",
-            "contents": "sin(${1:float number})"
+            "contents": "sin(${1:number})"
         },
         {
             "trigger": "sinh(number)",
-            "contents": "sinh(${1:float number})"
+            "contents": "sinh(${1:number})"
         },
         {
             "trigger": "smooth(value, minimum, maximum)",
-            "contents": "smooth(${1:float value}, ${2:float minimum}, ${3:float maximum})"
+            "contents": "smooth(${1:value}, ${2:minimum}, ${3:maximum})"
         },
         {
             "trigger": "snoise(X, Y, Z)",
-            "contents": "snoise(${1:float X}, ${2:float Y}, ${3:float Z})"
+            "contents": "snoise(${1:X}, ${2:Y}, ${3:Z})"
         },
         {
             "trigger": "spknot(surface_node, prim_num, knot_index, du_or_dv)",
-            "contents": "spknot(${1:string surface_node}, ${2:float prim_num}, ${3:float knot_index}, ${4:float du_or_dv})"
+            "contents": "spknot(${1:surface_node}, ${2:prim_num}, ${3:knot_index}, ${4:du_or_dv})"
         },
         {
             "trigger": "spline()",
@@ -1299,179 +1319,179 @@
         },
         {
             "trigger": "sqrt(number)",
-            "contents": "sqrt(${1:float number})"
+            "contents": "sqrt(${1:number})"
         },
         {
             "trigger": "stamp(scope, token, value)",
-            "contents": "stamp(${1:string scope}, ${2:string token}, ${3:float value})"
+            "contents": "stamp(${1:scope}, ${2:token}, ${3:value})"
         },
         {
             "trigger": "stamps(stamp_op_path, token, value)",
-            "contents": "stamps(${1:string stamp_op_path}, ${2:string token}, ${3:string value})"
+            "contents": "stamps(${1:stamp_op_path}, ${2:token}, ${3:value})"
         },
         {
             "trigger": "strcasecmp(s1, s2)",
-            "contents": "strcasecmp(${1:string s1}, ${2:string s2})"
+            "contents": "strcasecmp(${1:s1}, ${2:s2})"
         },
         {
             "trigger": "strcasematch(pattern, s)",
-            "contents": "strcasematch(${1:string pattern}, ${2:string s})"
+            "contents": "strcasematch(${1:pattern}, ${2:s})"
         },
         {
             "trigger": "strcat(s1, s2)",
-            "contents": "strcat(${1:string s1}, ${2:string s2})"
+            "contents": "strcat(${1:s1}, ${2:s2})"
         },
         {
             "trigger": "strcmp(s1, s2)",
-            "contents": "strcmp(${1:string s1}, ${2:string s2})"
+            "contents": "strcmp(${1:s1}, ${2:s2})"
         },
         {
             "trigger": "strdup(count, s2)",
-            "contents": "strdup(${1:float count}, ${2:string s2})"
+            "contents": "strdup(${1:count}, ${2:s2})"
         },
         {
             "trigger": "stripmatrix(mat)",
-            "contents": "stripmatrix(${1:string mat})"
+            "contents": "stripmatrix(${1:mat})"
         },
         {
             "trigger": "strlen(s)",
-            "contents": "strlen(${1:string s})"
+            "contents": "strlen(${1:s})"
         },
         {
             "trigger": "strmatch(pattern, s)",
-            "contents": "strmatch(${1:string pattern}, ${2:string s})"
+            "contents": "strmatch(${1:pattern}, ${2:s})"
         },
         {
             "trigger": "strreplace(s, old, new)",
-            "contents": "strreplace(${1:string s}, ${2:string old}, ${3:string new})"
+            "contents": "strreplace(${1:s}, ${2:old}, ${3:new})"
         },
         {
             "trigger": "sturb(X, Y, Z, depth)",
-            "contents": "sturb(${1:float X}, ${2:float Y}, ${3:float Z}, ${4:float depth})"
+            "contents": "sturb(${1:X}, ${2:Y}, ${3:Z}, ${4:depth})"
         },
         {
             "trigger": "substr(s, start, length)",
-            "contents": "substr(${1:string s}, ${2:float start}, ${3:float length})"
+            "contents": "substr(${1:s}, ${2:start}, ${3:length})"
         },
         {
             "trigger": "surflen(surface_node, prim_num, ustart, vstart, ustop, vstop)",
-            "contents": "surflen(${1:string surface_node}, ${2:float prim_num}, ${3:float ustart}, ${4:float vstart}, ${5:float ustop}, ${6:float vstop})"
+            "contents": "surflen(${1:surface_node}, ${2:prim_num}, ${3:ustart}, ${4:vstart}, ${5:ustop}, ${6:vstop})"
         },
         {
             "trigger": "system(command_string)",
-            "contents": "system(${1:string command_string})"
+            "contents": "system(${1:command_string})"
         },
         {
             "trigger": "systemES(command_string)",
-            "contents": "systemES(${1:string command_string})"
+            "contents": "systemES(${1:command_string})"
         },
         {
             "trigger": "systemRAW(command_string)",
-            "contents": "systemRAW(${1:string command_string})"
+            "contents": "systemRAW(${1:command_string})"
         },
         {
             "trigger": "tan(number)",
-            "contents": "tan(${1:float number})"
+            "contents": "tan(${1:number})"
         },
         {
             "trigger": "tanh(number)",
-            "contents": "tanh(${1:float number})"
+            "contents": "tanh(${1:number})"
         },
         {
             "trigger": "tex(filename, U, V, color_type)",
-            "contents": "tex(${1:string filename}, ${2:float U}, ${3:float V}, ${4:string color_type})"
+            "contents": "tex(${1:filename}, ${2:U}, ${3:V}, ${4:color_type})"
         },
         {
             "trigger": "texni(diskfile, U, V, color_type)",
-            "contents": "texni(${1:string diskfile}, ${2:float U}, ${3:float V}, ${4:string color_type})"
+            "contents": "texni(${1:diskfile}, ${2:U}, ${3:V}, ${4:color_type})"
         },
         {
             "trigger": "tolower(s)",
-            "contents": "tolower(${1:string s})"
+            "contents": "tolower(${1:s})"
         },
         {
             "trigger": "toupper(s)",
-            "contents": "toupper(${1:string s})"
+            "contents": "toupper(${1:s})"
         },
         {
             "trigger": "translate(tx, ty, tz)",
-            "contents": "translate(${1:float tx}, ${2:float ty}, ${3:float tz})"
+            "contents": "translate(${1:tx}, ${2:ty}, ${3:tz})"
         },
         {
             "trigger": "transpose(mat)",
-            "contents": "transpose(${1:matrix mat})"
+            "contents": "transpose(${1:mat})"
         },
         {
             "trigger": "trunc(number)",
-            "contents": "trunc(${1:float number})"
+            "contents": "trunc(${1:number})"
         },
         {
             "trigger": "turb(X, Y, Z, depth)",
-            "contents": "turb(${1:float X}, ${2:float Y}, ${3:float Z}, ${4:float depth})"
+            "contents": "turb(${1:X}, ${2:Y}, ${3:Z}, ${4:depth})"
         },
         {
             "trigger": "uniqueval(surface_node, class, attribute, index)",
-            "contents": "uniqueval(${1:string surface_node}, ${2:float class}, ${3:string attribute}, ${4:float index})"
+            "contents": "uniqueval(${1:surface_node}, ${2:class}, ${3:attribute}, ${4:index})"
         },
         {
             "trigger": "uniquevals(surface_node, class, attribute, index)",
-            "contents": "uniquevals(${1:string surface_node}, ${2:float class}, ${3:string attribute}, ${4:float index})"
+            "contents": "uniquevals(${1:surface_node}, ${2:class}, ${3:attribute}, ${4:index})"
         },
         {
             "trigger": "unituv(surface_node, prim_num, uv_real, D_U|D_V)",
-            "contents": "unituv(${1:string surface_node}, ${2:float prim_num}, ${3:float uv_real}, ${4:float D_U|D_V})"
+            "contents": "unituv(${1:surface_node}, ${2:prim_num}, ${3:uv_real}, ${4:D_U|D_V})"
         },
         {
             "trigger": "uvdist(surface_node, prim1_num, u1, v1, surface_node, prim2_num, u2, v2)",
-            "contents": "uvdist(${1:string surface_node}, ${2:float prim1_num}, ${3:float u1}, ${4:float v1}, ${5:string surface_node}, ${6:float prim2_num}, ${7:float u2}, ${8:float v2})"
+            "contents": "uvdist(${1:surface_node}, ${2:prim1_num}, ${3:u1}, ${4:v1}, ${5:surface_node}, ${6:prim2_num}, ${7:u2}, ${8:v2})"
         },
         {
             "trigger": "vangle(v0, v1)",
-            "contents": "vangle(${1:vector v0}, ${2:vector v1})"
+            "contents": "vangle(${1:v0}, ${2:v1})"
         },
         {
             "trigger": "vector(pattern)",
-            "contents": "vector(${1:string pattern})"
+            "contents": "vector(${1:pattern})"
         },
         {
             "trigger": "vector3(x, y, z)",
-            "contents": "vector3(${1:float x}, ${2:float y}, ${3:float z})"
+            "contents": "vector3(${1:x}, ${2:y}, ${3:z})"
         },
         {
             "trigger": "vector4(x, y, z, w)",
-            "contents": "vector4(${1:float x}, ${2:float y}, ${3:float z}, ${4:float w})"
+            "contents": "vector4(${1:x}, ${2:y}, ${3:z}, ${4:w})"
         },
         {
             "trigger": "vertex(surface_node, primitive_number, vertex_number, attribute, index)",
-            "contents": "vertex(${1:string surface_node}, ${2:float primitive_number}, ${3:float vertex_number}, ${4:string attribute}, ${5:float index})"
+            "contents": "vertex(${1:surface_node}, ${2:primitive_number}, ${3:vertex_number}, ${4:attribute}, ${5:index})"
         },
         {
             "trigger": "vertexattribsize(surface_node, attribute)",
-            "contents": "vertexattribsize(${1:string surface_node}, ${2:string attribute})"
+            "contents": "vertexattribsize(${1:surface_node}, ${2:attribute})"
         },
         {
             "trigger": "vertexattribtype(surface_node, attribute)",
-            "contents": "vertexattribtype(${1:string surface_node}, ${2:string attribute})"
+            "contents": "vertexattribtype(${1:surface_node}, ${2:attribute})"
         },
         {
             "trigger": "vertexs(surface_node, primitive_number, vertex_number, attribute)",
-            "contents": "vertexs(${1:string surface_node}, ${2:float primitive_number}, ${3:float vertex_number}, ${4:string attribute})"
+            "contents": "vertexs(${1:surface_node}, ${2:primitive_number}, ${3:vertex_number}, ${4:attribute})"
         },
         {
             "trigger": "vertexsmap(surface_node, attribute, index)",
-            "contents": "vertexsmap(${1:string surface_node}, ${2:string attribute}, ${3:float index})"
+            "contents": "vertexsmap(${1:surface_node}, ${2:attribute}, ${3:index})"
         },
         {
             "trigger": "vertexsnummap(surface_node, attribute)",
-            "contents": "vertexsnummap(${1:string surface_node}, ${2:string attribute})"
+            "contents": "vertexsnummap(${1:surface_node}, ${2:attribute})"
         },
         {
             "trigger": "vlength(vec)",
-            "contents": "vlength(${1:vector vec})"
+            "contents": "vlength(${1:vec})"
         },
         {
             "trigger": "vlength2(vec)",
-            "contents": "vlength2(${1:vector vec})"
+            "contents": "vlength2(${1:vec})"
         },
         {
             "trigger": "vmatch()",
@@ -1487,79 +1507,79 @@
         },
         {
             "trigger": "volumeaverage(surface_node, prim_id)",
-            "contents": "volumeaverage(${1:string surface_node}, ${2:float prim_id})"
+            "contents": "volumeaverage(${1:surface_node}, ${2:prim_id})"
         },
         {
             "trigger": "volumegradient(surface_node, prim_id, x, y, z, axis)",
-            "contents": "volumegradient(${1:string surface_node}, ${2:float prim_id}, ${3:float x}, ${4:float y}, ${5:float z}, ${6:float axis})"
+            "contents": "volumegradient(${1:surface_node}, ${2:prim_id}, ${3:x}, ${4:y}, ${5:z}, ${6:axis})"
         },
         {
             "trigger": "volumeindex(surface_node, prim_id, ix, iy, iz)",
-            "contents": "volumeindex(${1:string surface_node}, ${2:float prim_id}, ${3:float ix}, ${4:float iy}, ${5:float iz})"
+            "contents": "volumeindex(${1:surface_node}, ${2:prim_id}, ${3:ix}, ${4:iy}, ${5:iz})"
         },
         {
             "trigger": "volumeindextopos(surface_node, prim_id, ix, iy, iz, axis)",
-            "contents": "volumeindextopos(${1:string surface_node}, ${2:float prim_id}, ${3:float ix}, ${4:float iy}, ${5:float iz}, ${6:float axis})"
+            "contents": "volumeindextopos(${1:surface_node}, ${2:prim_id}, ${3:ix}, ${4:iy}, ${5:iz}, ${6:axis})"
         },
         {
             "trigger": "volumemax(surface_node, prim_id)",
-            "contents": "volumemax(${1:string surface_node}, ${2:float prim_id})"
+            "contents": "volumemax(${1:surface_node}, ${2:prim_id})"
         },
         {
             "trigger": "volumemin(surface_node, prim_id)",
-            "contents": "volumemin(${1:string surface_node}, ${2:float prim_id})"
+            "contents": "volumemin(${1:surface_node}, ${2:prim_id})"
         },
         {
             "trigger": "volumepostoindex(surface_node, prim_id, x, y, z, axis)",
-            "contents": "volumepostoindex(${1:string surface_node}, ${2:float prim_id}, ${3:float x}, ${4:float y}, ${5:float z}, ${6:float axis})"
+            "contents": "volumepostoindex(${1:surface_node}, ${2:prim_id}, ${3:x}, ${4:y}, ${5:z}, ${6:axis})"
         },
         {
             "trigger": "volumeres(surface_node, prim_id, axis)",
-            "contents": "volumeres(${1:string surface_node}, ${2:float prim_id}, ${3:float axis})"
+            "contents": "volumeres(${1:surface_node}, ${2:prim_id}, ${3:axis})"
         },
         {
             "trigger": "volumesample(surface_node, prim_id, x, y, z)",
-            "contents": "volumesample(${1:string surface_node}, ${2:float prim_id}, ${3:float x}, ${4:float y}, ${5:float z})"
+            "contents": "volumesample(${1:surface_node}, ${2:prim_id}, ${3:x}, ${4:y}, ${5:z})"
         },
         {
             "trigger": "volumevoxeldiameter(surface_node, prim_id)",
-            "contents": "volumevoxeldiameter(${1:string surface_node}, ${2:float prim_id})"
+            "contents": "volumevoxeldiameter(${1:surface_node}, ${2:prim_id})"
         },
         {
             "trigger": "vorigin(obj1, obj2)",
-            "contents": "vorigin(${1:string obj1}, ${2:string obj2})"
+            "contents": "vorigin(${1:obj1}, ${2:obj2})"
         },
         {
             "trigger": "vpname(viewer, viewport_quadrant_number)",
-            "contents": "vpname(${1:string viewer}, ${2:float viewport_quadrant_number})"
+            "contents": "vpname(${1:viewer}, ${2:viewport_quadrant_number})"
         },
         {
             "trigger": "vrorigin(obj1, obj2)",
-            "contents": "vrorigin(${1:string obj1}, ${2:string obj2})"
+            "contents": "vrorigin(${1:obj1}, ${2:obj2})"
         },
         {
             "trigger": "vscale(vec, scale)",
-            "contents": "vscale(${1:vector vec}, ${2:float scale})"
+            "contents": "vscale(${1:vec}, ${2:scale})"
         },
         {
             "trigger": "vset(size, value)",
-            "contents": "vset(${1:float size}, ${2:float value})"
+            "contents": "vset(${1:size}, ${2:value})"
         },
         {
             "trigger": "vsize(vec)",
-            "contents": "vsize(${1:vector vec})"
+            "contents": "vsize(${1:vec})"
         },
         {
             "trigger": "vtorigin(obj1, obj2)",
-            "contents": "vtorigin(${1:string obj1}, ${2:string obj2})"
+            "contents": "vtorigin(${1:obj1}, ${2:obj2})"
         },
         {
             "trigger": "wrap(value, minimum, maximum)",
-            "contents": "wrap(${1:float value}, ${2:float minimum}, ${3:float maximum})"
+            "contents": "wrap(${1:value}, ${2:minimum}, ${3:maximum})"
         },
         {
             "trigger": "xyzdist(x, y, z, surface_node, prim_num, return_type)",
-            "contents": "xyzdist(${1:float x}, ${2:float y}, ${3:float z}, ${4:string surface_node}, ${5:float prim_num}, ${6:float return_type})"
+            "contents": "xyzdist(${1:x}, ${2:y}, ${3:z}, ${4:surface_node}, ${5:prim_num}, ${6:return_type})"
         }
     ]
 }

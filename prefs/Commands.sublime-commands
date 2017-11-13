@@ -1,0 +1,6 @@
+[
+    {
+        "caption": "HScript: Show Documentation for Function",
+        "command": "hscript_helpcard"
+    }
+]
