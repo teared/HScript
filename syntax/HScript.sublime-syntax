@@ -55,6 +55,8 @@ contexts:
     # Constants, functions, types.
     - match: (?<!\w|\.)((\.[0-9][0-9_]*|[0-9][0-9_]*\.|([0-9]+|[0-9][0-9_]*[0-9])\.[0-9][0-9_]*)f?|([1-9]|0_)[0-9_]*|0)([eE][\+-]?[0-9]+)?(?!\w|\.)
       scope: constant.numeric.dec.hscript
+    - match: \b(0+[0-7][0-7_]*)\b
+      scope: constant.numeric.dec.hscript
     - match: \b({{expression}})\b(?=\s*\()
       scope: support.function.hscript
     - match: \b({{command}})\b

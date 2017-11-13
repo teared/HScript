@@ -1,20 +1,170 @@
-# Constants.
-1.3
-.3
-1.
-1_1.3_3
-.3_3
-1_1.
-1.1_
-1_000
-1000_
-1e2
-1e-2
-1e+2
-1e10
-1_0.1e-2
+# SYNTAX TEST "Packages/HScript/syntax/HScript.sublime-syntax"
 
-# Patterns.
+
+
+Comments.
+
+
+# Test comment.
+# <- punctuation.definition.comment
+#^^^^^^^^^^^^^^ comment.line
+
+
+
+Constants.
+
+
+ 1.f 1.0_f .1f 1.3 .3 1. 1_1.3_3 .3_3 1_1. 1.1_
+#^^^ constant.numeric
+#    ^^^^^ constant.numeric
+#          ^^^ constant.numeric
+#              ^^^ constant.numeric
+#                  ^^ constant.numeric
+#                     ^^ constant.numeric
+#                        ^^^^^^^ constant.numeric
+#                                ^^^^ constant.numeric
+#                                     ^^^^ constant.numeric
+#                                          ^^^^ constant.numeric
+  1_000 1000_
+# ^^^^^ constant.numeric
+#       ^^^^^ constant.numeric
+  017 0_17 00_07 0007
+# ^^^ constant.numeric
+#     ^^^^ constant.numeric
+#          ^^^^^ constant.numeric
+#                ^^^^ constant.numeric
+  1e2 1e-2 1e+2 1e10 1_0.1e-2
+# ^^^ constant.numeric
+#     ^^^^ constant.numeric
+#          ^^^^ constant.numeric
+#               ^^^^ constant.numeric
+#                    ^^^^^^^^ constant.numeric
+
+
+
+String literals.
+
+
+"asd\"fgh\t\\t\fe\nd\\"
+#   ^^ constant.character.escape
+#            ^ -constant.character.escape
+#             ^^ -constant.character.escape
+#                     ^ punctuation.definition.string.end
+#^^^^^^^^^^^^^^^^^^^^^^ string.quoted
+
+
+
+Types, variables, operators.
+
+vector color
+# <- storage.type
+float color
+# <- storage.type
+matrix color
+
+$PI - $F^2
+# <- constant.language.variable
+#     ^^ constant.language.variable
+#   ^ keyword.operator.arithmetic
+#       ^ keyword.operator.power
+
+
+
+Expression functions and commands.
+
+
+opinput(name, index)
+# <- support.function
+
+opls
+# <- keyword.control.command
+
+echo foo
+# <- keyword.control.command
+#    ^^^ string.unquoted.echo
+
+
+
+Flow control.
+
+
+if (1)
+# <- keyword.control
+
+for
+# <- keyword.control
+
+
+
+HScript Expressions.
+
+
+  if($PT % 2 == 0, ($TX - point("../mountain_z", ($PT + 1), "P", 0)), 0)
+# ^^ support.function
+#   ^ punctuation.parens.begin
+#    ^^^ constant.language.variable
+#        ^ keyword.operator.arithmetic
+#          ^ constant.numeric.dec
+#            ^^ keyword.operator.assignment
+#               ^ constant.numeric.dec
+#                ^ punctuation.separator
+#                  ^ punctuation.parens.begin
+#                         ^^^^^ support.function
+#                               ^ punctuation.definition.string.begin
+#                               ^^^^^^^^^^^^^^^ string.quoted.double
+#                                             ^ punctuation.definition.string.end
+#                                              ^ punctuation.separator
+
+{
+# <- punctuation.braces.begin
+    if ($PT % 2 == 0)
+#   ^^ keyword.control
+    {
+        return point("../mountain_z", $PT + 1, "P", 0);
+#       ^^^^^^ keyword.control
+#              ^^^^^ support.function
+    }
+    else if (2)
+#   ^^^^ keyword.control
+#       ^ -keyword.control
+#        ^^ keyword.control
+    {
+        return 0;
+#       ^^^^^^ keyword.control
+#              ^ constant.numeric.dec
+    }
+}
+# <- punctuation.braces.end
+
+
+
+HScript
+
+
+foreach object ("`run("opls -d")`")
+# <- keyword.control
+#              ^ punctuation.parens.begin
+#               ^ punctuation.definition.string.begin
+#                ^ keyword.other.backticks
+#                 ^^^ support.function
+#                    ^ punctuation.parens.begin
+#                              ^ punctuation.parens.end
+#                               ^ keyword.other.backticks
+#                                ^ punctuation.definition.string.end
+#               ^^^^^^^^^^^^^^^^^^ string.quoted.double
+#                                 ^ punctuation.parens.end
+    echo Object $object
+#   ^^^^ keyword.control.command
+#        ^^^^^^ string.unquoted.echo
+#               ^^^^^^^ constant.language.variable
+end
+# <- keyword.control
+
+
+
+Group Patterns has no special scopes, only reusing existing operators.
+
+
 geo*
 [gG]eo*
 ?eo*
@@ -24,6 +174,11 @@ geo*
 0-30:2,3
 !3-5
 0-100:2 ^10-20
+
+
+
+Demos.
+
 
 # HScript Expressions example.
 if($PT % 2 == 0, ($TX - point("../mountain_z", ($PT + 1), "P", 0)), 0)
