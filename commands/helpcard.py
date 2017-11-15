@@ -13,6 +13,9 @@ class HscriptHelpcardCommand(sublime_plugin.TextCommand):
         self.helpcards = json.loads(sublime.load_resource('Packages/HScript/commands/helpcards.json'))
         super().__init__(*args, **kwargs)
 
+    def is_enabled(self):
+        return self.view.score_selector(self.view.sel()[0].a, 'source.hscript') > 0
+
     def run(self, edit):
         # Expand to full token under cursor.
         first_sel = self.view.sel()[0].a
