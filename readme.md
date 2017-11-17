@@ -68,3 +68,8 @@ For the rest, check [Sublime Text Documentation], it has many small features
 that make textual editing easy and powerful.
 
 [Sublime Text Documentation]: https://www.sublimetext.com/docs/3/
+
+
+## License
+
+Public domain.
