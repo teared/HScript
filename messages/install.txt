@@ -1,0 +1,42 @@
+Houdini add-on for Sublime Text:
+    https://github.com/teared/HScript
+
+
+Features
+
+    HScript and HScript Expressions syntax.
+    Expression function auto-completions with arguments.
+    Expression function documentation via styled popups.
+    Nicely used in VEX snippets inside backticks by VEX add-on: https://github.com/teared/VEX
+
+    Open issues for bug reports, requests, suggestions, etc:
+        https://github.com/teared/HScript/issues
+
+
+Optional: VEX add-on
+
+    Similar add-on for VEX and VEX Expressions. Syntax, auto-completions,
+    documentation popups. It can use HScript add-on inside backtick-expressions
+    embedded inside snippets.
+
+    https://github.com/teared/VEX
+
+
+Usage
+
+    Open any HScript code and choose HScript using menu at the right bottom corner
+    of the editor. If you don't want to change from Batch to HScript every time
+    you open file with `.cmd` extension, there is "Open all with current extension
+    as..." action in the same menu.
+
+    When you start to type expression function name, it will prompt you with
+    suggestions. You can choose one and use `Tab` and `Shift+Tab` keys to navigate
+    back and forth.
+
+    To show docs for the function:
+        Tools → Command Pallette → HScript: Show Documentation for Function Under Cursor
+        Shortcut: "Ctrl+Alt+D".
+
+    For the rest, check Sublime Text Documentation, it has many small features
+    that make textual editing easy and powerful.
+        https://www.sublimetext.com/docs/3/

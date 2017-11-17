@@ -1,4 +1,25 @@
 {
+    // This is default HScript package preferences file. Don't change it.
+
+    // If you opened settings from Sublime Text, correct file for user
+    // overrides should be in the next column of split window, called
+    // "HScript.sublime-settings — User".
+
+    // This "HScript.sublime-settings — User" is also a syntax-specific file
+    // (package has same name as a syntax it defines). So you will also see it
+    // if you opened it via: Preferences → Syntax Specific. But instead of
+    // this default HScript package preferences, you will see default Preferences
+    // of Sublime Text itself.
+
+    // Feel free to override any of Package settings below, as well as
+    // Sublime's Preferences.
+
+    // First candidate from the Preferences is "extensions" setting,
+    // which will force .h files to open with HScript syntax instead of
+    // Windows Batch file:
+    // "extensions": ["cmd"],
+
+    // Size of documentation popups, in pixels.
     "popup_max_width": 640,
     "popup_max_height": 360,
 }
