@@ -1,0 +1,42 @@
+Houdini add-on for Sublime Text:
+    https://github.com/teared/HScript
+
+
+Release 7.1.0
+
+
+1. Updated for Houdini 17.0.
+
+2. New expression functions added:
+
+    float arclenD(string surface_node, float prim_num, float ustart, float ustop, float divs)
+    string chopnames(string CHOP)
+    float contextoption(string token)
+    string contextoptions(string token)
+    float hascontextoption(string token)
+    string lopinputprim(string lop_path, float input_index)
+    string lopinputprims(string lop_path, float input_index)
+    string loplastmodifiedprim(string lop_path)
+    string loplastmodifiedprims(string lop_path)
+    string topexp(string expression)
+
+    Tip: to read about new functions quickly, copy the list in empty
+    Sublime Text document, set HScript syntax and check documentation helpcards.
+
+3. Older expressions that is now highlighted and documented:
+
+    float dopgroupismutual(string dop, string group)
+    float raw()
+    string seampoints(string surface_node, float whichside)
+
+4. Commands highlighted in syntax:
+
+    animeditor
+    chautoselect
+    imgsave
+    kinconvert
+    matrman
+    matupdateref
+    rexport
+    shopconvert
+    system
