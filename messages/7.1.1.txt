@@ -1,0 +1,19 @@
+Houdini add-on for Sublime Text:
+    https://github.com/teared/HScript
+
+
+Release 7.1.1
+
+
+1. Updated for Houdini 17.5.
+
+2. Obsolete expression functions removed:
+
+    string popcontextgeo(float index)
+    float popevent(string event_name)
+    float popeventtime(string event_name)
+    float poppoint(float point_number, string attribute, float index)
+    float poppointid(float particle_id, string attribute, float index)
+    float poppointnum(float particle_id)
+    string poppoints(float point_number, string attribute)
+    string poppointsid(float particle_id, string attribute)
