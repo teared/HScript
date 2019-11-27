@@ -1,0 +1,43 @@
+Houdini add-on for Sublime Text:
+    https://github.com/teared/HScript
+
+
+Release 7.1.2
+
+
+1. Updated for Houdini 18.
+
+2. New expression functions added:
+
+    string abspath(string relpath)
+    string decodeattrib(string s)
+    string decodeparm(string s)
+    string encodeattrib(string s)
+    string encodeparm(string s)
+    string lopparentprims(string lop_paths)
+    string loprelativeprims(string lop_paths, string relative_path)
+    string opinputstring(string name, float index, string key)
+    string pdgattribute(string name, float index)
+    string pdgattributes(string name, float index)
+    string pdginput(float index, string tag, float localize)
+    string pdgoutput(float index, string tag, float localize)
+    string relpath(string abspath)
+    float scalefrommks(string dimensions)
+    float scaletomks(string dimensions)
+
+    Tip: to read about new functions quickly, copy the list in empty
+    Sublime Text document, set HScript syntax and check documentation helpcards.
+
+3. Commands highlighted in syntax:
+
+    ociocolorspace
+    ociodisplay
+    scenegraphtree
+    sceneviewopts
+    sceneviewpurpose
+    sceneviewrenderopts
+    topcancel
+    topcook
+    topdirty
+    visualizeradd
+    visualizerset

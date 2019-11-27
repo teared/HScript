@@ -6,6 +6,10 @@
             "contents": "abs(${1:number})"
         },
         {
+            "trigger": "abspath(relpath)",
+            "contents": "abspath(${1:relpath})"
+        },
+        {
             "trigger": "acos(number)",
             "contents": "acos(${1:number})"
         },
@@ -254,12 +258,12 @@
             "contents": "decode(${1:s})"
         },
         {
-            "trigger": "encode(s)",
-            "contents": "encode(${1:s})"
+            "trigger": "decodeattrib(s)",
+            "contents": "decodeattrib(${1:s})"
         },
         {
-            "trigger": "ftrim(number)",
-            "contents": "ftrim(${1:number})"
+            "trigger": "decodeparm(s)",
+            "contents": "decodeparm(${1:s})"
         },
         {
             "trigger": "deg(radians)",
@@ -494,6 +498,18 @@
             "contents": "edgegroupmask(${1:surface_node}, ${2:pattern})"
         },
         {
+            "trigger": "encode(s)",
+            "contents": "encode(${1:s})"
+        },
+        {
+            "trigger": "encodeattrib(s)",
+            "contents": "encodeattrib(${1:s})"
+        },
+        {
+            "trigger": "encodeparm(s)",
+            "contents": "encodeparm(${1:s})"
+        },
+        {
             "trigger": "eval(expression)",
             "contents": "eval(${1:expression})"
         },
@@ -564,6 +580,10 @@
         {
             "trigger": "ftoa(number)",
             "contents": "ftoa(${1:number})"
+        },
+        {
+            "trigger": "ftrim(number)",
+            "contents": "ftrim(${1:number})"
         },
         {
             "trigger": "groupbyval(surface_node, class, attribute, id)",
@@ -762,6 +782,14 @@
             "contents": "loplastmodifiedprims(${1:lop_path})"
         },
         {
+            "trigger": "lopparentprims(lop_paths)",
+            "contents": "lopparentprims(${1:lop_paths})"
+        },
+        {
+            "trigger": "loprelativeprims(lop_paths, relative_path)",
+            "contents": "loprelativeprims(${1:lop_paths}, ${2:relative_path})"
+        },
+        {
             "trigger": "match()",
             "contents": "match()"
         },
@@ -938,6 +966,10 @@
             "contents": "opinputpath(${1:name}, ${2:index})"
         },
         {
+            "trigger": "opinputstring(name, index, key)",
+            "contents": "opinputstring(${1:name}, ${2:index}, ${3:key})"
+        },
+        {
             "trigger": "opisloading()",
             "contents": "opisloading()"
         },
@@ -1048,6 +1080,22 @@
         {
             "trigger": "parmisstring(parameter_name)",
             "contents": "parmisstring(${1:parameter_name})"
+        },
+        {
+            "trigger": "pdgattribute(name, index)",
+            "contents": "pdgattribute(${1:name}, ${2:index})"
+        },
+        {
+            "trigger": "pdgattributes(name, index)",
+            "contents": "pdgattributes(${1:name}, ${2:index})"
+        },
+        {
+            "trigger": "pdginput(index, tag, localize)",
+            "contents": "pdginput(${1:index}, ${2:tag}, ${3:localize})"
+        },
+        {
+            "trigger": "pdgoutput(index, tag, localize)",
+            "contents": "pdgoutput(${1:index}, ${2:tag}, ${3:localize})"
         },
         {
             "trigger": "pic(copname, U, V, color_type)",
@@ -1234,6 +1282,10 @@
             "contents": "realuv(${1:surface_node}, ${2:prim_num}, ${3:uv_unit}, ${4:D_U|D_V})"
         },
         {
+            "trigger": "relpath(abspath)",
+            "contents": "relpath(${1:abspath})"
+        },
+        {
             "trigger": "repeat(f1, f2)",
             "contents": "repeat(${1:f1}, ${2:f2})"
         },
@@ -1284,6 +1336,14 @@
         {
             "trigger": "scale(sx, sy, sz)",
             "contents": "scale(${1:sx}, ${2:sy}, ${3:sz})"
+        },
+        {
+            "trigger": "scalefrommks(dimensions)",
+            "contents": "scalefrommks(${1:dimensions})"
+        },
+        {
+            "trigger": "scaletomks(dimensions)",
+            "contents": "scaletomks(${1:dimensions})"
         },
         {
             "trigger": "seqanim(compositing_node)",
