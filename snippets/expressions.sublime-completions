@@ -50,12 +50,36 @@
             "contents": "atof(${1:source})"
         },
         {
+            "trigger": "attriblist(surface_node, class)",
+            "contents": "attriblist(${1:surface_node}, ${2:class})"
+        },
+        {
             "trigger": "bbox(surface_node, type)",
             "contents": "bbox(${1:surface_node}, ${2:type})"
         },
         {
             "trigger": "bezier()",
             "contents": "bezier()"
+        },
+        {
+            "trigger": "bitand(abits, bbits)",
+            "contents": "bitand(${1:abits}, ${2:bbits})"
+        },
+        {
+            "trigger": "bitor(abits, bbits)",
+            "contents": "bitor(${1:abits}, ${2:bbits})"
+        },
+        {
+            "trigger": "bitset(number, bit_index, value)",
+            "contents": "bitset(${1:number}, ${2:bit_index}, ${3:value})"
+        },
+        {
+            "trigger": "bittest(number, bit_index)",
+            "contents": "bittest(${1:number}, ${2:bit_index})"
+        },
+        {
+            "trigger": "bitxor(abits, bbits)",
+            "contents": "bitxor(${1:abits}, ${2:bbits})"
         },
         {
             "trigger": "boneangle(bone1, bone2)",
@@ -198,12 +222,12 @@
             "contents": "constant()"
         },
         {
-            "trigger": "contextoption(token)",
-            "contents": "contextoption(${1:token})"
+            "trigger": "contextoption(name)",
+            "contents": "contextoption(${1:name})"
         },
         {
-            "trigger": "contextoptions(token)",
-            "contents": "contextoptions(${1:token})"
+            "trigger": "contextoptions(name)",
+            "contents": "contextoptions(${1:name})"
         },
         {
             "trigger": "cophasmeta(compositing_node, metadata_name)",
@@ -218,8 +242,8 @@
             "contents": "copmetas(${1:compositing_node}, ${2:metadata_name})"
         },
         {
-            "trigger": "cos(number)",
-            "contents": "cos(${1:number})"
+            "trigger": "cos(degrees)",
+            "contents": "cos(${1:degrees})"
         },
         {
             "trigger": "cosh(number)",
@@ -276,6 +300,10 @@
         {
             "trigger": "detail(surface_node, attrib_name, attrib_index)",
             "contents": "detail(${1:surface_node}, ${2:attrib_name}, ${3:attrib_index})"
+        },
+        {
+            "trigger": "detailattriblist(surface_node)",
+            "contents": "detailattriblist(${1:surface_node})"
         },
         {
             "trigger": "detailattribsize(surface_node, attribute)",
@@ -602,6 +630,10 @@
             "contents": "hasdetailattrib(${1:surface_node}, ${2:attribute})"
         },
         {
+            "trigger": "haspdgattrib(attribute)",
+            "contents": "haspdgattrib(${1:attribute})"
+        },
+        {
             "trigger": "haspoint(group_name, surface_node, point_num)",
             "contents": "haspoint(${1:group_name}, ${2:surface_node}, ${3:point_num})"
         },
@@ -922,6 +954,10 @@
             "contents": "oc(${1:output_channel_index}, ${2:index})"
         },
         {
+            "trigger": "ocldeviceinfo(flag)",
+            "contents": "ocldeviceinfo(${1:flag})"
+        },
+        {
             "trigger": "oldrand(value)",
             "contents": "oldrand(${1:value})"
         },
@@ -996,6 +1032,10 @@
         {
             "trigger": "opninputs(name)",
             "contents": "opninputs(${1:name})"
+        },
+        {
+            "trigger": "opnodigits(name)",
+            "contents": "opnodigits(${1:name})"
         },
         {
             "trigger": "opnoutputs(name)",
@@ -1082,6 +1122,26 @@
             "contents": "parmisstring(${1:parameter_name})"
         },
         {
+            "trigger": "pdgattrib(name, index)",
+            "contents": "pdgattrib(${1:name}, ${2:index})"
+        },
+        {
+            "trigger": "pdgattriblist()",
+            "contents": "pdgattriblist()"
+        },
+        {
+            "trigger": "pdgattribs(name, index)",
+            "contents": "pdgattribs(${1:name}, ${2:index})"
+        },
+        {
+            "trigger": "pdgattribsize(attribute)",
+            "contents": "pdgattribsize(${1:attribute})"
+        },
+        {
+            "trigger": "pdgattribtype(attribute)",
+            "contents": "pdgattribtype(${1:attribute})"
+        },
+        {
             "trigger": "pdgattribute(name, index)",
             "contents": "pdgattribute(${1:name}, ${2:index})"
         },
@@ -1090,12 +1150,32 @@
             "contents": "pdgattributes(${1:name}, ${2:index})"
         },
         {
+            "trigger": "pdgattribvals(name)",
+            "contents": "pdgattribvals(${1:name})"
+        },
+        {
             "trigger": "pdginput(index, tag, localize)",
             "contents": "pdginput(${1:index}, ${2:tag}, ${3:localize})"
         },
         {
+            "trigger": "pdginputsize(tag)",
+            "contents": "pdginputsize(${1:tag})"
+        },
+        {
+            "trigger": "pdginputvals(tag, localize)",
+            "contents": "pdginputvals(${1:tag}, ${2:localize})"
+        },
+        {
             "trigger": "pdgoutput(index, tag, localize)",
             "contents": "pdgoutput(${1:index}, ${2:tag}, ${3:localize})"
+        },
+        {
+            "trigger": "pdgoutputsize(tag)",
+            "contents": "pdgoutputsize(${1:tag})"
+        },
+        {
+            "trigger": "pdgoutputvals(tag, localize)",
+            "contents": "pdgoutputvals(${1:tag}, ${2:localize})"
         },
         {
             "trigger": "pic(copname, U, V, color_type)",
@@ -1112,6 +1192,10 @@
         {
             "trigger": "point(surface_node, point_number, attribute, index)",
             "contents": "point(${1:surface_node}, ${2:point_number}, ${3:attribute}, ${4:index})"
+        },
+        {
+            "trigger": "pointattriblist(surface_node)",
+            "contents": "pointattriblist(${1:surface_node})"
         },
         {
             "trigger": "pointattribsize(surface_node, attribute)",
@@ -1168,6 +1252,10 @@
         {
             "trigger": "prim(surface_node, prim_num, attrib_name, attrib_index)",
             "contents": "prim(${1:surface_node}, ${2:prim_num}, ${3:attrib_name}, ${4:attrib_index})"
+        },
+        {
+            "trigger": "primattriblist(surface_node)",
+            "contents": "primattriblist(${1:surface_node})"
         },
         {
             "trigger": "primattribsize(surface_node, attribute)",
@@ -1370,8 +1458,8 @@
             "contents": "sign(${1:value})"
         },
         {
-            "trigger": "sin(number)",
-            "contents": "sin(${1:number})"
+            "trigger": "sin(degrees)",
+            "contents": "sin(${1:degrees})"
         },
         {
             "trigger": "sinh(number)",
@@ -1466,8 +1554,8 @@
             "contents": "systemRAW(${1:command_string})"
         },
         {
-            "trigger": "tan(number)",
-            "contents": "tan(${1:number})"
+            "trigger": "tan(degrees)",
+            "contents": "tan(${1:degrees})"
         },
         {
             "trigger": "tanh(number)",
@@ -1542,12 +1630,24 @@
             "contents": "vertex(${1:surface_node}, ${2:primitive_number}, ${3:vertex_number}, ${4:attribute}, ${5:index})"
         },
         {
+            "trigger": "vertexattriblist(surface_node)",
+            "contents": "vertexattriblist(${1:surface_node})"
+        },
+        {
             "trigger": "vertexattribsize(surface_node, attribute)",
             "contents": "vertexattribsize(${1:surface_node}, ${2:attribute})"
         },
         {
             "trigger": "vertexattribtype(surface_node, attribute)",
             "contents": "vertexattribtype(${1:surface_node}, ${2:attribute})"
+        },
+        {
+            "trigger": "vertexgrouplist(surface_node)",
+            "contents": "vertexgrouplist(${1:surface_node})"
+        },
+        {
+            "trigger": "vertexgroupmask(surface_node, pattern)",
+            "contents": "vertexgroupmask(${1:surface_node}, ${2:pattern})"
         },
         {
             "trigger": "vertexs(surface_node, primitive_number, vertex_number, attribute)",

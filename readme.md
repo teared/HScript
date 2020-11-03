@@ -1,6 +1,6 @@
 # [Houdini] add-on for [Sublime Text]
 
-[Houdini]: https://sidefx.com/
+[Houdini]: https://www.sidefx.com/
 [Sublime Text]: https://www.sublimetext.com/
 
 
@@ -13,8 +13,8 @@
 
 Open [issues] for bug reports, requests, suggestions, etc.
 
-[HScript]: http://www.sidefx.com/docs/houdini/commands/_guide
-[HScript Expressions]: http://www.sidefx.com/docs/houdini/ref/expression_cookbook.html
+[HScript]: https://www.sidefx.com/docs/houdini/commands/_guide
+[HScript Expressions]: https://www.sidefx.com/docs/houdini/ref/expression_cookbook.html
 [VEX add-on]: https://github.com/teared/VEX
 [issues]: https://github.com/teared/HScript/issues
 
@@ -36,7 +36,7 @@ Requirements:
 
    Tools → Install Package Control
 
-[Sublime Text]: http://www.sublimetext.com/
+[Sublime Text]: https://www.sublimetext.com/
 [Package Control]: https://packagecontrol.io/
 
 

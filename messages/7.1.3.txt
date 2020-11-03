@@ -1,0 +1,40 @@
+Houdini add-on for Sublime Text:
+    https://github.com/teared/HScript
+
+
+Release 7.1.3
+
+
+1. Updated for Houdini 18.5.
+
+2. New expression functions added:
+
+    float bitset(float number, float bit_index, float value)
+    float bittest(float number, float bit_index)
+    float bitxor(float abits, float bbits)
+    string detailattriblist(string surface_node)
+    float haspdgattrib(string attribute)
+    float ocldeviceinfo(string flag)
+    string opnodigits(string name)
+    float pdgattrib(string name, float index)
+    string pdgattriblist()
+    string pdgattribs(string name, float index)
+    float pdgattribsize(string attribute)
+    float pdgattribtype(string attribute)
+    string pdgattribvals(string name)
+    float pdginputsize(string tag)
+    string pdginputvals(string tag, float localize)
+    float pdgoutputsize(string tag)
+    string pdgoutputvals(string tag, float localize)
+    string pointattriblist(string surface_node)
+    string primattriblist(string surface_node)
+    string vertexgrouplist(string surface_node)
+    string vertexgroupmask(string surface_node, string pattern)
+
+    Tip: to read about new functions quickly, copy the list in empty
+    Sublime Text document, set HScript syntax and check documentation helpcards.
+
+3. Commands highlighted in syntax:
+
+    opinputstring
+    viewposteffects
