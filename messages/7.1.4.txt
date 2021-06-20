@@ -1,0 +1,10 @@
+Houdini add-on for Sublime Text:
+    https://github.com/teared/HScript
+
+
+Release 7.1.4
+
+
+1. Added support for Sublime Text 4:
+
+    https://www.sublimetext.com/blog/articles/sublime-text-4
