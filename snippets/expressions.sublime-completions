@@ -194,12 +194,12 @@
             "contents": "chs(${1:channel})"
         },
         {
-            "trigger": "chsop(path)",
-            "contents": "chsop(${1:path})"
+            "trigger": "chsop(parameter_path)",
+            "contents": "chsop(${1:parameter_path})"
         },
         {
-            "trigger": "chsoplist(path)",
-            "contents": "chsoplist(${1:path})"
+            "trigger": "chsoplist(parameter_path)",
+            "contents": "chsoplist(${1:parameter_path})"
         },
         {
             "trigger": "chsraw(channel)",
@@ -232,6 +232,10 @@
         {
             "trigger": "cophasmeta(compositing_node, metadata_name)",
             "contents": "cophasmeta(${1:compositing_node}, ${2:metadata_name})"
+        },
+        {
+            "trigger": "cophasplane(compositing_node, plane_name)",
+            "contents": "cophasplane(${1:compositing_node}, ${2:plane_name})"
         },
         {
             "trigger": "copmeta(compositing_node, metadata_name, index)",
@@ -602,6 +606,10 @@
             "contents": "floor(${1:number})"
         },
         {
+            "trigger": "fpadzero(integerpad, fracpad, value)",
+            "contents": "fpadzero(${1:integerpad}, ${2:fracpad}, ${3:value})"
+        },
+        {
             "trigger": "frac(number)",
             "contents": "frac(${1:number})"
         },
@@ -934,6 +942,14 @@
             "contents": "nuniquevals(${1:surface_node}, ${2:class}, ${3:attribute})"
         },
         {
+            "trigger": "nvertices(surface_node)",
+            "contents": "nvertices(${1:surface_node})"
+        },
+        {
+            "trigger": "nverticesgroup(surface_node, group_name)",
+            "contents": "nverticesgroup(${1:surface_node}, ${2:group_name})"
+        },
+        {
             "trigger": "objkinoverride()",
             "contents": "objkinoverride()"
         },
@@ -1162,8 +1178,16 @@
             "contents": "pdginputsize(${1:tag})"
         },
         {
+            "trigger": "pdginputtag(index)",
+            "contents": "pdginputtag(${1:index})"
+        },
+        {
             "trigger": "pdginputvals(tag, localize)",
             "contents": "pdginputvals(${1:tag}, ${2:localize})"
+        },
+        {
+            "trigger": "pdgmappath(path)",
+            "contents": "pdgmappath(${1:path})"
         },
         {
             "trigger": "pdgoutput(index, tag, localize)",
@@ -1172,6 +1196,10 @@
         {
             "trigger": "pdgoutputsize(tag)",
             "contents": "pdgoutputsize(${1:tag})"
+        },
+        {
+            "trigger": "pdgoutputtag(index)",
+            "contents": "pdgoutputtag(${1:index})"
         },
         {
             "trigger": "pdgoutputvals(tag, localize)",
