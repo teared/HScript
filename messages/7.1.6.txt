@@ -1,0 +1,22 @@
+Houdini add-on for Sublime Text:
+    https://github.com/teared/HScript
+
+
+Release 7.1.6
+
+
+1. Updated for Houdini 19.5.
+
+2. New expression functions added:
+
+    ispdgeval
+    strsplit
+    strsplitcount
+
+    Tip: to read about new functions quickly,
+    copy the list into an empty Sublime Text document,
+    set the HScript syntax, and check the documentation helpcards.
+
+
+Open issues for bug reports, requests, suggestions, etc:
+    https://github.com/teared/HScript/issues

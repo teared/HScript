@@ -39,4 +39,4 @@ Usage
 
     For the rest, check Sublime Text Documentation, it has many small features
     that make textual editing easy and powerful.
-        https://www.sublimetext.com/docs/3/
+        https://www.sublimetext.com/docs/

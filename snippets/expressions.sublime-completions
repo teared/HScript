@@ -758,6 +758,10 @@
             "contents": "ishvariable(${1:variable_name})"
         },
         {
+            "trigger": "ispdgeval()",
+            "contents": "ispdgeval()"
+        },
+        {
             "trigger": "isspline(surface_node, prim_num)",
             "contents": "isspline(${1:surface_node}, ${2:prim_num})"
         },
@@ -1556,6 +1560,14 @@
         {
             "trigger": "strreplace(s, old, new)",
             "contents": "strreplace(${1:s}, ${2:old}, ${3:new})"
+        },
+        {
+            "trigger": "strsplit(s, separators, component)",
+            "contents": "strsplit(${1:s}, ${2:separators}, ${3:component})"
+        },
+        {
+            "trigger": "strsplitcount(s, separators)",
+            "contents": "strsplitcount(${1:s}, ${2:separators})"
         },
         {
             "trigger": "sturb(X, Y, Z, depth)",
