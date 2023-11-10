@@ -3,1799 +3,2745 @@
     "completions": [
         {
             "trigger": "abs(number)",
-            "contents": "abs(${1:number})"
+            "contents": "abs(${1:number})",
+            "kind": "function",
+            "details": "Returns the absolute value of the argument."
         },
         {
             "trigger": "abspath(relpath)",
-            "contents": "abspath(${1:relpath})"
+            "contents": "abspath(${1:relpath})",
+            "kind": "function",
+            "details": "Returns the full path of a file."
         },
         {
             "trigger": "acos(number)",
-            "contents": "acos(${1:number})"
+            "contents": "acos(${1:number})",
+            "kind": "function",
+            "details": "Returns the arc-cosine of the argument."
         },
         {
             "trigger": "angvel(rot1, rot2, time)",
-            "contents": "angvel(${1:rot1}, ${2:rot2}, ${3:time})"
+            "contents": "angvel(${1:rot1}, ${2:rot2}, ${3:time})",
+            "kind": "function",
+            "details": "Returns the angular velocity required to rotate an object from one"
         },
         {
             "trigger": "arclen(surface_node, prim_num, ustart, ustop)",
-            "contents": "arclen(${1:surface_node}, ${2:prim_num}, ${3:ustart}, ${4:ustop})"
+            "contents": "arclen(${1:surface_node}, ${2:prim_num}, ${3:ustart}, ${4:ustop})",
+            "kind": "function",
+            "details": "Returns the arc length of a curve between two U positions."
         },
         {
             "trigger": "arclenD(surface_node, prim_num, ustart, ustop, divs)",
-            "contents": "arclenD(${1:surface_node}, ${2:prim_num}, ${3:ustart}, ${4:ustop}, ${5:divs})"
+            "contents": "arclenD(${1:surface_node}, ${2:prim_num}, ${3:ustart}, ${4:ustop}, ${5:divs})",
+            "kind": "function",
+            "details": ""
         },
         {
             "trigger": "arg(line, argNum)",
-            "contents": "arg(${1:line}, ${2:argNum})"
+            "contents": "arg(${1:line}, ${2:argNum})",
+            "kind": "function",
+            "details": "Returns an argument from a list of HScript-style arguments."
         },
         {
             "trigger": "argc(line)",
-            "contents": "argc(${1:line})"
+            "contents": "argc(${1:line})",
+            "kind": "function",
+            "details": "Returns the number of arguments in an HScript-style list of arguments."
         },
         {
             "trigger": "asin(number)",
-            "contents": "asin(${1:number})"
+            "contents": "asin(${1:number})",
+            "kind": "function",
+            "details": "Returns the arc-sine of the argument."
         },
         {
             "trigger": "atan(number)",
-            "contents": "atan(${1:number})"
+            "contents": "atan(${1:number})",
+            "kind": "function",
+            "details": "Returns the arc-tangent of the argument."
         },
         {
             "trigger": "atan2(y, x)",
-            "contents": "atan2(${1:y}, ${2:x})"
+            "contents": "atan2(${1:y}, ${2:x})",
+            "kind": "function",
+            "details": "Returns the arc-tangent of y/x."
         },
         {
             "trigger": "atof(source)",
-            "contents": "atof(${1:source})"
+            "contents": "atof(${1:source})",
+            "kind": "function",
+            "details": "Converts a string to a float."
         },
         {
             "trigger": "attriblist(surface_node, class)",
-            "contents": "attriblist(${1:surface_node}, ${2:class})"
+            "contents": "attriblist(${1:surface_node}, ${2:class})",
+            "kind": "function",
+            "details": "Returns a space-separated list of attribute names."
         },
         {
             "trigger": "bbox(surface_node, type)",
-            "contents": "bbox(${1:surface_node}, ${2:type})"
+            "contents": "bbox(${1:surface_node}, ${2:type})",
+            "kind": "function",
+            "details": "Returns bounding box information for a surface node."
         },
         {
             "trigger": "bezier()",
-            "contents": "bezier()"
+            "contents": "bezier()",
+            "kind": "function",
+            "details": "Channel segment function: Bezier interpoloation spline"
         },
         {
             "trigger": "bitand(abits, bbits)",
-            "contents": "bitand(${1:abits}, ${2:bbits})"
+            "contents": "bitand(${1:abits}, ${2:bbits})",
+            "kind": "function",
+            "details": "Combines two numbers with bitwise-and."
         },
         {
             "trigger": "bitor(abits, bbits)",
-            "contents": "bitor(${1:abits}, ${2:bbits})"
+            "contents": "bitor(${1:abits}, ${2:bbits})",
+            "kind": "function",
+            "details": "Combines two numbers with bitwise-or."
         },
         {
             "trigger": "bitset(number, bit_index, value)",
-            "contents": "bitset(${1:number}, ${2:bit_index}, ${3:value})"
+            "contents": "bitset(${1:number}, ${2:bit_index}, ${3:value})",
+            "kind": "function",
+            "details": "Sets or clears a bit in a number."
         },
         {
             "trigger": "bittest(number, bit_index)",
-            "contents": "bittest(${1:number}, ${2:bit_index})"
+            "contents": "bittest(${1:number}, ${2:bit_index})",
+            "kind": "function",
+            "details": "Returns if a given bit is set."
         },
         {
             "trigger": "bitxor(abits, bbits)",
-            "contents": "bitxor(${1:abits}, ${2:bbits})"
+            "contents": "bitxor(${1:abits}, ${2:bbits})",
+            "kind": "function",
+            "details": "Combines two numbers with bitwise-xor."
         },
         {
             "trigger": "boneangle(bone1, bone2)",
-            "contents": "boneangle(${1:bone1}, ${2:bone2})"
+            "contents": "boneangle(${1:bone1}, ${2:bone2})",
+            "kind": "function",
+            "details": "Returns the angle at the joint between two bone objects."
         },
         {
             "trigger": "ceil(number)",
-            "contents": "ceil(${1:number})"
+            "contents": "ceil(${1:number})",
+            "kind": "function",
+            "details": "Returns the smallest integer not less than the value passed in."
         },
         {
             "trigger": "centroid(surface_node, type)",
-            "contents": "centroid(${1:surface_node}, ${2:type})"
+            "contents": "centroid(${1:surface_node}, ${2:type})",
+            "kind": "function",
+            "details": "Returns centroid information for a surface node."
         },
         {
             "trigger": "ch(channel)",
-            "contents": "ch(${1:channel})"
+            "contents": "ch(${1:channel})",
+            "kind": "function",
+            "details": ""
         },
         {
             "trigger": "chexist(channel_name)",
-            "contents": "chexist(${1:channel_name})"
+            "contents": "chexist(${1:channel_name})",
+            "kind": "function",
+            "details": "Returns 1 if the specified channel exists, 0 if it doesn't."
         },
         {
             "trigger": "chexpr(channel, new_expr_function)",
-            "contents": "chexpr(${1:channel}, ${2:new_expr_function})"
+            "contents": "chexpr(${1:channel}, ${2:new_expr_function})",
+            "kind": "function",
+            "details": "Evaluates a channel with a new segment expression."
         },
         {
             "trigger": "chexprf(channel, new_expr_function, frame)",
-            "contents": "chexprf(${1:channel}, ${2:new_expr_function}, ${3:frame})"
+            "contents": "chexprf(${1:channel}, ${2:new_expr_function}, ${3:frame})",
+            "kind": "function",
+            "details": "Evaluates a channel with a new segment expression at a given frame."
         },
         {
             "trigger": "chexprt(channel, new_expr_function, time)",
-            "contents": "chexprt(${1:channel}, ${2:new_expr_function}, ${3:time})"
+            "contents": "chexprt(${1:channel}, ${2:new_expr_function}, ${3:time})",
+            "kind": "function",
+            "details": "Evaluates a channel with a new segment expression at a given time."
         },
         {
             "trigger": "chf(channel, frame)",
-            "contents": "chf(${1:channel}, ${2:frame})"
+            "contents": "chf(${1:channel}, ${2:frame})",
+            "kind": "function",
+            "details": "Evaluates a parameter at a given frame."
         },
         {
             "trigger": "chgroup(group_name)",
-            "contents": "chgroup(${1:group_name})"
+            "contents": "chgroup(${1:group_name})",
+            "kind": "function",
+            "details": "return a string containing all of the channels contained in a group."
         },
         {
             "trigger": "chop(channel)",
-            "contents": "chop(${1:channel})"
+            "contents": "chop(${1:channel})",
+            "kind": "function",
+            "details": "Evaluates a channel within a CHOP at the current time."
         },
         {
             "trigger": "chopcf(CHOP, channel_index, frame)",
-            "contents": "chopcf(${1:CHOP}, ${2:channel_index}, ${3:frame})"
+            "contents": "chopcf(${1:CHOP}, ${2:channel_index}, ${3:frame})",
+            "kind": "function",
+            "details": "Evaluates a channel within a CHOP at a given time."
         },
         {
             "trigger": "chopci(CHOP, channel_index, index)",
-            "contents": "chopci(${1:CHOP}, ${2:channel_index}, ${3:index})"
+            "contents": "chopci(${1:CHOP}, ${2:channel_index}, ${3:index})",
+            "kind": "function",
+            "details": "Evaluates a channel within a CHOP at a specified sample point."
         },
         {
             "trigger": "chopct(CHOP, channel_index, time)",
-            "contents": "chopct(${1:CHOP}, ${2:channel_index}, ${3:time})"
+            "contents": "chopct(${1:CHOP}, ${2:channel_index}, ${3:time})",
+            "kind": "function",
+            "details": "Evaluates a channel within a CHOP at a specified time."
         },
         {
             "trigger": "chope(CHOP)",
-            "contents": "chope(${1:CHOP})"
+            "contents": "chope(${1:CHOP})",
+            "kind": "function",
+            "details": "Returns the end index of the channels in a CHOP."
         },
         {
             "trigger": "chopf(channel, frame)",
-            "contents": "chopf(${1:channel}, ${2:frame})"
+            "contents": "chopf(${1:channel}, ${2:frame})",
+            "kind": "function",
+            "details": "Evaluates a channel within a CHOP with at a given frame."
         },
         {
             "trigger": "chopi(channel, index)",
-            "contents": "chopi(${1:channel}, ${2:index})"
+            "contents": "chopi(${1:channel}, ${2:index})",
+            "kind": "function",
+            "details": "Evaluates a channel within a CHOP at a given sample point."
         },
         {
             "trigger": "chopl(CHOP)",
-            "contents": "chopl(${1:CHOP})"
+            "contents": "chopl(${1:CHOP})",
+            "kind": "function",
+            "details": "Returns the length of the channels in a CHOP, in samples."
         },
         {
             "trigger": "chopn(CHOP)",
-            "contents": "chopn(${1:CHOP})"
+            "contents": "chopn(${1:CHOP})",
+            "kind": "function",
+            "details": "Returns the number of data channels within a CHOP."
         },
         {
             "trigger": "chopnames(CHOP)",
-            "contents": "chopnames(${1:CHOP})"
+            "contents": "chopnames(${1:CHOP})",
+            "kind": "function",
+            "details": "Returns the names of all the data channels within a CHOP."
         },
         {
             "trigger": "chopr(CHOP)",
-            "contents": "chopr(${1:CHOP})"
+            "contents": "chopr(${1:CHOP})",
+            "kind": "function",
+            "details": "Returns the sample rate of a CHOP."
         },
         {
             "trigger": "chops(CHOP)",
-            "contents": "chops(${1:CHOP})"
+            "contents": "chops(${1:CHOP})",
+            "kind": "function",
+            "details": "Returns the start index of a CHOP."
         },
         {
             "trigger": "chopstr(channel)",
-            "contents": "chopstr(${1:channel})"
+            "contents": "chopstr(${1:channel})",
+            "kind": "function",
+            "details": "Returns the string value of a channel within a CHOP at the current time."
         },
         {
             "trigger": "chopt(channel, time)",
-            "contents": "chopt(${1:channel}, ${2:time})"
+            "contents": "chopt(${1:channel}, ${2:time})",
+            "kind": "function",
+            "details": "Returns the value of a channel within a CHOP at a specified time."
         },
         {
             "trigger": "chramp(ramp_path, position, component_index)",
-            "contents": "chramp(${1:ramp_path}, ${2:position}, ${3:component_index})"
+            "contents": "chramp(${1:ramp_path}, ${2:position}, ${3:component_index})",
+            "kind": "function",
+            "details": "Returns the value of a ramp parameter at a specific position."
         },
         {
             "trigger": "chrampf(ramp_path, position, component_index, frame)",
-            "contents": "chrampf(${1:ramp_path}, ${2:position}, ${3:component_index}, ${4:frame})"
+            "contents": "chrampf(${1:ramp_path}, ${2:position}, ${3:component_index}, ${4:frame})",
+            "kind": "function",
+            "details": "Returns the value of a ramp parameter at a specific position and frame."
         },
         {
             "trigger": "chrampt(ramp_path, position, component_index, time)",
-            "contents": "chrampt(${1:ramp_path}, ${2:position}, ${3:component_index}, ${4:time})"
+            "contents": "chrampt(${1:ramp_path}, ${2:position}, ${3:component_index}, ${4:time})",
+            "kind": "function",
+            "details": ""
         },
         {
             "trigger": "chs(channel)",
-            "contents": "chs(${1:channel})"
+            "contents": "chs(${1:channel})",
+            "kind": "function",
+            "details": "Evaluates the string value of a parameter at the current time."
         },
         {
             "trigger": "chsop(parameter_path)",
-            "contents": "chsop(${1:parameter_path})"
+            "contents": "chsop(${1:parameter_path})",
+            "kind": "function",
+            "details": "Evaluates the parameter at the current time as a node path string."
         },
         {
             "trigger": "chsoplist(parameter_path)",
-            "contents": "chsoplist(${1:parameter_path})"
+            "contents": "chsoplist(${1:parameter_path})",
+            "kind": "function",
+            "details": "Evaluates the parameter at the current time as a node path list string."
         },
         {
             "trigger": "chsraw(channel)",
-            "contents": "chsraw(${1:channel})"
+            "contents": "chsraw(${1:channel})",
+            "kind": "function",
+            "details": "Returns the raw (unexpanded) expression value of a parameter as a"
         },
         {
             "trigger": "cht(channel, time)",
-            "contents": "cht(${1:channel}, ${2:time})"
+            "contents": "cht(${1:channel}, ${2:time})",
+            "kind": "function",
+            "details": "Returns the value of a parameter at a specified time."
         },
         {
             "trigger": "clamp(value, minimum, maximum)",
-            "contents": "clamp(${1:value}, ${2:minimum}, ${3:maximum})"
+            "contents": "clamp(${1:value}, ${2:minimum}, ${3:maximum})",
+            "kind": "function",
+            "details": "Returns a value clamped between a minimum and maximum."
         },
         {
             "trigger": "clamptosphere(x, y, z, min_radius, max_radius, constant_type)",
-            "contents": "clamptosphere(${1:x}, ${2:y}, ${3:z}, ${4:min_radius}, ${5:max_radius}, ${6:constant_type})"
+            "contents": "clamptosphere(${1:x}, ${2:y}, ${3:z}, ${4:min_radius}, ${5:max_radius}, ${6:constant_type})",
+            "kind": "function",
+            "details": "Clamps a vector to always end between a minimum and maximum sphere."
         },
         {
             "trigger": "constant()",
-            "contents": "constant()"
+            "contents": "constant()",
+            "kind": "function",
+            "details": "Channel segment function: constant value."
         },
         {
             "trigger": "contextoption(name)",
-            "contents": "contextoption(${1:name})"
+            "contents": "contextoption(${1:name})",
+            "kind": "function",
+            "details": "Returns the value of context option as a floating point value."
         },
         {
             "trigger": "contextoptions(name)",
-            "contents": "contextoptions(${1:name})"
+            "contents": "contextoptions(${1:name})",
+            "kind": "function",
+            "details": "Returns a cook context option as a string value."
         },
         {
             "trigger": "cophasmeta(compositing_node, metadata_name)",
-            "contents": "cophasmeta(${1:compositing_node}, ${2:metadata_name})"
+            "contents": "cophasmeta(${1:compositing_node}, ${2:metadata_name})",
+            "kind": "function",
+            "details": "Tests if metadata exists on a compositing node."
         },
         {
             "trigger": "cophasplane(compositing_node, plane_name)",
-            "contents": "cophasplane(${1:compositing_node}, ${2:plane_name})"
+            "contents": "cophasplane(${1:compositing_node}, ${2:plane_name})",
+            "kind": "function",
+            "details": "Tests if a plane exists on a compositing node."
         },
         {
             "trigger": "copmeta(compositing_node, metadata_name, index)",
-            "contents": "copmeta(${1:compositing_node}, ${2:metadata_name}, ${3:index})"
+            "contents": "copmeta(${1:compositing_node}, ${2:metadata_name}, ${3:index})",
+            "kind": "function",
+            "details": "Returns numeric metadata from a compositing node."
         },
         {
             "trigger": "copmetas(compositing_node, metadata_name)",
-            "contents": "copmetas(${1:compositing_node}, ${2:metadata_name})"
+            "contents": "copmetas(${1:compositing_node}, ${2:metadata_name})",
+            "kind": "function",
+            "details": "Returns string metadata from a compositing node."
         },
         {
             "trigger": "cos(degrees)",
-            "contents": "cos(${1:degrees})"
+            "contents": "cos(${1:degrees})",
+            "kind": "function",
+            "details": "Returns the cosine of the argument."
         },
         {
             "trigger": "cosh(number)",
-            "contents": "cosh(${1:number})"
+            "contents": "cosh(${1:number})",
+            "kind": "function",
+            "details": "Returns the hyperbolic cosine of the argument."
         },
         {
             "trigger": "cross(v1, v2)",
-            "contents": "cross(${1:v1}, ${2:v2})"
+            "contents": "cross(${1:v1}, ${2:v2})",
+            "kind": "function",
+            "details": "Computes the cross-product of two vectors."
         },
         {
             "trigger": "cubic()",
-            "contents": "cubic()"
+            "contents": "cubic()",
+            "kind": "function",
+            "details": "Channel segment function: cubic spline."
         },
         {
             "trigger": "curvature(surface_node, prim_num, u, v)",
-            "contents": "curvature(${1:surface_node}, ${2:prim_num}, ${3:u}, ${4:v})"
+            "contents": "curvature(${1:surface_node}, ${2:prim_num}, ${3:u}, ${4:v})",
+            "kind": "function",
+            "details": "Returns the curvature of the surface at the given UV coordinates."
         },
         {
             "trigger": "cycle(f1, f2)",
-            "contents": "cycle(${1:f1}, ${2:f2})"
+            "contents": "cycle(${1:f1}, ${2:f2})",
+            "kind": "function",
+            "details": "Channel segment function: repeats animation from previous frames."
         },
         {
             "trigger": "cycleoffset(f1, f2)",
-            "contents": "cycleoffset(${1:f1}, ${2:f2})"
+            "contents": "cycleoffset(${1:f1}, ${2:f2})",
+            "kind": "function",
+            "details": "Channel segment function: repeats the animation between frames f1 and"
         },
         {
             "trigger": "cycleoffsett(t1, t2)",
-            "contents": "cycleoffsett(${1:t1}, ${2:t2})"
+            "contents": "cycleoffsett(${1:t1}, ${2:t2})",
+            "kind": "function",
+            "details": "Channel segment function: repeats the animation between times t1 and"
         },
         {
             "trigger": "cyclet(t1, t2)",
-            "contents": "cyclet(${1:t1}, ${2:t2})"
+            "contents": "cyclet(${1:t1}, ${2:t2})",
+            "kind": "function",
+            "details": "Channel segment function: repeats animation from previous frames."
         },
         {
             "trigger": "decode(s)",
-            "contents": "decode(${1:s})"
+            "contents": "decode(${1:s})",
+            "kind": "function",
+            "details": "Decodes a variable name that was previously encoded."
         },
         {
             "trigger": "decodeattrib(s)",
-            "contents": "decodeattrib(${1:s})"
+            "contents": "decodeattrib(${1:s})",
+            "kind": "function",
+            "details": "Decodes a geometry attribute name that was previously encoded."
         },
         {
             "trigger": "decodeparm(s)",
-            "contents": "decodeparm(${1:s})"
+            "contents": "decodeparm(${1:s})",
+            "kind": "function",
+            "details": "Decodes a node parameter name that was previously encoded."
         },
         {
             "trigger": "deg(radians)",
-            "contents": "deg(${1:radians})"
+            "contents": "deg(${1:radians})",
+            "kind": "function",
+            "details": "Converts from radians to degrees."
         },
         {
             "trigger": "degree(surface_node, prim_num, du_or_dv)",
-            "contents": "degree(${1:surface_node}, ${2:prim_num}, ${3:du_or_dv})"
+            "contents": "degree(${1:surface_node}, ${2:prim_num}, ${3:du_or_dv})",
+            "kind": "function",
+            "details": "Returns the degree a specified face or hull."
         },
         {
             "trigger": "detail(surface_node, attrib_name, attrib_index)",
-            "contents": "detail(${1:surface_node}, ${2:attrib_name}, ${3:attrib_index})"
+            "contents": "detail(${1:surface_node}, ${2:attrib_name}, ${3:attrib_index})",
+            "kind": "function",
+            "details": "Returns the value of a detail attribute."
         },
         {
             "trigger": "detailattriblist(surface_node)",
-            "contents": "detailattriblist(${1:surface_node})"
+            "contents": "detailattriblist(${1:surface_node})",
+            "kind": "function",
+            "details": "Returns a space-separated list of detail attribute names."
         },
         {
             "trigger": "detailattribsize(surface_node, attribute)",
-            "contents": "detailattribsize(${1:surface_node}, ${2:attribute})"
+            "contents": "detailattribsize(${1:surface_node}, ${2:attribute})",
+            "kind": "function",
+            "details": "Returns the number of components in a detail attribute."
         },
         {
             "trigger": "detailattribtype(surface_node, attribute)",
-            "contents": "detailattribtype(${1:surface_node}, ${2:attribute})"
+            "contents": "detailattribtype(${1:surface_node}, ${2:attribute})",
+            "kind": "function",
+            "details": "Returns the type of a detail attribute."
         },
         {
             "trigger": "details(surface_node, attribute)",
-            "contents": "details(${1:surface_node}, ${2:attribute})"
+            "contents": "details(${1:surface_node}, ${2:attribute})",
+            "kind": "function",
+            "details": "Returns the string value of a detail attribute."
         },
         {
             "trigger": "detailsmap(surface_node, attribute, index)",
-            "contents": "detailsmap(${1:surface_node}, ${2:attribute}, ${3:index})"
+            "contents": "detailsmap(${1:surface_node}, ${2:attribute}, ${3:index})",
+            "kind": "function",
+            "details": "Returns a string from a list of strings in a detail attribute."
         },
         {
             "trigger": "detailsnummap(surface_node, attribute)",
-            "contents": "detailsnummap(${1:surface_node}, ${2:attribute})"
+            "contents": "detailsnummap(${1:surface_node}, ${2:attribute})",
+            "kind": "function",
+            "details": "Returns the number of unique strings bound to a detail attribute."
+        },
+        {
+            "trigger": "detailvals(surface_node, attrib_name, component)",
+            "contents": "detailvals(${1:surface_node}, ${2:attrib_name}, ${3:component})",
+            "kind": "function",
+            "details": "Returns components of a string array attribute."
         },
         {
             "trigger": "determinant(mat)",
-            "contents": "determinant(${1:mat})"
+            "contents": "determinant(${1:mat})",
+            "kind": "function",
+            "details": "Returns the determinant of a matrix."
         },
         {
             "trigger": "dihedral(v0, v1)",
-            "contents": "dihedral(${1:v0}, ${2:v1})"
+            "contents": "dihedral(${1:v0}, ${2:v1})",
+            "kind": "function",
+            "details": "Computes the dihedral matrix between vectors v0 and v1."
         },
         {
             "trigger": "distance(x1, y1, z1, x2, y2, z2)",
-            "contents": "distance(${1:x1}, ${2:y1}, ${3:z1}, ${4:x2}, ${5:y2}, ${6:z2})"
+            "contents": "distance(${1:x1}, ${2:y1}, ${3:z1}, ${4:x2}, ${5:y2}, ${6:z2})",
+            "kind": "function",
+            "details": "Returns the distance between two 3D points."
         },
         {
             "trigger": "dopallfields(dop, objectSpec, subDataName, recordType)",
-            "contents": "dopallfields(${1:dop}, ${2:objectSpec}, ${3:subDataName}, ${4:recordType})"
+            "contents": "dopallfields(${1:dop}, ${2:objectSpec}, ${3:subDataName}, ${4:recordType})",
+            "kind": "function",
+            "details": "Returns a space separated list of all the field names that can be passed"
         },
         {
             "trigger": "dopcontextgeo(name, index)",
-            "contents": "dopcontextgeo(${1:name}, ${2:index})"
+            "contents": "dopcontextgeo(${1:name}, ${2:index})",
+            "kind": "function",
+            "details": "Returns the full path of the node connected to a dopnetwork."
         },
         {
             "trigger": "dopcountslices(dop, objectFilter, subDataName)",
-            "contents": "dopcountslices(${1:dop}, ${2:objectFilter}, ${3:subDataName})"
+            "contents": "dopcountslices(${1:dop}, ${2:objectFilter}, ${3:subDataName})",
+            "kind": "function",
+            "details": "Returns the number of records of a given type in a piece of dynamics"
         },
         {
             "trigger": "dopfield(dop, objectSpec, subDataName, recordType, recordNum, fieldName)",
-            "contents": "dopfield(${1:dop}, ${2:objectSpec}, ${3:subDataName}, ${4:recordType}, ${5:recordNum}, ${6:fieldName})"
+            "contents": "dopfield(${1:dop}, ${2:objectSpec}, ${3:subDataName}, ${4:recordType}, ${5:recordNum}, ${6:fieldName})",
+            "kind": "function",
+            "details": "Returns the value of a field as a float."
         },
         {
             "trigger": "dopfieldname(dop, objectSpec, subDataName, recordType, fieldNum)",
-            "contents": "dopfieldname(${1:dop}, ${2:objectSpec}, ${3:subDataName}, ${4:recordType}, ${5:fieldNum})"
+            "contents": "dopfieldname(${1:dop}, ${2:objectSpec}, ${3:subDataName}, ${4:recordType}, ${5:fieldNum})",
+            "kind": "function",
+            "details": "Returns the name of a DOP field."
         },
         {
             "trigger": "dopfields(dop, objectSpec, subDataName, recordType, recordNum, fieldName)",
-            "contents": "dopfields(${1:dop}, ${2:objectSpec}, ${3:subDataName}, ${4:recordType}, ${5:recordNum}, ${6:fieldName})"
+            "contents": "dopfields(${1:dop}, ${2:objectSpec}, ${3:subDataName}, ${4:recordType}, ${5:recordNum}, ${6:fieldName})",
+            "kind": "function",
+            "details": "Returns the value of a DOP field as a string."
         },
         {
             "trigger": "dopfieldtype(dop, objectSpec, subDataName, recordType, fieldNum)",
-            "contents": "dopfieldtype(${1:dop}, ${2:objectSpec}, ${3:subDataName}, ${4:recordType}, ${5:fieldNum})"
+            "contents": "dopfieldtype(${1:dop}, ${2:objectSpec}, ${3:subDataName}, ${4:recordType}, ${5:fieldNum})",
+            "kind": "function",
+            "details": "Returns the type of a DOP field."
         },
         {
             "trigger": "dopframe(dop)",
-            "contents": "dopframe(${1:dop})"
+            "contents": "dopframe(${1:dop})",
+            "kind": "function",
+            "details": "Returns the current frame of the simulation."
         },
         {
             "trigger": "dopframetost(dop, simulationframe)",
-            "contents": "dopframetost(${1:dop}, ${2:simulationframe})"
+            "contents": "dopframetost(${1:dop}, ${2:simulationframe})",
+            "kind": "function",
+            "details": "Returns the simulation time equivalent of a simulation frame."
         },
         {
             "trigger": "dopgrouphasobject(dop, objectSpec, group)",
-            "contents": "dopgrouphasobject(${1:dop}, ${2:objectSpec}, ${3:group})"
+            "contents": "dopgrouphasobject(${1:dop}, ${2:objectSpec}, ${3:group})",
+            "kind": "function",
+            "details": "Returns 1 if a specified DOP group contains a specified object."
         },
         {
             "trigger": "dopgrouplist(dop)",
-            "contents": "dopgrouplist(${1:dop})"
+            "contents": "dopgrouplist(${1:dop})",
+            "kind": "function",
+            "details": "returns a string containing a list of all object groups for the current"
         },
         {
             "trigger": "dophasfield(dop, objectSpec, subDataName, recordType, recordNum, fieldName)",
-            "contents": "dophasfield(${1:dop}, ${2:objectSpec}, ${3:subDataName}, ${4:recordType}, ${5:recordNum}, ${6:fieldName})"
+            "contents": "dophasfield(${1:dop}, ${2:objectSpec}, ${3:subDataName}, ${4:recordType}, ${5:recordNum}, ${6:fieldName})",
+            "kind": "function",
+            "details": "Returns 1 if a specified DOP field exists."
         },
         {
             "trigger": "dophassubdata(dop, objectSpec, subDataName)",
-            "contents": "dophassubdata(${1:dop}, ${2:objectSpec}, ${3:subDataName})"
+            "contents": "dophassubdata(${1:dop}, ${2:objectSpec}, ${3:subDataName})",
+            "kind": "function",
+            "details": "Returns 1 if a dynamics object has the specified subdata."
         },
         {
             "trigger": "dopnodeobjs(dop)",
-            "contents": "dopnodeobjs(${1:dop})"
+            "contents": "dopnodeobjs(${1:dop})",
+            "kind": "function",
+            "details": "Returns the list of objects processed by a DOP in the latest timestep."
         },
         {
             "trigger": "dopnumfields(dop, objectSpec, subDataName, recordType)",
-            "contents": "dopnumfields(${1:dop}, ${2:objectSpec}, ${3:subDataName}, ${4:recordType})"
+            "contents": "dopnumfields(${1:dop}, ${2:objectSpec}, ${3:subDataName}, ${4:recordType})",
+            "kind": "function",
+            "details": "Returns the number of fields in a DOP record type."
         },
         {
             "trigger": "dopnumobjects(dop, objectFilter)",
-            "contents": "dopnumobjects(${1:dop}, ${2:objectFilter})"
+            "contents": "dopnumobjects(${1:dop}, ${2:objectFilter})",
+            "kind": "function",
+            "details": "returns the number of objects in a simulation."
         },
         {
             "trigger": "dopnumrecords(dop, objectFilter, subDataName, recordType)",
-            "contents": "dopnumrecords(${1:dop}, ${2:objectFilter}, ${3:subDataName}, ${4:recordType})"
+            "contents": "dopnumrecords(${1:dop}, ${2:objectFilter}, ${3:subDataName}, ${4:recordType})",
+            "kind": "function",
+            "details": "Returns the number of records of a given type in a piece of dynamics"
         },
         {
             "trigger": "dopnumrecordtypes(dop, objectSpec, subDataName)",
-            "contents": "dopnumrecordtypes(${1:dop}, ${2:objectSpec}, ${3:subDataName})"
+            "contents": "dopnumrecordtypes(${1:dop}, ${2:objectSpec}, ${3:subDataName})",
+            "kind": "function",
+            "details": "Returns the number of types of record in a piece of dynamics data."
         },
         {
             "trigger": "dopnumsubdata(dop, objectSpec, subDataName)",
-            "contents": "dopnumsubdata(${1:dop}, ${2:objectSpec}, ${3:subDataName})"
+            "contents": "dopnumsubdata(${1:dop}, ${2:objectSpec}, ${3:subDataName})",
+            "kind": "function",
+            "details": "Returns the number of subdata items attached to an object or data."
         },
         {
             "trigger": "dopobjectlist(dop, objectSpec, listNames)",
-            "contents": "dopobjectlist(${1:dop}, ${2:objectSpec}, ${3:listNames})"
+            "contents": "dopobjectlist(${1:dop}, ${2:objectSpec}, ${3:listNames})",
+            "kind": "function",
+            "details": "Returns all objects matching the an object specification."
         },
         {
             "trigger": "dopobjectsareaffectors(dop, objectSpec, affectors)",
-            "contents": "dopobjectsareaffectors(${1:dop}, ${2:objectSpec}, ${3:affectors})"
+            "contents": "dopobjectsareaffectors(${1:dop}, ${2:objectSpec}, ${3:affectors})",
+            "kind": "function",
+            "details": "Tests whether a set of objects has an affector relationship with another"
         },
         {
             "trigger": "dopobjscreatedby(dop)",
-            "contents": "dopobjscreatedby(${1:dop})"
+            "contents": "dopobjscreatedby(${1:dop})",
+            "kind": "function",
+            "details": "Returns the list of objects created by a particular DOP node."
         },
         {
             "trigger": "dopoption(dop, objectSpec, subDataName, fieldName)",
-            "contents": "dopoption(${1:dop}, ${2:objectSpec}, ${3:subDataName}, ${4:fieldName})"
+            "contents": "dopoption(${1:dop}, ${2:objectSpec}, ${3:subDataName}, ${4:fieldName})",
+            "kind": "function",
+            "details": "Returns the value of a DOP field as a float."
         },
         {
             "trigger": "dopoptions(dop, objectSpec, subDataName, fieldName)",
-            "contents": "dopoptions(${1:dop}, ${2:objectSpec}, ${3:subDataName}, ${4:fieldName})"
+            "contents": "dopoptions(${1:dop}, ${2:objectSpec}, ${3:subDataName}, ${4:fieldName})",
+            "kind": "function",
+            "details": "Returns the value of a DOP field as a string."
         },
         {
             "trigger": "doprecordtypename(dop, objectSpec, subDataName, recordTypeNum)",
-            "contents": "doprecordtypename(${1:dop}, ${2:objectSpec}, ${3:subDataName}, ${4:recordTypeNum})"
+            "contents": "doprecordtypename(${1:dop}, ${2:objectSpec}, ${3:subDataName}, ${4:recordTypeNum})",
+            "kind": "function",
+            "details": "Returns the name of a record in DOPs data given its index."
         },
         {
             "trigger": "dopsolvedopnet()",
-            "contents": "dopsolvedopnet()"
+            "contents": "dopsolvedopnet()",
+            "kind": "function",
+            "details": "Script solver support function."
         },
         {
             "trigger": "dopsolvenewobject(object_index)",
-            "contents": "dopsolvenewobject(${1:object_index})"
+            "contents": "dopsolvenewobject(${1:object_index})",
+            "kind": "function",
+            "details": "Script solver support function."
         },
         {
             "trigger": "dopsolvenumnewobjects()",
-            "contents": "dopsolvenumnewobjects()"
+            "contents": "dopsolvenumnewobjects()",
+            "kind": "function",
+            "details": "Script solver support function."
         },
         {
             "trigger": "dopsolvenumobjects()",
-            "contents": "dopsolvenumobjects()"
+            "contents": "dopsolvenumobjects()",
+            "kind": "function",
+            "details": "Script solver support function."
         },
         {
             "trigger": "dopsolveobject(object_index)",
-            "contents": "dopsolveobject(${1:object_index})"
+            "contents": "dopsolveobject(${1:object_index})",
+            "kind": "function",
+            "details": "Script solver support function."
         },
         {
             "trigger": "dopsolvetimestep()",
-            "contents": "dopsolvetimestep()"
+            "contents": "dopsolvetimestep()",
+            "kind": "function",
+            "details": "Script solver support function."
         },
         {
             "trigger": "dopsttoframe(dop, simulationtime)",
-            "contents": "dopsttoframe(${1:dop}, ${2:simulationtime})"
+            "contents": "dopsttoframe(${1:dop}, ${2:simulationtime})",
+            "kind": "function",
+            "details": "returns the simulation frame of a given simulation time."
         },
         {
             "trigger": "dopsttot(dop, simulationtime)",
-            "contents": "dopsttot(${1:dop}, ${2:simulationtime})"
+            "contents": "dopsttot(${1:dop}, ${2:simulationtime})",
+            "kind": "function",
+            "details": "Returns the global time of a given simulation time."
         },
         {
             "trigger": "dopsubdataname(dop, objectSpec, subDataName, subDataNum)",
-            "contents": "dopsubdataname(${1:dop}, ${2:objectSpec}, ${3:subDataName}, ${4:subDataNum})"
+            "contents": "dopsubdataname(${1:dop}, ${2:objectSpec}, ${3:subDataName}, ${4:subDataNum})",
+            "kind": "function",
+            "details": "Returns the name of a subdata of a given DOP object."
         },
         {
             "trigger": "doptime(dop)",
-            "contents": "doptime(${1:dop})"
+            "contents": "doptime(${1:dop})",
+            "kind": "function",
+            "details": "Returns the current time of a simulation."
         },
         {
             "trigger": "doptransform(dop, objectSpec, subDataName)",
-            "contents": "doptransform(${1:dop}, ${2:objectSpec}, ${3:subDataName})"
+            "contents": "doptransform(${1:dop}, ${2:objectSpec}, ${3:subDataName})",
+            "kind": "function",
+            "details": "Returns a transformation matrix associated with a piece of data."
         },
         {
             "trigger": "dopttost(dop, globaltime)",
-            "contents": "dopttost(${1:dop}, ${2:globaltime})"
+            "contents": "dopttost(${1:dop}, ${2:globaltime})",
+            "kind": "function",
+            "details": "Returns the simulation time equivalent to a given global time."
         },
         {
             "trigger": "dopvelatpos(dop, objectSpec, posx, posy, posz, usevolumevelocity, usepointvelocity)",
-            "contents": "dopvelatpos(${1:dop}, ${2:objectSpec}, ${3:posx}, ${4:posy}, ${5:posz}, ${6:usevolumevelocity}, ${7:usepointvelocity})"
+            "contents": "dopvelatpos(${1:dop}, ${2:objectSpec}, ${3:posx}, ${4:posy}, ${5:posz}, ${6:usevolumevelocity}, ${7:usepointvelocity})",
+            "kind": "function",
+            "details": "Returns the velocity that a point at a location in simulation space"
         },
         {
             "trigger": "dot(v0, v1)",
-            "contents": "dot(${1:v0}, ${2:v1})"
+            "contents": "dot(${1:v0}, ${2:v1})",
+            "kind": "function",
+            "details": "Computes the dot product of two vectors."
         },
         {
             "trigger": "ease()",
-            "contents": "ease()"
+            "contents": "ease()",
+            "kind": "function",
+            "details": "Channel segment function: ease-in and -out."
         },
         {
             "trigger": "easein()",
-            "contents": "easein()"
+            "contents": "easein()",
+            "kind": "function",
+            "details": "Channel segment function: ease-in."
         },
         {
             "trigger": "easeinp(number)",
-            "contents": "easeinp(${1:number})"
+            "contents": "easeinp(${1:number})",
+            "kind": "function",
+            "details": "Channel segment function: ease-in with configurable acceleration."
         },
         {
             "trigger": "easeout()",
-            "contents": "easeout()"
+            "contents": "easeout()",
+            "kind": "function",
+            "details": "Channel segment function: ease-out"
         },
         {
             "trigger": "easeoutp(number)",
-            "contents": "easeoutp(${1:number})"
+            "contents": "easeoutp(${1:number})",
+            "kind": "function",
+            "details": "Channel segment function: ease-out with configurable acceleration."
         },
         {
             "trigger": "easep(number)",
-            "contents": "easep(${1:number})"
+            "contents": "easep(${1:number})",
+            "kind": "function",
+            "details": "Channel segment function: ease-in and -out with configurable"
         },
         {
             "trigger": "edgegrouplist(surface_node)",
-            "contents": "edgegrouplist(${1:surface_node})"
+            "contents": "edgegrouplist(${1:surface_node})",
+            "kind": "function",
+            "details": "Returns the list of edge groups in a surface node."
         },
         {
             "trigger": "edgegroupmask(surface_node, pattern)",
-            "contents": "edgegroupmask(${1:surface_node}, ${2:pattern})"
+            "contents": "edgegroupmask(${1:surface_node}, ${2:pattern})",
+            "kind": "function",
+            "details": "Returns the list of edge groups matching a pattern in a surface node."
+        },
+        {
+            "trigger": "efit(num, oldmin, oldmax, newmin, newmax)",
+            "contents": "efit(${1:num}, ${2:oldmin}, ${3:oldmax}, ${4:newmin}, ${5:newmax})",
+            "kind": "function",
+            "details": "Fits a value from one range to another."
         },
         {
             "trigger": "encode(s)",
-            "contents": "encode(${1:s})"
+            "contents": "encode(${1:s})",
+            "kind": "function",
+            "details": "Encodes any string into a valid variable name."
         },
         {
             "trigger": "encodeattrib(s)",
-            "contents": "encodeattrib(${1:s})"
+            "contents": "encodeattrib(${1:s})",
+            "kind": "function",
+            "details": "Encodes any string into a valid geometry attribute name."
         },
         {
             "trigger": "encodeparm(s)",
-            "contents": "encodeparm(${1:s})"
+            "contents": "encodeparm(${1:s})",
+            "kind": "function",
+            "details": "Encodes any string into a valid node parameter name."
         },
         {
             "trigger": "eval(expression)",
-            "contents": "eval(${1:expression})"
+            "contents": "eval(${1:expression})",
+            "kind": "function",
+            "details": "Evaulates a string as an expression returning a float."
         },
         {
             "trigger": "evals(expression)",
-            "contents": "evals(${1:expression})"
+            "contents": "evals(${1:expression})",
+            "kind": "function",
+            "details": "Evaulates a string as an expression returning a string."
         },
         {
             "trigger": "execute(command)",
-            "contents": "execute(${1:command})"
+            "contents": "execute(${1:command})",
+            "kind": "function",
+            "details": "Runs a string as an HScript command and returns the command's output."
         },
         {
             "trigger": "executeb(command)",
-            "contents": "executeb(${1:command})"
+            "contents": "executeb(${1:command})",
+            "kind": "function",
+            "details": "Runs a string as an HScript command and returns the command and error"
         },
         {
             "trigger": "executee(command)",
-            "contents": "executee(${1:command})"
+            "contents": "executee(${1:command})",
+            "kind": "function",
+            "details": "Runs a string as an HScript command and returns any error output."
         },
         {
             "trigger": "exp(number)",
-            "contents": "exp(${1:number})"
+            "contents": "exp(${1:number})",
+            "kind": "function",
+            "details": "Returns the logarithmic exponentiation of the argument."
         },
         {
             "trigger": "explodematrix(mat, trs, xyz, component)",
-            "contents": "explodematrix(${1:mat}, ${2:trs}, ${3:xyz}, ${4:component})"
+            "contents": "explodematrix(${1:mat}, ${2:trs}, ${3:xyz}, ${4:component})",
+            "kind": "function",
+            "details": "Explodes a 3x3 or 4x4 matrix into the euler rotations required to"
         },
         {
             "trigger": "explodematrixp(mat, p, trs, xyz, component)",
-            "contents": "explodematrixp(${1:mat}, ${2:p}, ${3:trs}, ${4:xyz}, ${5:component})"
+            "contents": "explodematrixp(${1:mat}, ${2:p}, ${3:trs}, ${4:xyz}, ${5:component})",
+            "kind": "function",
+            "details": "Explodes a 3x3 or 4x4 matrix into the euler rotations required to"
         },
         {
             "trigger": "explodematrixpr(mat, p, pr, trs, xyz, component)",
-            "contents": "explodematrixpr(${1:mat}, ${2:p}, ${3:pr}, ${4:trs}, ${5:xyz}, ${6:component})"
+            "contents": "explodematrixpr(${1:mat}, ${2:p}, ${3:pr}, ${4:trs}, ${5:xyz}, ${6:component})",
+            "kind": "function",
+            "details": ""
         },
         {
             "trigger": "findfile(filename)",
-            "contents": "findfile(${1:filename})"
+            "contents": "findfile(${1:filename})",
+            "kind": "function",
+            "details": "Searches the Houdini path for a file."
         },
         {
             "trigger": "findfiles(filename, separator)",
-            "contents": "findfiles(${1:filename}, ${2:separator})"
+            "contents": "findfiles(${1:filename}, ${2:separator})",
+            "kind": "function",
+            "details": "Searches the Houdini path for a file or directory."
         },
         {
             "trigger": "fit(num, oldmin, oldmax, newmin, newmax)",
-            "contents": "fit(${1:num}, ${2:oldmin}, ${3:oldmax}, ${4:newmin}, ${5:newmax})"
+            "contents": "fit(${1:num}, ${2:oldmin}, ${3:oldmax}, ${4:newmin}, ${5:newmax})",
+            "kind": "function",
+            "details": "Fits a value from one range to another."
         },
         {
             "trigger": "fit01(num, newmin, newmax)",
-            "contents": "fit01(${1:num}, ${2:newmin}, ${3:newmax})"
+            "contents": "fit01(${1:num}, ${2:newmin}, ${3:newmax})",
+            "kind": "function",
+            "details": "Fits a value to the 0-1 range."
         },
         {
             "trigger": "fit10(num, newmin, newmax)",
-            "contents": "fit10(${1:num}, ${2:newmin}, ${3:newmax})"
+            "contents": "fit10(${1:num}, ${2:newmin}, ${3:newmax})",
+            "kind": "function",
+            "details": "Fits a number in the 0-1 range."
         },
         {
             "trigger": "fit11(num, newmin, newmax)",
-            "contents": "fit11(${1:num}, ${2:newmin}, ${3:newmax})"
+            "contents": "fit11(${1:num}, ${2:newmin}, ${3:newmax})",
+            "kind": "function",
+            "details": "Fits a number to the -1 to 1 range."
         },
         {
             "trigger": "floor(number)",
-            "contents": "floor(${1:number})"
+            "contents": "floor(${1:number})",
+            "kind": "function",
+            "details": "Returns the largest integer not greater than a number."
         },
         {
             "trigger": "fpadzero(integerpad, fracpad, value)",
-            "contents": "fpadzero(${1:integerpad}, ${2:fracpad}, ${3:value})"
+            "contents": "fpadzero(${1:integerpad}, ${2:fracpad}, ${3:value})",
+            "kind": "function",
+            "details": "Returns a string padding a number to a given length with zeros."
         },
         {
             "trigger": "frac(number)",
-            "contents": "frac(${1:number})"
+            "contents": "frac(${1:number})",
+            "kind": "function",
+            "details": "Returns the fractional part of a floating-point number."
         },
         {
             "trigger": "ftoa(number)",
-            "contents": "ftoa(${1:number})"
+            "contents": "ftoa(${1:number})",
+            "kind": "function",
+            "details": "Converts a number to a string."
         },
         {
             "trigger": "ftrim(number)",
-            "contents": "ftrim(${1:number})"
+            "contents": "ftrim(${1:number})",
+            "kind": "function",
+            "details": "Converts a number to a string, with rounding."
         },
         {
             "trigger": "groupbyval(surface_node, class, attribute, id)",
-            "contents": "groupbyval(${1:surface_node}, ${2:class}, ${3:attribute}, ${4:id})"
+            "contents": "groupbyval(${1:surface_node}, ${2:class}, ${3:attribute}, ${4:id})",
+            "kind": "function",
+            "details": "Returns a string describing the set of elements with a given value for"
         },
         {
             "trigger": "groupbyvals(surface_node, class, attribute, id)",
-            "contents": "groupbyvals(${1:surface_node}, ${2:class}, ${3:attribute}, ${4:id})"
+            "contents": "groupbyvals(${1:surface_node}, ${2:class}, ${3:attribute}, ${4:id})",
+            "kind": "function",
+            "details": "Returns a string describing the set of elements with a given value for a"
         },
         {
             "trigger": "hascontextoption(token)",
-            "contents": "hascontextoption(${1:token})"
+            "contents": "hascontextoption(${1:token})",
+            "kind": "function",
+            "details": "Returns a non-zero value if the specified context option exists."
         },
         {
             "trigger": "hasdetailattrib(surface_node, attribute)",
-            "contents": "hasdetailattrib(${1:surface_node}, ${2:attribute})"
+            "contents": "hasdetailattrib(${1:surface_node}, ${2:attribute})",
+            "kind": "function",
+            "details": "Returns 1 if a specified detail attribute exists."
         },
         {
             "trigger": "haspdgattrib(attribute)",
-            "contents": "haspdgattrib(${1:attribute})"
+            "contents": "haspdgattrib(${1:attribute})",
+            "kind": "function",
+            "details": "Returns 1 if the active PDG work item has the specified attribute."
         },
         {
             "trigger": "haspoint(group_name, surface_node, point_num)",
-            "contents": "haspoint(${1:group_name}, ${2:surface_node}, ${3:point_num})"
+            "contents": "haspoint(${1:group_name}, ${2:surface_node}, ${3:point_num})",
+            "kind": "function",
+            "details": "Returns 1 if a specified point is in a specified group."
         },
         {
             "trigger": "haspointattrib(surface_node, attribute)",
-            "contents": "haspointattrib(${1:surface_node}, ${2:attribute})"
+            "contents": "haspointattrib(${1:surface_node}, ${2:attribute})",
+            "kind": "function",
+            "details": "Returns 1 if a specified point attribute exists."
         },
         {
             "trigger": "hasprim(group_name, surface_node, prim_num)",
-            "contents": "hasprim(${1:group_name}, ${2:surface_node}, ${3:prim_num})"
+            "contents": "hasprim(${1:group_name}, ${2:surface_node}, ${3:prim_num})",
+            "kind": "function",
+            "details": "Returns 1 if a specified primitive is in a specified group."
         },
         {
             "trigger": "hasprimattrib(surface_node, attribute)",
-            "contents": "hasprimattrib(${1:surface_node}, ${2:attribute})"
+            "contents": "hasprimattrib(${1:surface_node}, ${2:attribute})",
+            "kind": "function",
+            "details": "Returns 1 if a specified primitive attribute exists."
         },
         {
             "trigger": "hasvertexattrib(surface_node, attribute)",
-            "contents": "hasvertexattrib(${1:surface_node}, ${2:attribute})"
+            "contents": "hasvertexattrib(${1:surface_node}, ${2:attribute})",
+            "kind": "function",
+            "details": "Returns 1 if a specified vertex attribute exists."
         },
         {
             "trigger": "hextoint(value)",
-            "contents": "hextoint(${1:value})"
+            "contents": "hextoint(${1:value})",
+            "kind": "function",
+            "details": "Converts a hexadecimal argument string into an integer."
         },
         {
             "trigger": "hsv(red, green, blue, component)",
-            "contents": "hsv(${1:red}, ${2:green}, ${3:blue}, ${4:component})"
+            "contents": "hsv(${1:red}, ${2:green}, ${3:blue}, ${4:component})",
+            "kind": "function",
+            "details": "Converts RGB values to HSV components."
         },
         {
             "trigger": "ic(input_index, channel_index, index)",
-            "contents": "ic(${1:input_index}, ${2:channel_index}, ${3:index})"
+            "contents": "ic(${1:input_index}, ${2:channel_index}, ${3:index})",
+            "kind": "function",
+            "details": "Evaluates a CHOP's input channel at a specific index."
         },
         {
             "trigger": "ice(input_index)",
-            "contents": "ice(${1:input_index})"
+            "contents": "ice(${1:input_index})",
+            "kind": "function",
+            "details": "Returns the end index of a CHOP's input."
         },
         {
             "trigger": "icl(input_index)",
-            "contents": "icl(${1:input_index})"
+            "contents": "icl(${1:input_index})",
+            "kind": "function",
+            "details": "Returns the length of a CHOP's input, in samples."
         },
         {
             "trigger": "icmax(input_index, channel_index)",
-            "contents": "icmax(${1:input_index}, ${2:channel_index})"
+            "contents": "icmax(${1:input_index}, ${2:channel_index})",
+            "kind": "function",
+            "details": "Evaluates a CHOP's input channel's maximum value."
         },
         {
             "trigger": "icmin(input_index, channel_index)",
-            "contents": "icmin(${1:input_index}, ${2:channel_index})"
+            "contents": "icmin(${1:input_index}, ${2:channel_index})",
+            "kind": "function",
+            "details": "Evaluates a CHOP's input channel's minimum value."
         },
         {
             "trigger": "icn(input_index)",
-            "contents": "icn(${1:input_index})"
+            "contents": "icn(${1:input_index})",
+            "kind": "function",
+            "details": "Returns the number of channels in a CHOP's input."
         },
         {
             "trigger": "icr(input_index)",
-            "contents": "icr(${1:input_index})"
+            "contents": "icr(${1:input_index})",
+            "kind": "function",
+            "details": "Returns the sample rate of a CHOP's input."
         },
         {
             "trigger": "ics(input_index)",
-            "contents": "ics(${1:input_index})"
+            "contents": "ics(${1:input_index})",
+            "kind": "function",
+            "details": "Returns the start index of a CHOP's input."
         },
         {
             "trigger": "identity(size)",
-            "contents": "identity(${1:size})"
+            "contents": "identity(${1:size})",
+            "kind": "function",
+            "details": "Creates an identity matrix."
         },
         {
             "trigger": "if(expression, true_value, false_value)",
-            "contents": "if(${1:expression}, ${2:true_value}, ${3:false_value})"
+            "contents": "if(${1:expression}, ${2:true_value}, ${3:false_value})",
+            "kind": "function",
+            "details": "Returns the value of the second or third argument depending on the truth"
         },
         {
             "trigger": "ifs(expression, true_value, false_value)",
-            "contents": "ifs(${1:expression}, ${2:true_value}, ${3:false_value})"
+            "contents": "ifs(${1:expression}, ${2:true_value}, ${3:false_value})",
+            "kind": "function",
+            "details": "Returns the string value of the second or third argument depending on"
         },
         {
             "trigger": "imgbounds(foo, bar, baz, qux)",
-            "contents": "imgbounds(${1:foo}, ${2:bar}, ${3:baz}, ${4:qux})"
+            "contents": "imgbounds(${1:foo}, ${2:bar}, ${3:baz}, ${4:qux})",
+            "kind": "function",
+            "details": ""
         },
         {
             "trigger": "index(source, pattern)",
-            "contents": "index(${1:source}, ${2:pattern})"
+            "contents": "index(${1:source}, ${2:pattern})",
+            "kind": "function",
+            "details": ""
         },
         {
             "trigger": "instancepoint()",
-            "contents": "instancepoint()"
+            "contents": "instancepoint()",
+            "kind": "function",
+            "details": "Returns the point number currently being instanced onto."
         },
         {
             "trigger": "int(number)",
-            "contents": "int(${1:number})"
+            "contents": "int(${1:number})",
+            "kind": "function",
+            "details": "Converts a number to an integer by truncating any fractional part."
         },
         {
             "trigger": "inttohex(value)",
-            "contents": "inttohex(${1:value})"
+            "contents": "inttohex(${1:value})",
+            "kind": "function",
+            "details": "Converts a number into a hexadecimal string."
         },
         {
             "trigger": "invert(mat)",
-            "contents": "invert(${1:mat})"
+            "contents": "invert(${1:mat})",
+            "kind": "function",
+            "details": "Inverts a matrix."
         },
         {
             "trigger": "iprquery(query, pane, x, y)",
-            "contents": "iprquery(${1:query}, ${2:pane}, ${3:x}, ${4:y})"
+            "contents": "iprquery(${1:query}, ${2:pane}, ${3:x}, ${4:y})",
+            "kind": "function",
+            "details": ""
         },
         {
             "trigger": "iprquerys(query, pane, x, y)",
-            "contents": "iprquerys(${1:query}, ${2:pane}, ${3:x}, ${4:y})"
+            "contents": "iprquerys(${1:query}, ${2:pane}, ${3:x}, ${4:y})",
+            "kind": "function",
+            "details": ""
         },
         {
             "trigger": "isclosed(surface_node, prim_num)",
-            "contents": "isclosed(${1:surface_node}, ${2:prim_num})"
+            "contents": "isclosed(${1:surface_node}, ${2:prim_num})",
+            "kind": "function",
+            "details": "Returns 1 if a primitive is closed."
         },
         {
             "trigger": "iscollided(surface_node, pointnumber)",
-            "contents": "iscollided(${1:surface_node}, ${2:pointnumber})"
+            "contents": "iscollided(${1:surface_node}, ${2:pointnumber})",
+            "kind": "function",
+            "details": "Returns 1 if a specified point has collided with something."
         },
         {
             "trigger": "ishvariable(variable_name)",
-            "contents": "ishvariable(${1:variable_name})"
+            "contents": "ishvariable(${1:variable_name})",
+            "kind": "function",
+            "details": "Returns 1 if a specified Houdini environment variable exists."
         },
         {
             "trigger": "ispdgeval()",
-            "contents": "ispdgeval()"
+            "contents": "ispdgeval()",
+            "kind": "function",
+            "details": "Returns 1 if the parameter is being evaluated as part of a PDG cook,"
         },
         {
             "trigger": "isspline(surface_node, prim_num)",
-            "contents": "isspline(${1:surface_node}, ${2:prim_num})"
+            "contents": "isspline(${1:surface_node}, ${2:prim_num})",
+            "kind": "function",
+            "details": "Returns 1 if a specified primitive is a NURBs or Bezier curve or"
         },
         {
             "trigger": "isstuck(surface_node, pointnumber)",
-            "contents": "isstuck(${1:surface_node}, ${2:pointnumber})"
+            "contents": "isstuck(${1:surface_node}, ${2:pointnumber})",
+            "kind": "function",
+            "details": "Returns 1 if a specified point is a stuck particle."
         },
         {
             "trigger": "isvariable(variable_name)",
-            "contents": "isvariable(${1:variable_name})"
+            "contents": "isvariable(${1:variable_name})",
+            "kind": "function",
+            "details": "Returns 1 if a specified Houdini or system environment variable exists."
         },
         {
             "trigger": "iswrapu(surface_node, prim_num)",
-            "contents": "iswrapu(${1:surface_node}, ${2:prim_num})"
+            "contents": "iswrapu(${1:surface_node}, ${2:prim_num})",
+            "kind": "function",
+            "details": "Returns 1 if a specified primitive is wrapped in U."
         },
         {
             "trigger": "iswrapv(surface_node, prim_num)",
-            "contents": "iswrapv(${1:surface_node}, ${2:prim_num})"
+            "contents": "iswrapv(${1:surface_node}, ${2:prim_num})",
+            "kind": "function",
+            "details": "Returns 1 if a specified primitive is wrapped in V."
         },
         {
             "trigger": "length(x, y, z)",
-            "contents": "length(${1:x}, ${2:y}, ${3:z})"
+            "contents": "length(${1:x}, ${2:y}, ${3:z})",
+            "kind": "function",
+            "details": "Returns the length of a vector."
         },
         {
             "trigger": "linear()",
-            "contents": "linear()"
+            "contents": "linear()",
+            "kind": "function",
+            "details": "Channel segment function: linear interpolation."
         },
         {
             "trigger": "listbyval(surface_node, class, attribute, id)",
-            "contents": "listbyval(${1:surface_node}, ${2:class}, ${3:attribute}, ${4:id})"
+            "contents": "listbyval(${1:surface_node}, ${2:class}, ${3:attribute}, ${4:id})",
+            "kind": "function",
+            "details": "Returns a list of elements with a given value for an integer attribute."
         },
         {
             "trigger": "listbyvals(surface_node, class, attribute, id)",
-            "contents": "listbyvals(${1:surface_node}, ${2:class}, ${3:attribute}, ${4:id})"
+            "contents": "listbyvals(${1:surface_node}, ${2:class}, ${3:attribute}, ${4:id})",
+            "kind": "function",
+            "details": "Returns a list of elements with a given value for a string attribute."
         },
         {
             "trigger": "lock(float)",
-            "contents": "lock(${1:float})"
+            "contents": "lock(${1:float})",
+            "kind": "function",
+            "details": "Returns a value that cannot be changed."
         },
         {
             "trigger": "log(number)",
-            "contents": "log(${1:number})"
+            "contents": "log(${1:number})",
+            "kind": "function",
+            "details": "Returns the natural logarithm of the argument."
         },
         {
             "trigger": "log10(number)",
-            "contents": "log10(${1:number})"
+            "contents": "log10(${1:number})",
+            "kind": "function",
+            "details": "Returns the base 10 logarithm of the argument."
         },
         {
             "trigger": "lopinputprim(lop_path, input_index)",
-            "contents": "lopinputprim(${1:lop_path}, ${2:input_index})"
+            "contents": "lopinputprim(${1:lop_path}, ${2:input_index})",
+            "kind": "function",
+            "details": "Returns the path of the USD primitive last modified by an input to a LOP"
         },
         {
             "trigger": "lopinputprims(lop_path, input_index)",
-            "contents": "lopinputprims(${1:lop_path}, ${2:input_index})"
+            "contents": "lopinputprims(${1:lop_path}, ${2:input_index})",
+            "kind": "function",
+            "details": "Returns the paths of the USD primitives last modified by an input to a"
         },
         {
             "trigger": "loplastmodifiedprim(lop_path)",
-            "contents": "loplastmodifiedprim(${1:lop_path})"
+            "contents": "loplastmodifiedprim(${1:lop_path})",
+            "kind": "function",
+            "details": "Returns the path of the USD primitive last modified by a LOP node."
         },
         {
             "trigger": "loplastmodifiedprims(lop_path)",
-            "contents": "loplastmodifiedprims(${1:lop_path})"
+            "contents": "loplastmodifiedprims(${1:lop_path})",
+            "kind": "function",
+            "details": "Returns the paths of the USD primitives last modified by a LOP node."
         },
         {
             "trigger": "lopparentprims(lop_paths)",
-            "contents": "lopparentprims(${1:lop_paths})"
+            "contents": "lopparentprims(${1:lop_paths})",
+            "kind": "function",
+            "details": "Returns the paths of the parents of the supplied list of USD primitives."
         },
         {
             "trigger": "loprelativeprims(lop_paths, relative_path)",
-            "contents": "loprelativeprims(${1:lop_paths}, ${2:relative_path})"
+            "contents": "loprelativeprims(${1:lop_paths}, ${2:relative_path})",
+            "kind": "function",
+            "details": "Returns the paths at a particular location relative to the supplied list"
+        },
+        {
+            "trigger": "ltrim(s, trim_characters)",
+            "contents": "ltrim(${1:s}, ${2:trim_characters})",
+            "kind": "function",
+            "details": ""
         },
         {
             "trigger": "match()",
-            "contents": "match()"
+            "contents": "match()",
+            "kind": "function",
+            "details": "Channel segment function: matches the incoming and outgoing values."
         },
         {
             "trigger": "matchin()",
-            "contents": "matchin()"
+            "contents": "matchin()",
+            "kind": "function",
+            "details": "Channel segment function: matches the incoming slope."
         },
         {
             "trigger": "matchout()",
-            "contents": "matchout()"
+            "contents": "matchout()",
+            "kind": "function",
+            "details": "Channel segment function: matches the outgoing slope."
         },
         {
             "trigger": "matrix(pattern)",
-            "contents": "matrix(${1:pattern})"
+            "contents": "matrix(${1:pattern})",
+            "kind": "function",
+            "details": "Converts a string specification into a matrix."
         },
         {
             "trigger": "matrixtoquat(m)",
-            "contents": "matrixtoquat(${1:m})"
+            "contents": "matrixtoquat(${1:m})",
+            "kind": "function",
+            "details": "Converts a rotation matrix to a quaternion."
         },
         {
             "trigger": "max(value1, value2)",
-            "contents": "max(${1:value1}, ${2:value2})"
+            "contents": "max(${1:value1}, ${2:value2})",
+            "kind": "function",
+            "details": "Returns the larger of two values."
         },
         {
             "trigger": "mcols(mat)",
-            "contents": "mcols(${1:mat})"
+            "contents": "mcols(${1:mat})",
+            "kind": "function",
+            "details": "Returns the number of columns in a matrix."
         },
         {
             "trigger": "metaweight(surface_node, x, y, z)",
-            "contents": "metaweight(${1:surface_node}, ${2:x}, ${3:y}, ${4:z})"
+            "contents": "metaweight(${1:surface_node}, ${2:x}, ${3:y}, ${4:z})",
+            "kind": "function",
+            "details": "Returns the weight of a metaball at a specific location."
         },
         {
             "trigger": "min(value1, value2)",
-            "contents": "min(${1:value1}, ${2:value2})"
+            "contents": "min(${1:value1}, ${2:value2})",
+            "kind": "function",
+            "details": "Returns the smaller of two values."
         },
         {
             "trigger": "mindist(surface_node, point_num, surface_node, prim_num, return_type)",
-            "contents": "mindist(${1:surface_node}, ${2:point_num}, ${3:surface_node}, ${4:prim_num}, ${5:return_type})"
+            "contents": "mindist(${1:surface_node}, ${2:point_num}, ${3:surface_node}, ${4:prim_num}, ${5:return_type})",
+            "kind": "function",
+            "details": "Finds the smallest distance between a point and a primitive."
         },
         {
             "trigger": "mlookat(v1, v2)",
-            "contents": "mlookat(${1:v1}, ${2:v2})"
+            "contents": "mlookat(${1:v1}, ${2:v2})",
+            "kind": "function",
+            "details": "Computes the transformation matrix of a lookat from one vector to"
         },
         {
             "trigger": "mlookatup(v1, v2, upv)",
-            "contents": "mlookatup(${1:v1}, ${2:v2}, ${3:upv})"
+            "contents": "mlookatup(${1:v1}, ${2:v2}, ${3:upv})",
+            "kind": "function",
+            "details": "Computes the transformation matrix of a lookat from one vector to"
         },
         {
             "trigger": "mobjlookat(base_node, target_node, upv)",
-            "contents": "mobjlookat(${1:base_node}, ${2:target_node}, ${3:upv})"
+            "contents": "mobjlookat(${1:base_node}, ${2:target_node}, ${3:upv})",
+            "kind": "function",
+            "details": "Computes the transformation matrix of a lookat from one object to"
         },
         {
             "trigger": "modblend(val1, val2, length, weight)",
-            "contents": "modblend(${1:val1}, ${2:val2}, ${3:length}, ${4:weight})"
+            "contents": "modblend(${1:val1}, ${2:val2}, ${3:length}, ${4:weight})",
+            "kind": "function",
+            "details": "Blends the two modular values."
         },
         {
             "trigger": "morient(zaxis, yaxis)",
-            "contents": "morient(${1:zaxis}, ${2:yaxis})"
+            "contents": "morient(${1:zaxis}, ${2:yaxis})",
+            "kind": "function",
+            "details": "Computes the transformation matrix to orient along specific Z and Y"
         },
         {
             "trigger": "mousepane()",
-            "contents": "mousepane()"
+            "contents": "mousepane()",
+            "kind": "function",
+            "details": "Returns the full name of the pane currently under the mouse pointer."
         },
         {
             "trigger": "mousepath()",
-            "contents": "mousepath()"
+            "contents": "mousepath()",
+            "kind": "function",
+            "details": "Returns the node path of the pane currently under the mouse pointer."
         },
         {
             "trigger": "mrows(mat)",
-            "contents": "mrows(${1:mat})"
+            "contents": "mrows(${1:mat})",
+            "kind": "function",
+            "details": "Returns the number of rows in a matrix."
         },
         {
             "trigger": "mzero(mat)",
-            "contents": "mzero(${1:mat})"
+            "contents": "mzero(${1:mat})",
+            "kind": "function",
+            "details": "Returns a matrix with all values set to 0."
         },
         {
             "trigger": "nearpoint(surface_node, x, y, z)",
-            "contents": "nearpoint(${1:surface_node}, ${2:x}, ${3:y}, ${4:z})"
+            "contents": "nearpoint(${1:surface_node}, ${2:x}, ${3:y}, ${4:z})",
+            "kind": "function",
+            "details": "Finds the point in a geometry nearest to specific 3D coordinates."
         },
         {
             "trigger": "noise(X, Y, Z)",
-            "contents": "noise(${1:X}, ${2:Y}, ${3:Z})"
+            "contents": "noise(${1:X}, ${2:Y}, ${3:Z})",
+            "kind": "function",
+            "details": "Generates 3D noise."
         },
         {
             "trigger": "normal(surface_node, prim_num, u, v, index)",
-            "contents": "normal(${1:surface_node}, ${2:prim_num}, ${3:u}, ${4:v}, ${5:index})"
+            "contents": "normal(${1:surface_node}, ${2:prim_num}, ${3:u}, ${4:v}, ${5:index})",
+            "kind": "function",
+            "details": "Returns the components of the surface normal specific UV coordinates."
         },
         {
             "trigger": "normalize(v)",
-            "contents": "normalize(${1:v})"
+            "contents": "normalize(${1:v})",
+            "kind": "function",
+            "details": "Normalizes a vector."
         },
         {
             "trigger": "npoints(surface_node)",
-            "contents": "npoints(${1:surface_node})"
+            "contents": "npoints(${1:surface_node})",
+            "kind": "function",
+            "details": "Returns the number of points in a geometry."
         },
         {
             "trigger": "npointsgroup(surface_node, group_name)",
-            "contents": "npointsgroup(${1:surface_node}, ${2:group_name})"
+            "contents": "npointsgroup(${1:surface_node}, ${2:group_name})",
+            "kind": "function",
+            "details": "Returns the number of points in the specified group."
         },
         {
             "trigger": "nprims(name)",
-            "contents": "nprims(${1:name})"
+            "contents": "nprims(${1:name})",
+            "kind": "function",
+            "details": "Returns the number of primitives in a surface node."
         },
         {
             "trigger": "nprimsgroup(surface_node, group_name)",
-            "contents": "nprimsgroup(${1:surface_node}, ${2:group_name})"
+            "contents": "nprimsgroup(${1:surface_node}, ${2:group_name})",
+            "kind": "function",
+            "details": "Returns the number of primitives in the specified group."
         },
         {
             "trigger": "nuniquevals(surface_node, class, attribute)",
-            "contents": "nuniquevals(${1:surface_node}, ${2:class}, ${3:attribute})"
+            "contents": "nuniquevals(${1:surface_node}, ${2:class}, ${3:attribute})",
+            "kind": "function",
+            "details": "Returns the number of unique values for an integer or string attribute"
         },
         {
             "trigger": "nvertices(surface_node)",
-            "contents": "nvertices(${1:surface_node})"
+            "contents": "nvertices(${1:surface_node})",
+            "kind": "function",
+            "details": "Returns the number of vertices in a geometry."
         },
         {
             "trigger": "nverticesgroup(surface_node, group_name)",
-            "contents": "nverticesgroup(${1:surface_node}, ${2:group_name})"
+            "contents": "nverticesgroup(${1:surface_node}, ${2:group_name})",
+            "kind": "function",
+            "details": "Returns the number of vertices in the specified group."
         },
         {
             "trigger": "objkinoverride()",
-            "contents": "objkinoverride()"
+            "contents": "objkinoverride()",
+            "kind": "function",
+            "details": "Returns the current global kinematic override setting for bone objects."
         },
         {
             "trigger": "objlightmask(geometry, options)",
-            "contents": "objlightmask(${1:geometry}, ${2:options})"
+            "contents": "objlightmask(${1:geometry}, ${2:options})",
+            "kind": "function",
+            "details": "Returns a list of lights matching an object's light mask."
         },
         {
             "trigger": "objlookat(base_node, target_node, upv)",
-            "contents": "objlookat(${1:base_node}, ${2:target_node}, ${3:upv})"
+            "contents": "objlookat(${1:base_node}, ${2:target_node}, ${3:upv})",
+            "kind": "function",
+            "details": "Computes the rotation vector of a lookat from one object to another."
         },
         {
             "trigger": "objpretransform(object_name)",
-            "contents": "objpretransform(${1:object_name})"
+            "contents": "objpretransform(${1:object_name})",
+            "kind": "function",
+            "details": "Returns an object's pre-transform matrix."
         },
         {
             "trigger": "oc(output_channel_index, index)",
-            "contents": "oc(${1:output_channel_index}, ${2:index})"
+            "contents": "oc(${1:output_channel_index}, ${2:index})",
+            "kind": "function",
+            "details": "Returns the value of a CHOP's output at a specific sample index."
         },
         {
             "trigger": "ocldeviceinfo(flag)",
-            "contents": "ocldeviceinfo(${1:flag})"
+            "contents": "ocldeviceinfo(${1:flag})",
+            "kind": "function",
+            "details": "Queries the current OpenCL device with the provided flag"
         },
         {
             "trigger": "oldrand(value)",
-            "contents": "oldrand(${1:value})"
+            "contents": "oldrand(${1:value})",
+            "kind": "function",
+            "details": "Returns a pseudo-random number between 0 and 1."
         },
         {
             "trigger": "opblist(bundle_name)",
-            "contents": "opblist(${1:bundle_name})"
+            "contents": "opblist(${1:bundle_name})",
+            "kind": "function",
+            "details": "Returns the full paths of all operators in a bundle."
         },
         {
             "trigger": "opcreator(name)",
-            "contents": "opcreator(${1:name})"
+            "contents": "opcreator(${1:name})",
+            "kind": "function",
+            "details": "Returns the creator of this node."
         },
         {
             "trigger": "opdigits(name)",
-            "contents": "opdigits(${1:name})"
+            "contents": "opdigits(${1:name})",
+            "kind": "function",
+            "details": "Returns the numeric suffix of a node name."
         },
         {
             "trigger": "opexist(op_name)",
-            "contents": "opexist(${1:op_name})"
+            "contents": "opexist(${1:op_name})",
+            "kind": "function",
+            "details": "Returns 1 if the specified node, group, or bundle exists."
         },
         {
             "trigger": "opflag(network, flag)",
-            "contents": "opflag(${1:network}, ${2:flag})"
+            "contents": "opflag(${1:network}, ${2:flag})",
+            "kind": "function",
+            "details": "Returns a list nodes with a particular flag set."
         },
         {
             "trigger": "opfullpath(relpath)",
-            "contents": "opfullpath(${1:relpath})"
+            "contents": "opfullpath(${1:relpath})",
+            "kind": "function",
+            "details": "Returns the full path of a node."
         },
         {
             "trigger": "opfullpathfrom(node, basenode)",
-            "contents": "opfullpathfrom(${1:node}, ${2:basenode})"
+            "contents": "opfullpathfrom(${1:node}, ${2:basenode})",
+            "kind": "function",
+            "details": "Returns the path of a node relative to another node."
         },
         {
             "trigger": "opid(name)",
-            "contents": "opid(${1:name})"
+            "contents": "opid(${1:name})",
+            "kind": "function",
+            "details": "Returns the unique ID of a node."
         },
         {
             "trigger": "opinput(name, index)",
-            "contents": "opinput(${1:name}, ${2:index})"
+            "contents": "opinput(${1:name}, ${2:index})",
+            "kind": "function",
+            "details": "Returns the name of the node connected to a given input."
         },
         {
             "trigger": "opinputpath(name, index)",
-            "contents": "opinputpath(${1:name}, ${2:index})"
+            "contents": "opinputpath(${1:name}, ${2:index})",
+            "kind": "function",
+            "details": "Returns the full path of the node connected to a given input."
         },
         {
             "trigger": "opinputstring(name, index, key)",
-            "contents": "opinputstring(${1:name}, ${2:index}, ${3:key})"
+            "contents": "opinputstring(${1:name}, ${2:index}, ${3:key})",
+            "kind": "function",
+            "details": "Returns the value associated with a key string on node connection."
         },
         {
             "trigger": "opisloading()",
-            "contents": "opisloading()"
+            "contents": "opisloading()",
+            "kind": "function",
+            "details": "Returns 1 if Houdini is currently loading a scene file."
         },
         {
             "trigger": "opisquitting()",
-            "contents": "opisquitting()"
+            "contents": "opisquitting()",
+            "kind": "function",
+            "details": "Returns 1 if Houdini is currently shutting down."
         },
         {
             "trigger": "oplightmask(geometry)",
-            "contents": "oplightmask(${1:geometry})"
+            "contents": "oplightmask(${1:geometry})",
+            "kind": "function",
+            "details": "Returns a list of lights matching an object's light mask."
         },
         {
             "trigger": "oplistsort(path)",
-            "contents": "oplistsort(${1:path})"
+            "contents": "oplistsort(${1:path})",
+            "kind": "function",
+            "details": "Sorts a list of node paths based on node input/outputs order."
         },
         {
             "trigger": "opname(name)",
-            "contents": "opname(${1:name})"
+            "contents": "opname(${1:name})",
+            "kind": "function",
+            "details": "Returns the name of a node given its path."
         },
         {
             "trigger": "opnchildren(name)",
-            "contents": "opnchildren(${1:name})"
+            "contents": "opnchildren(${1:name})",
+            "kind": "function",
+            "details": "Returns the number of nodes inside a container node."
         },
         {
             "trigger": "opninputs(name)",
-            "contents": "opninputs(${1:name})"
+            "contents": "opninputs(${1:name})",
+            "kind": "function",
+            "details": "Returns the maximum number of connected inputs."
         },
         {
             "trigger": "opnodigits(name)",
-            "contents": "opnodigits(${1:name})"
+            "contents": "opnodigits(${1:name})",
+            "kind": "function",
+            "details": "Returns the alphanumeric prefix of a node name eliminating trailing"
         },
         {
             "trigger": "opnoutputs(name)",
-            "contents": "opnoutputs(${1:name})"
+            "contents": "opnoutputs(${1:name})",
+            "kind": "function",
+            "details": "Returns the number of nodes connected to a node's output."
         },
         {
             "trigger": "opoutput(name, index)",
-            "contents": "opoutput(${1:name}, ${2:index})"
+            "contents": "opoutput(${1:name}, ${2:index})",
+            "kind": "function",
+            "details": "Returns the name of a node connected a given node's output."
         },
         {
             "trigger": "opoutputpath(name, index)",
-            "contents": "opoutputpath(${1:name}, ${2:index})"
+            "contents": "opoutputpath(${1:name}, ${2:index})",
+            "kind": "function",
+            "details": "Returns the full path of a node connected a given node's output."
         },
         {
             "trigger": "oppinput(name, index)",
-            "contents": "oppinput(${1:name}, ${2:index})"
+            "contents": "oppinput(${1:name}, ${2:index})",
+            "kind": "function",
+            "details": "Deprecated: replaced by opinput."
         },
         {
             "trigger": "oppwd()",
-            "contents": "oppwd()"
+            "contents": "oppwd()",
+            "kind": "function",
+            "details": "Returns the path of the current network."
         },
         {
             "trigger": "oppwf()",
-            "contents": "oppwf()"
+            "contents": "oppwf()",
+            "kind": "function",
+            "details": "Prints the path of the current network."
         },
         {
             "trigger": "oprelativepath(srcpath, destpath)",
-            "contents": "oprelativepath(${1:srcpath}, ${2:destpath})"
+            "contents": "oprelativepath(${1:srcpath}, ${2:destpath})",
+            "kind": "function",
+            "details": "Returns the relative path from one node to another."
         },
         {
             "trigger": "opselect(network)",
-            "contents": "opselect(${1:network})"
+            "contents": "opselect(${1:network})",
+            "kind": "function",
+            "details": "Returns a list of the selected nodes."
         },
         {
             "trigger": "opselectpath(network)",
-            "contents": "opselectpath(${1:network})"
+            "contents": "opselectpath(${1:network})",
+            "kind": "function",
+            "details": "Returns a list of the full paths of selected nodes."
         },
         {
             "trigger": "opselectrecurse(network, flag)",
-            "contents": "opselectrecurse(${1:network}, ${2:flag})"
+            "contents": "opselectrecurse(${1:network}, ${2:flag})",
+            "kind": "function",
+            "details": "Returns a recursive list of the selected nodes."
         },
         {
             "trigger": "opselectrecursepath(network, flag)",
-            "contents": "opselectrecursepath(${1:network}, ${2:flag})"
+            "contents": "opselectrecursepath(${1:network}, ${2:flag})",
+            "kind": "function",
+            "details": "Returns a recursive list of the full paths of selected nodes."
         },
         {
             "trigger": "opstreamname(nodepath)",
-            "contents": "opstreamname(${1:nodepath})"
+            "contents": "opstreamname(${1:nodepath})",
+            "kind": "function",
+            "details": ""
         },
         {
             "trigger": "opsubpath(node)",
-            "contents": "opsubpath(${1:node})"
+            "contents": "opsubpath(${1:node})",
+            "kind": "function",
+            "details": "Returns the full path of a node including any containing subnets."
         },
         {
             "trigger": "optransform(object_name)",
-            "contents": "optransform(${1:object_name})"
+            "contents": "optransform(${1:object_name})",
+            "kind": "function",
+            "details": "Returns the transformation matrix of an object at the current time."
         },
         {
             "trigger": "optype(name)",
-            "contents": "optype(${1:name})"
+            "contents": "optype(${1:name})",
+            "kind": "function",
+            "details": "Returns the type of a node."
         },
         {
             "trigger": "optypeinfo(name, pattern)",
-            "contents": "optypeinfo(${1:name}, ${2:pattern})"
+            "contents": "optypeinfo(${1:name}, ${2:pattern})",
+            "kind": "function",
+            "details": "Returns type information about a node."
         },
         {
             "trigger": "origin(obj1, obj2, constant_type)",
-            "contents": "origin(${1:obj1}, ${2:obj2}, ${3:constant_type})"
+            "contents": "origin(${1:obj1}, ${2:obj2}, ${3:constant_type})",
+            "kind": "function",
+            "details": "Returns components of an object's transforms."
         },
         {
             "trigger": "originoffset(obj1, pos1, obj2, pos2, constant_type)",
-            "contents": "originoffset(${1:obj1}, ${2:pos1}, ${3:obj2}, ${4:pos2}, ${5:constant_type})"
+            "contents": "originoffset(${1:obj1}, ${2:pos1}, ${3:obj2}, ${4:pos2}, ${5:constant_type})",
+            "kind": "function",
+            "details": "Returns components of an object's offset transforms."
         },
         {
             "trigger": "padzero(size, value)",
-            "contents": "padzero(${1:size}, ${2:value})"
+            "contents": "padzero(${1:size}, ${2:value})",
+            "kind": "function",
+            "details": "Returns a string padding a number to a given length with zeros."
         },
         {
             "trigger": "param(token, value)",
-            "contents": "param(${1:token}, ${2:value})"
+            "contents": "param(${1:token}, ${2:value})",
+            "kind": "function",
+            "details": "Deprecated: use stamp instead."
         },
         {
             "trigger": "parmisstring(parameter_name)",
-            "contents": "parmisstring(${1:parameter_name})"
+            "contents": "parmisstring(${1:parameter_name})",
+            "kind": "function",
+            "details": "Returns 1 if a specified parameter is a string."
         },
         {
             "trigger": "pdgattrib(name, index)",
-            "contents": "pdgattrib(${1:name}, ${2:index})"
+            "contents": "pdgattrib(${1:name}, ${2:index})",
+            "kind": "function",
+            "details": "Returns the value of a PDG work item attrib"
         },
         {
             "trigger": "pdgattriblist()",
-            "contents": "pdgattriblist()"
+            "contents": "pdgattriblist()",
+            "kind": "function",
+            "details": "Returns a space-separated list of attribute names on the active PDG work"
         },
         {
             "trigger": "pdgattribs(name, index)",
-            "contents": "pdgattribs(${1:name}, ${2:index})"
+            "contents": "pdgattribs(${1:name}, ${2:index})",
+            "kind": "function",
+            "details": "Returns the string value of a PDG work item attribute"
         },
         {
             "trigger": "pdgattribsize(attribute)",
-            "contents": "pdgattribsize(${1:attribute})"
+            "contents": "pdgattribsize(${1:attribute})",
+            "kind": "function",
+            "details": "Returns the number of components in a PDG work item attribute."
         },
         {
             "trigger": "pdgattribtype(attribute)",
-            "contents": "pdgattribtype(${1:attribute})"
+            "contents": "pdgattribtype(${1:attribute})",
+            "kind": "function",
+            "details": "Returns the type of a PDG work item attribute."
         },
         {
             "trigger": "pdgattribute(name, index)",
-            "contents": "pdgattribute(${1:name}, ${2:index})"
+            "contents": "pdgattribute(${1:name}, ${2:index})",
+            "kind": "function",
+            "details": "Deprecated: replaced by pdgattrib."
         },
         {
             "trigger": "pdgattributes(name, index)",
-            "contents": "pdgattributes(${1:name}, ${2:index})"
+            "contents": "pdgattributes(${1:name}, ${2:index})",
+            "kind": "function",
+            "details": "Deprecated: replaced by pdgattribs."
         },
         {
             "trigger": "pdgattribvals(name)",
-            "contents": "pdgattribvals(${1:name})"
+            "contents": "pdgattribvals(${1:name})",
+            "kind": "function",
+            "details": "Returns the space separated list of values for a PDG work item attribute"
         },
         {
             "trigger": "pdginput(index, tag, localize)",
-            "contents": "pdginput(${1:index}, ${2:tag}, ${3:localize})"
+            "contents": "pdginput(${1:index}, ${2:tag}, ${3:localize})",
+            "kind": "function",
+            "details": "Returns a work item input file for the specified file index and tag"
         },
         {
             "trigger": "pdginputsize(tag)",
-            "contents": "pdginputsize(${1:tag})"
+            "contents": "pdginputsize(${1:tag})",
+            "kind": "function",
+            "details": "Returns the number of input files on the active PDG work item"
         },
         {
             "trigger": "pdginputtag(index)",
-            "contents": "pdginputtag(${1:index})"
+            "contents": "pdginputtag(${1:index})",
+            "kind": "function",
+            "details": "Returns the file tag for the input file at the specified index."
         },
         {
             "trigger": "pdginputvals(tag, localize)",
-            "contents": "pdginputvals(${1:tag}, ${2:localize})"
+            "contents": "pdginputvals(${1:tag}, ${2:localize})",
+            "kind": "function",
+            "details": "Returns a space separated string of all work item input files for the"
         },
         {
             "trigger": "pdgmappath(path)",
-            "contents": "pdgmappath(${1:path})"
+            "contents": "pdgmappath(${1:path})",
+            "kind": "function",
+            "details": "Maps the given path to the local Zone"
         },
         {
             "trigger": "pdgoutput(index, tag, localize)",
-            "contents": "pdgoutput(${1:index}, ${2:tag}, ${3:localize})"
+            "contents": "pdgoutput(${1:index}, ${2:tag}, ${3:localize})",
+            "kind": "function",
+            "details": "Returns a work item output file for the specified file index and tag"
         },
         {
             "trigger": "pdgoutputsize(tag)",
-            "contents": "pdgoutputsize(${1:tag})"
+            "contents": "pdgoutputsize(${1:tag})",
+            "kind": "function",
+            "details": "Returns the number of output files on the active PDG work item"
         },
         {
             "trigger": "pdgoutputtag(index)",
-            "contents": "pdgoutputtag(${1:index})"
+            "contents": "pdgoutputtag(${1:index})",
+            "kind": "function",
+            "details": "Returns the file tag for the output file at the specified index."
         },
         {
             "trigger": "pdgoutputvals(tag, localize)",
-            "contents": "pdgoutputvals(${1:tag}, ${2:localize})"
+            "contents": "pdgoutputvals(${1:tag}, ${2:localize})",
+            "kind": "function",
+            "details": "Returns a space separated string of all work item output files for the"
         },
         {
             "trigger": "pic(copname, U, V, color_type)",
-            "contents": "pic(${1:copname}, ${2:U}, ${3:V}, ${4:color_type})"
+            "contents": "pic(${1:copname}, ${2:U}, ${3:V}, ${4:color_type})",
+            "kind": "function",
+            "details": "Returns the color of a pixel in a compositing node."
         },
         {
             "trigger": "picni(copname, U, V, color_type)",
-            "contents": "picni(${1:copname}, ${2:U}, ${3:V}, ${4:color_type})"
+            "contents": "picni(${1:copname}, ${2:U}, ${3:V}, ${4:color_type})",
+            "kind": "function",
+            "details": "Returns the non-interpolated color of a pixel in a compositing node."
         },
         {
             "trigger": "pluralize(s)",
-            "contents": "pluralize(${1:s})"
+            "contents": "pluralize(${1:s})",
+            "kind": "function",
+            "details": "Converts an English noun to its plural."
         },
         {
             "trigger": "point(surface_node, point_number, attribute, index)",
-            "contents": "point(${1:surface_node}, ${2:point_number}, ${3:attribute}, ${4:index})"
+            "contents": "point(${1:surface_node}, ${2:point_number}, ${3:attribute}, ${4:index})",
+            "kind": "function",
+            "details": "Returns the value of a point attribute."
         },
         {
             "trigger": "pointattriblist(surface_node)",
-            "contents": "pointattriblist(${1:surface_node})"
+            "contents": "pointattriblist(${1:surface_node})",
+            "kind": "function",
+            "details": "Returns a space-separated list of point attribute names."
         },
         {
             "trigger": "pointattribsize(surface_node, attribute)",
-            "contents": "pointattribsize(${1:surface_node}, ${2:attribute})"
+            "contents": "pointattribsize(${1:surface_node}, ${2:attribute})",
+            "kind": "function",
+            "details": "Returns the number of components in a point attribute."
         },
         {
             "trigger": "pointattribtype(surface_node, attribute)",
-            "contents": "pointattribtype(${1:surface_node}, ${2:attribute})"
+            "contents": "pointattribtype(${1:surface_node}, ${2:attribute})",
+            "kind": "function",
+            "details": "Returns the type of a point attribute."
         },
         {
             "trigger": "pointavg(surface_node, attribute, index)",
-            "contents": "pointavg(${1:surface_node}, ${2:attribute}, ${3:index})"
+            "contents": "pointavg(${1:surface_node}, ${2:attribute}, ${3:index})",
+            "kind": "function",
+            "details": "Returns the average of an attribute across all points in a geometry."
         },
         {
             "trigger": "pointdist(surface_node, point_num, surface_node, prim_num, return_type)",
-            "contents": "pointdist(${1:surface_node}, ${2:point_num}, ${3:surface_node}, ${4:prim_num}, ${5:return_type})"
+            "contents": "pointdist(${1:surface_node}, ${2:point_num}, ${3:surface_node}, ${4:prim_num}, ${5:return_type})",
+            "kind": "function",
+            "details": "Returns the distance between a point and a primitive."
         },
         {
             "trigger": "pointgrouplist(surface_node)",
-            "contents": "pointgrouplist(${1:surface_node})"
+            "contents": "pointgrouplist(${1:surface_node})",
+            "kind": "function",
+            "details": "Returns the list of point groups in a surface node."
         },
         {
             "trigger": "pointgroupmask(surface_node, pattern)",
-            "contents": "pointgroupmask(${1:surface_node}, ${2:pattern})"
+            "contents": "pointgroupmask(${1:surface_node}, ${2:pattern})",
+            "kind": "function",
+            "details": "Returns the list of point groups matching a pattern in a surface node."
         },
         {
             "trigger": "pointlist(surface_node, group_name)",
-            "contents": "pointlist(${1:surface_node}, ${2:group_name})"
+            "contents": "pointlist(${1:surface_node}, ${2:group_name})",
+            "kind": "function",
+            "details": "Returns a list of all points in a point group."
         },
         {
             "trigger": "pointneighbours(surface_node, point_num, num_shared_prims)",
-            "contents": "pointneighbours(${1:surface_node}, ${2:point_num}, ${3:num_shared_prims})"
+            "contents": "pointneighbours(${1:surface_node}, ${2:point_num}, ${3:num_shared_prims})",
+            "kind": "function",
+            "details": "Lists points that share a minimum number of primitives with a specified"
         },
         {
             "trigger": "pointpattern(surface_node, pattern)",
-            "contents": "pointpattern(${1:surface_node}, ${2:pattern})"
+            "contents": "pointpattern(${1:surface_node}, ${2:pattern})",
+            "kind": "function",
+            "details": "Returns a list of points that match a specified pattern."
         },
         {
             "trigger": "points(surface_node, point_number, attribute)",
-            "contents": "points(${1:surface_node}, ${2:point_number}, ${3:attribute})"
+            "contents": "points(${1:surface_node}, ${2:point_number}, ${3:attribute})",
+            "kind": "function",
+            "details": "Returns the string value of a point attribute."
         },
         {
             "trigger": "pointsmap(surface_node, attribute, index)",
-            "contents": "pointsmap(${1:surface_node}, ${2:attribute}, ${3:index})"
+            "contents": "pointsmap(${1:surface_node}, ${2:attribute}, ${3:index})",
+            "kind": "function",
+            "details": "Returns a string from a list of strings in a point attribute."
         },
         {
             "trigger": "pointsnummap(surface_node, attribute)",
-            "contents": "pointsnummap(${1:surface_node}, ${2:attribute})"
+            "contents": "pointsnummap(${1:surface_node}, ${2:attribute})",
+            "kind": "function",
+            "details": "Returns the number of unique strings bound to a point attribute."
+        },
+        {
+            "trigger": "pointvals(surface_node, point_num, attrib_name, component)",
+            "contents": "pointvals(${1:surface_node}, ${2:point_num}, ${3:attrib_name}, ${4:component})",
+            "kind": "function",
+            "details": "Returns components of a string array attribute."
         },
         {
             "trigger": "pow(base, exponent)",
-            "contents": "pow(${1:base}, ${2:exponent})"
+            "contents": "pow(${1:base}, ${2:exponent})",
+            "kind": "function",
+            "details": "Raises a number to an exponent."
         },
         {
             "trigger": "prim(surface_node, prim_num, attrib_name, attrib_index)",
-            "contents": "prim(${1:surface_node}, ${2:prim_num}, ${3:attrib_name}, ${4:attrib_index})"
+            "contents": "prim(${1:surface_node}, ${2:prim_num}, ${3:attrib_name}, ${4:attrib_index})",
+            "kind": "function",
+            "details": "Returns the value of a primitive attribute."
         },
         {
             "trigger": "primattriblist(surface_node)",
-            "contents": "primattriblist(${1:surface_node})"
+            "contents": "primattriblist(${1:surface_node})",
+            "kind": "function",
+            "details": "Returns a space-separated list of primitive attribute names."
         },
         {
             "trigger": "primattribsize(surface_node, attribute)",
-            "contents": "primattribsize(${1:surface_node}, ${2:attribute})"
+            "contents": "primattribsize(${1:surface_node}, ${2:attribute})",
+            "kind": "function",
+            "details": "Returns the number of components in a primitive attribute."
         },
         {
             "trigger": "primattribtype(surface_node, attribute)",
-            "contents": "primattribtype(${1:surface_node}, ${2:attribute})"
+            "contents": "primattribtype(${1:surface_node}, ${2:attribute})",
+            "kind": "function",
+            "details": "Returns the type of a primitive attribute."
         },
         {
             "trigger": "primdist(surface_node, prim1_num, surface_node, prim2_num, return_type)",
-            "contents": "primdist(${1:surface_node}, ${2:prim1_num}, ${3:surface_node}, ${4:prim2_num}, ${5:return_type})"
+            "contents": "primdist(${1:surface_node}, ${2:prim1_num}, ${3:surface_node}, ${4:prim2_num}, ${5:return_type})",
+            "kind": "function",
+            "details": "Returns the minimum distance and closest points between two primitives."
         },
         {
             "trigger": "primduv(surface_node, prim_num, attrib_name, attrib_index, u, v, du, dv)",
-            "contents": "primduv(${1:surface_node}, ${2:prim_num}, ${3:attrib_name}, ${4:attrib_index}, ${5:u}, ${6:v}, ${7:du}, ${8:dv})"
+            "contents": "primduv(${1:surface_node}, ${2:prim_num}, ${3:attrib_name}, ${4:attrib_index}, ${5:u}, ${6:v}, ${7:du}, ${8:dv})",
+            "kind": "function",
+            "details": "Returns the partial derivatives of a primitive attribute."
         },
         {
             "trigger": "primgrouplist(surface_node)",
-            "contents": "primgrouplist(${1:surface_node})"
+            "contents": "primgrouplist(${1:surface_node})",
+            "kind": "function",
+            "details": "Returns the list of primitive groups in a surface node."
         },
         {
             "trigger": "primgroupmask(surface_node, pattern)",
-            "contents": "primgroupmask(${1:surface_node}, ${2:pattern})"
+            "contents": "primgroupmask(${1:surface_node}, ${2:pattern})",
+            "kind": "function",
+            "details": "Returns the list of groups matching a pattern in a surface node."
         },
         {
             "trigger": "primlist(surface_node, group_name)",
-            "contents": "primlist(${1:surface_node}, ${2:group_name})"
+            "contents": "primlist(${1:surface_node}, ${2:group_name})",
+            "kind": "function",
+            "details": "Returns a list of all primitives in a surface node."
         },
         {
             "trigger": "primneighbours(surface_node, prim_num, num_shared_pts)",
-            "contents": "primneighbours(${1:surface_node}, ${2:prim_num}, ${3:num_shared_pts})"
+            "contents": "primneighbours(${1:surface_node}, ${2:prim_num}, ${3:num_shared_pts})",
+            "kind": "function",
+            "details": "Lists primitives that share a minimum number of points with a specified"
         },
         {
             "trigger": "prims(surface_node, primitive_number, attribute)",
-            "contents": "prims(${1:surface_node}, ${2:primitive_number}, ${3:attribute})"
+            "contents": "prims(${1:surface_node}, ${2:primitive_number}, ${3:attribute})",
+            "kind": "function",
+            "details": "Returns the string value of a primitive attribute."
         },
         {
             "trigger": "primsmap(surface_node, attribute, index)",
-            "contents": "primsmap(${1:surface_node}, ${2:attribute}, ${3:index})"
+            "contents": "primsmap(${1:surface_node}, ${2:attribute}, ${3:index})",
+            "kind": "function",
+            "details": "Returns a string from a list of strings in a primitive attribute."
         },
         {
             "trigger": "primsnummap(surface_node, attribute)",
-            "contents": "primsnummap(${1:surface_node}, ${2:attribute})"
+            "contents": "primsnummap(${1:surface_node}, ${2:attribute})",
+            "kind": "function",
+            "details": "Returns the number of unique strings bound to a primitive attribute."
         },
         {
             "trigger": "primuv(surface_node, prim_num, attrib_name, attrib_index, u, v)",
-            "contents": "primuv(${1:surface_node}, ${2:prim_num}, ${3:attrib_name}, ${4:attrib_index}, ${5:u}, ${6:v})"
+            "contents": "primuv(${1:surface_node}, ${2:prim_num}, ${3:attrib_name}, ${4:attrib_index}, ${5:u}, ${6:v})",
+            "kind": "function",
+            "details": "Returns the value of a primitive attribute at a certain UV location."
+        },
+        {
+            "trigger": "primvals(surface_node, prim_num, attrib_name, component)",
+            "contents": "primvals(${1:surface_node}, ${2:prim_num}, ${3:attrib_name}, ${4:component})",
+            "kind": "function",
+            "details": "Returns components of a string array attribute."
         },
         {
             "trigger": "print(label, expression)",
-            "contents": "print(${1:label}, ${2:expression})"
+            "contents": "print(${1:label}, ${2:expression})",
+            "kind": "function",
+            "details": "Prints a message to the console."
         },
         {
-            "trigger": "property(foo, bar)",
-            "contents": "property(${1:foo}, ${2:bar})"
+            "trigger": "property(path, default)",
+            "contents": "property(${1:path}, ${2:default})",
+            "kind": "function",
+            "details": ""
         },
         {
-            "trigger": "propertyf(foo, bar, baz)",
-            "contents": "propertyf(${1:foo}, ${2:bar}, ${3:baz})"
+            "trigger": "propertyf(path, frame, default)",
+            "contents": "propertyf(${1:path}, ${2:frame}, ${3:default})",
+            "kind": "function",
+            "details": ""
         },
         {
-            "trigger": "propertys(foo, bar)",
-            "contents": "propertys(${1:foo}, ${2:bar})"
+            "trigger": "propertys(path, default)",
+            "contents": "propertys(${1:path}, ${2:default})",
+            "kind": "function",
+            "details": ""
         },
         {
-            "trigger": "propertysop(foo, bar)",
-            "contents": "propertysop(${1:foo}, ${2:bar})"
+            "trigger": "propertysop(path, default)",
+            "contents": "propertysop(${1:path}, ${2:default})",
+            "kind": "function",
+            "details": ""
         },
         {
-            "trigger": "propertysraw(foo, bar)",
-            "contents": "propertysraw(${1:foo}, ${2:bar})"
+            "trigger": "propertysraw(path, default)",
+            "contents": "propertysraw(${1:path}, ${2:default})",
+            "kind": "function",
+            "details": ""
         },
         {
-            "trigger": "propertyt(foo, bar, baz)",
-            "contents": "propertyt(${1:foo}, ${2:bar}, ${3:baz})"
+            "trigger": "propertyt(path, time, default)",
+            "contents": "propertyt(${1:path}, ${2:time}, ${3:default})",
+            "kind": "function",
+            "details": ""
         },
         {
             "trigger": "pulse(value, start, end)",
-            "contents": "pulse(${1:value}, ${2:start}, ${3:end})"
+            "contents": "pulse(${1:value}, ${2:start}, ${3:end})",
+            "kind": "function",
+            "details": "Returns 1 when a value is within a certain range."
         },
         {
             "trigger": "pythonexprf(expression)",
-            "contents": "pythonexprf(${1:expression})"
+            "contents": "pythonexprf(${1:expression})",
+            "kind": "function",
+            "details": "Evaluates a Python expression, returning a float result."
         },
         {
             "trigger": "pythonexprs(expression)",
-            "contents": "pythonexprs(${1:expression})"
+            "contents": "pythonexprs(${1:expression})",
+            "kind": "function",
+            "details": "Evaluates a Python expression, returning a string result."
         },
         {
             "trigger": "qlinear()",
-            "contents": "qlinear()"
+            "contents": "qlinear()",
+            "kind": "function",
+            "details": "Channel segment function: uses quaternions to interpolate."
         },
         {
             "trigger": "quattomatrix(q)",
-            "contents": "quattomatrix(${1:q})"
+            "contents": "quattomatrix(${1:q})",
+            "kind": "function",
+            "details": "Converts quaternion to a 3x3 rotation matrix."
         },
         {
             "trigger": "quintic()",
-            "contents": "quintic()"
+            "contents": "quintic()",
+            "kind": "function",
+            "details": "Channel segment function: smoothly interpolates slopes and"
         },
         {
             "trigger": "rad(number)",
-            "contents": "rad(${1:number})"
+            "contents": "rad(${1:number})",
+            "kind": "function",
+            "details": "Converts from degrees to radians."
         },
         {
             "trigger": "rand(value)",
-            "contents": "rand(${1:value})"
+            "contents": "rand(${1:value})",
+            "kind": "function",
+            "details": "Returns a pseudo-random number from 0 to 1."
         },
         {
             "trigger": "realuv(surface_node, prim_num, uv_unit, D_U|D_V)",
-            "contents": "realuv(${1:surface_node}, ${2:prim_num}, ${3:uv_unit}, ${4:D_U|D_V})"
+            "contents": "realuv(${1:surface_node}, ${2:prim_num}, ${3:uv_unit}, ${4:D_U|D_V})",
+            "kind": "function",
+            "details": "Converts unit UV to real UV."
         },
         {
             "trigger": "relpath(abspath)",
-            "contents": "relpath(${1:abspath})"
+            "contents": "relpath(${1:abspath})",
+            "kind": "function",
+            "details": "Returns the relative path of a file."
         },
         {
             "trigger": "repeat(f1, f2)",
-            "contents": "repeat(${1:f1}, ${2:f2})"
+            "contents": "repeat(${1:f1}, ${2:f2})",
+            "kind": "function",
+            "details": "Channel segment function: repeats animation from previous frames."
         },
         {
             "trigger": "repeatt(t1, t2)",
-            "contents": "repeatt(${1:t1}, ${2:t2})"
+            "contents": "repeatt(${1:t1}, ${2:t2})",
+            "kind": "function",
+            "details": "Channel segment function: repeats animation from previous frames."
         },
         {
             "trigger": "res(compositing_node, res_type)",
-            "contents": "res(${1:compositing_node}, ${2:res_type})"
+            "contents": "res(${1:compositing_node}, ${2:res_type})",
+            "kind": "function",
+            "details": "Returns the natural resolution of the image in a compositing node."
         },
         {
             "trigger": "rgb(hue, saturation, value, component)",
-            "contents": "rgb(${1:hue}, ${2:saturation}, ${3:value}, ${4:component})"
+            "contents": "rgb(${1:hue}, ${2:saturation}, ${3:value}, ${4:component})",
+            "kind": "function",
+            "details": "Converts HSV values to RGB components."
         },
         {
             "trigger": "rindex(source, pattern)",
-            "contents": "rindex(${1:source}, ${2:pattern})"
+            "contents": "rindex(${1:source}, ${2:pattern})",
+            "kind": "function",
+            "details": "Finds the last occurrence of a pattern in a string."
         },
         {
             "trigger": "rint(number)",
-            "contents": "rint(${1:number})"
+            "contents": "rint(${1:number})",
+            "kind": "function",
+            "details": "Rounds to the nearest integer."
         },
         {
             "trigger": "rotate(angle, axis)",
-            "contents": "rotate(${1:angle}, ${2:axis})"
+            "contents": "rotate(${1:angle}, ${2:axis})",
+            "kind": "function",
+            "details": "Returns a 4x4 rotation matrix from an axis and angle."
         },
         {
             "trigger": "rotaxis(angle, axisv)",
-            "contents": "rotaxis(${1:angle}, ${2:axisv})"
+            "contents": "rotaxis(${1:angle}, ${2:axisv})",
+            "kind": "function",
+            "details": "Returns a 4x4 rotation matrix from an angle and a vector."
         },
         {
             "trigger": "round(number)",
-            "contents": "round(${1:number})"
+            "contents": "round(${1:number})",
+            "kind": "function",
+            "details": "Rounds a number to the nearest integer."
+        },
+        {
+            "trigger": "rtrim(s, trim_characters)",
+            "contents": "rtrim(${1:s}, ${2:trim_characters})",
+            "kind": "function",
+            "details": ""
         },
         {
             "trigger": "run(command)",
-            "contents": "run(${1:command})"
+            "contents": "run(${1:command})",
+            "kind": "function",
+            "details": "Runs a string as an HScript command and returns the command's output."
         },
         {
             "trigger": "runb(command)",
-            "contents": "runb(${1:command})"
+            "contents": "runb(${1:command})",
+            "kind": "function",
+            "details": "Runs a string as an HScript command and returns the command and error"
         },
         {
             "trigger": "rune(command)",
-            "contents": "rune(${1:command})"
+            "contents": "rune(${1:command})",
+            "kind": "function",
+            "details": "Runs a string as an HScript command and returns any error output."
         },
         {
             "trigger": "scale(sx, sy, sz)",
-            "contents": "scale(${1:sx}, ${2:sy}, ${3:sz})"
+            "contents": "scale(${1:sx}, ${2:sy}, ${3:sz})",
+            "kind": "function",
+            "details": "Takes three scaling values and returns a scale matrix."
         },
         {
             "trigger": "scalefrommks(dimensions)",
-            "contents": "scalefrommks(${1:dimensions})"
+            "contents": "scalefrommks(${1:dimensions})",
+            "kind": "function",
+            "details": "Returns the scale factor converting from MKS units to the Houdini units."
         },
         {
             "trigger": "scaletomks(dimensions)",
-            "contents": "scaletomks(${1:dimensions})"
+            "contents": "scaletomks(${1:dimensions})",
+            "kind": "function",
+            "details": "Returns the scale factor converting to MKS units from the Houdini units."
         },
         {
             "trigger": "seqanim(compositing_node)",
-            "contents": "seqanim(${1:compositing_node})"
+            "contents": "seqanim(${1:compositing_node})",
+            "kind": "function",
+            "details": "Returns 1 if a specified compositing node has an animated sequence."
         },
         {
             "trigger": "seqend(compositing_node)",
-            "contents": "seqend(${1:compositing_node})"
+            "contents": "seqend(${1:compositing_node})",
+            "kind": "function",
+            "details": "Returns the end frame of a compositing node's image sequence."
         },
         {
             "trigger": "seqlength(compositing_node)",
-            "contents": "seqlength(${1:compositing_node})"
+            "contents": "seqlength(${1:compositing_node})",
+            "kind": "function",
+            "details": "Returns the number of frames in a compositing node's image sequence."
         },
         {
             "trigger": "seqstart(compositing_node)",
-            "contents": "seqstart(${1:compositing_node})"
+            "contents": "seqstart(${1:compositing_node})",
+            "kind": "function",
+            "details": "Returns the start frame of a compositing node's image sequence."
         },
         {
             "trigger": "shopstring(shop_path, render_type)",
-            "contents": "shopstring(${1:shop_path}, ${2:render_type})"
+            "contents": "shopstring(${1:shop_path}, ${2:render_type})",
+            "kind": "function",
+            "details": "Returns the shader string generated by a shader."
         },
         {
             "trigger": "sign(value)",
-            "contents": "sign(${1:value})"
+            "contents": "sign(${1:value})",
+            "kind": "function",
+            "details": "Returns -1, 0, or 1 depending on the sign of the argument."
         },
         {
             "trigger": "sin(degrees)",
-            "contents": "sin(${1:degrees})"
+            "contents": "sin(${1:degrees})",
+            "kind": "function",
+            "details": "Returns the sine of the argument."
         },
         {
             "trigger": "sinh(number)",
-            "contents": "sinh(${1:number})"
+            "contents": "sinh(${1:number})",
+            "kind": "function",
+            "details": "Returns the hyperbolic sine of the argument."
         },
         {
             "trigger": "smooth(value, minimum, maximum)",
-            "contents": "smooth(${1:value}, ${2:minimum}, ${3:maximum})"
+            "contents": "smooth(${1:value}, ${2:minimum}, ${3:maximum})",
+            "kind": "function",
+            "details": "Takes a value and range and returns a smooth interpolation between 0 and"
         },
         {
             "trigger": "snoise(X, Y, Z)",
-            "contents": "snoise(${1:X}, ${2:Y}, ${3:Z})"
+            "contents": "snoise(${1:X}, ${2:Y}, ${3:Z})",
+            "kind": "function",
+            "details": "Generates sparse convolution 3D noise."
         },
         {
             "trigger": "spknot(surface_node, prim_num, knot_index, du_or_dv)",
-            "contents": "spknot(${1:surface_node}, ${2:prim_num}, ${3:knot_index}, ${4:du_or_dv})"
+            "contents": "spknot(${1:surface_node}, ${2:prim_num}, ${3:knot_index}, ${4:du_or_dv})",
+            "kind": "function",
+            "details": "Returns a knot value on a spline curve or surface."
         },
         {
             "trigger": "spline()",
-            "contents": "spline()"
+            "contents": "spline()",
+            "kind": "function",
+            "details": "Channel segment function: fits a curve to the keyframes."
         },
         {
             "trigger": "sqrt(number)",
-            "contents": "sqrt(${1:number})"
+            "contents": "sqrt(${1:number})",
+            "kind": "function",
+            "details": "Returns the square root of the argument."
         },
         {
             "trigger": "stamp(scope, token, value)",
-            "contents": "stamp(${1:scope}, ${2:token}, ${3:value})"
+            "contents": "stamp(${1:scope}, ${2:token}, ${3:value})",
+            "kind": "function",
+            "details": "Returns a copy stamping floating point value."
         },
         {
             "trigger": "stamps(stamp_op_path, token, value)",
-            "contents": "stamps(${1:stamp_op_path}, ${2:token}, ${3:value})"
+            "contents": "stamps(${1:stamp_op_path}, ${2:token}, ${3:value})",
+            "kind": "function",
+            "details": "Returns a copy stamping string value."
         },
         {
             "trigger": "strcasecmp(s1, s2)",
-            "contents": "strcasecmp(${1:s1}, ${2:s2})"
+            "contents": "strcasecmp(${1:s1}, ${2:s2})",
+            "kind": "function",
+            "details": "Compares two strings, ignoring case."
         },
         {
             "trigger": "strcasematch(pattern, s)",
-            "contents": "strcasematch(${1:pattern}, ${2:s})"
+            "contents": "strcasematch(${1:pattern}, ${2:s})",
+            "kind": "function",
+            "details": "Returns 1 if a string matches a pattern, ignoring case."
         },
         {
             "trigger": "strcat(s1, s2)",
-            "contents": "strcat(${1:s1}, ${2:s2})"
+            "contents": "strcat(${1:s1}, ${2:s2})",
+            "kind": "function",
+            "details": "Returns the concatenation of two strings."
         },
         {
             "trigger": "strcmp(s1, s2)",
-            "contents": "strcmp(${1:s1}, ${2:s2})"
+            "contents": "strcmp(${1:s1}, ${2:s2})",
+            "kind": "function",
+            "details": "Compares two strings."
         },
         {
             "trigger": "strdup(count, s2)",
-            "contents": "strdup(${1:count}, ${2:s2})"
+            "contents": "strdup(${1:count}, ${2:s2})",
+            "kind": "function",
+            "details": "Duplicates a string."
         },
         {
             "trigger": "stripmatrix(mat)",
-            "contents": "stripmatrix(${1:mat})"
+            "contents": "stripmatrix(${1:mat})",
+            "kind": "function",
+            "details": "Strips non-essential characters from the string representation of a matrix or vector"
         },
         {
             "trigger": "strlen(s)",
-            "contents": "strlen(${1:s})"
+            "contents": "strlen(${1:s})",
+            "kind": "function",
+            "details": "Returns the number of characters in a string"
         },
         {
             "trigger": "strmatch(pattern, s)",
-            "contents": "strmatch(${1:pattern}, ${2:s})"
+            "contents": "strmatch(${1:pattern}, ${2:s})",
+            "kind": "function",
+            "details": "Returns 1 if a string matches a pattern, including case."
         },
         {
             "trigger": "strreplace(s, old, new)",
-            "contents": "strreplace(${1:s}, ${2:old}, ${3:new})"
+            "contents": "strreplace(${1:s}, ${2:old}, ${3:new})",
+            "kind": "function",
+            "details": "Replaces substrings with a new string."
         },
         {
             "trigger": "strsplit(s, separators, component)",
-            "contents": "strsplit(${1:s}, ${2:separators}, ${3:component})"
+            "contents": "strsplit(${1:s}, ${2:separators}, ${3:component})",
+            "kind": "function",
+            "details": "Returns one component of a string split by some separators."
         },
         {
             "trigger": "strsplitcount(s, separators)",
-            "contents": "strsplitcount(${1:s}, ${2:separators})"
+            "contents": "strsplitcount(${1:s}, ${2:separators})",
+            "kind": "function",
+            "details": "Returns the number of components in a string split by some separators."
         },
         {
             "trigger": "sturb(X, Y, Z, depth)",
-            "contents": "sturb(${1:X}, ${2:Y}, ${3:Z}, ${4:depth})"
+            "contents": "sturb(${1:X}, ${2:Y}, ${3:Z}, ${4:depth})",
+            "kind": "function",
+            "details": "Generates spatially coherent 3D noise based on sparse convolution."
         },
         {
             "trigger": "substr(s, start, length)",
-            "contents": "substr(${1:s}, ${2:start}, ${3:length})"
+            "contents": "substr(${1:s}, ${2:start}, ${3:length})",
+            "kind": "function",
+            "details": "Returns a substring of a string."
         },
         {
             "trigger": "surflen(surface_node, prim_num, ustart, vstart, ustop, vstop)",
-            "contents": "surflen(${1:surface_node}, ${2:prim_num}, ${3:ustart}, ${4:vstart}, ${5:ustop}, ${6:vstop})"
+            "contents": "surflen(${1:surface_node}, ${2:prim_num}, ${3:ustart}, ${4:vstart}, ${5:ustop}, ${6:vstop})",
+            "kind": "function",
+            "details": "Returns the length of the 3D curve between two points on a surface."
         },
         {
             "trigger": "system(command_string)",
-            "contents": "system(${1:command_string})"
+            "contents": "system(${1:command_string})",
+            "kind": "function",
+            "details": "Runs a system command line and returns the output."
         },
         {
             "trigger": "systemES(command_string)",
-            "contents": "systemES(${1:command_string})"
+            "contents": "systemES(${1:command_string})",
+            "kind": "function",
+            "details": "Runs a system command line and returns the exit status."
         },
         {
             "trigger": "systemRAW(command_string)",
-            "contents": "systemRAW(${1:command_string})"
+            "contents": "systemRAW(${1:command_string})",
+            "kind": "function",
+            "details": "Runs a system command line and returns the output with no processing."
         },
         {
             "trigger": "tan(degrees)",
-            "contents": "tan(${1:degrees})"
+            "contents": "tan(${1:degrees})",
+            "kind": "function",
+            "details": "Returns the tangent of the argument."
         },
         {
             "trigger": "tanh(number)",
-            "contents": "tanh(${1:number})"
+            "contents": "tanh(${1:number})",
+            "kind": "function",
+            "details": "Returns the hyperbolic tangent of the argument."
         },
         {
             "trigger": "tex(filename, U, V, color_type)",
-            "contents": "tex(${1:filename}, ${2:U}, ${3:V}, ${4:color_type})"
+            "contents": "tex(${1:filename}, ${2:U}, ${3:V}, ${4:color_type})",
+            "kind": "function",
+            "details": "Returns the interpolated color of a point on an on-disk texture map."
         },
         {
             "trigger": "texni(diskfile, U, V, color_type)",
-            "contents": "texni(${1:diskfile}, ${2:U}, ${3:V}, ${4:color_type})"
+            "contents": "texni(${1:diskfile}, ${2:U}, ${3:V}, ${4:color_type})",
+            "kind": "function",
+            "details": "Returns the non-interpolated color of a point on an on-disk texture map."
         },
         {
             "trigger": "tolower(s)",
-            "contents": "tolower(${1:s})"
+            "contents": "tolower(${1:s})",
+            "kind": "function",
+            "details": "Returns the all-lowercase version of a string."
         },
         {
             "trigger": "toupper(s)",
-            "contents": "toupper(${1:s})"
+            "contents": "toupper(${1:s})",
+            "kind": "function",
+            "details": "Returns the all-uppercase version of a string."
         },
         {
             "trigger": "translate(tx, ty, tz)",
-            "contents": "translate(${1:tx}, ${2:ty}, ${3:tz})"
+            "contents": "translate(${1:tx}, ${2:ty}, ${3:tz})",
+            "kind": "function",
+            "details": "Takes X, Y, and Z translation values and returns a translation matrix."
         },
         {
             "trigger": "transpose(mat)",
-            "contents": "transpose(${1:mat})"
+            "contents": "transpose(${1:mat})",
+            "kind": "function",
+            "details": "Transposes a matrix."
+        },
+        {
+            "trigger": "trim(s, trim_characters)",
+            "contents": "trim(${1:s}, ${2:trim_characters})",
+            "kind": "function",
+            "details": ""
         },
         {
             "trigger": "trunc(number)",
-            "contents": "trunc(${1:number})"
+            "contents": "trunc(${1:number})",
+            "kind": "function",
+            "details": "Converts a number to an integer by truncating any fractional part,"
         },
         {
             "trigger": "turb(X, Y, Z, depth)",
-            "contents": "turb(${1:X}, ${2:Y}, ${3:Z}, ${4:depth})"
+            "contents": "turb(${1:X}, ${2:Y}, ${3:Z}, ${4:depth})",
+            "kind": "function",
+            "details": "Generates spatially coherent 3D noise."
         },
         {
             "trigger": "uniqueval(surface_node, class, attribute, index)",
-            "contents": "uniqueval(${1:surface_node}, ${2:class}, ${3:attribute}, ${4:index})"
+            "contents": "uniqueval(${1:surface_node}, ${2:class}, ${3:attribute}, ${4:index})",
+            "kind": "function",
+            "details": "Returns a unique value of an integer attribute."
         },
         {
             "trigger": "uniquevals(surface_node, class, attribute, index)",
-            "contents": "uniquevals(${1:surface_node}, ${2:class}, ${3:attribute}, ${4:index})"
+            "contents": "uniquevals(${1:surface_node}, ${2:class}, ${3:attribute}, ${4:index})",
+            "kind": "function",
+            "details": "Returns a unique value of a string attribute."
         },
         {
             "trigger": "unituv(surface_node, prim_num, uv_real, D_U|D_V)",
-            "contents": "unituv(${1:surface_node}, ${2:prim_num}, ${3:uv_real}, ${4:D_U|D_V})"
+            "contents": "unituv(${1:surface_node}, ${2:prim_num}, ${3:uv_real}, ${4:D_U|D_V})",
+            "kind": "function",
+            "details": "Converts real UV to unit UV."
         },
         {
             "trigger": "uvdist(surface_node, prim1_num, u1, v1, surface_node, prim2_num, u2, v2)",
-            "contents": "uvdist(${1:surface_node}, ${2:prim1_num}, ${3:u1}, ${4:v1}, ${5:surface_node}, ${6:prim2_num}, ${7:u2}, ${8:v2})"
+            "contents": "uvdist(${1:surface_node}, ${2:prim1_num}, ${3:u1}, ${4:v1}, ${5:surface_node}, ${6:prim2_num}, ${7:u2}, ${8:v2})",
+            "kind": "function",
+            "details": "Returns the distance between parameteric locations on two primitives."
         },
         {
             "trigger": "vangle(v0, v1)",
-            "contents": "vangle(${1:v0}, ${2:v1})"
+            "contents": "vangle(${1:v0}, ${2:v1})",
+            "kind": "function",
+            "details": "Returns the angle between two vectors."
         },
         {
             "trigger": "vector(pattern)",
-            "contents": "vector(${1:pattern})"
+            "contents": "vector(${1:pattern})",
+            "kind": "function",
+            "details": "Converts a string specification into a vector."
         },
         {
             "trigger": "vector3(x, y, z)",
-            "contents": "vector3(${1:x}, ${2:y}, ${3:z})"
+            "contents": "vector3(${1:x}, ${2:y}, ${3:z})",
+            "kind": "function",
+            "details": "Converts three values into a 3-component vector."
         },
         {
             "trigger": "vector4(x, y, z, w)",
-            "contents": "vector4(${1:x}, ${2:y}, ${3:z}, ${4:w})"
+            "contents": "vector4(${1:x}, ${2:y}, ${3:z}, ${4:w})",
+            "kind": "function",
+            "details": "Converts four values into a 4-component vector."
         },
         {
             "trigger": "vertex(surface_node, primitive_number, vertex_number, attribute, index)",
-            "contents": "vertex(${1:surface_node}, ${2:primitive_number}, ${3:vertex_number}, ${4:attribute}, ${5:index})"
+            "contents": "vertex(${1:surface_node}, ${2:primitive_number}, ${3:vertex_number}, ${4:attribute}, ${5:index})",
+            "kind": "function",
+            "details": "Returns the value of a vertex attribute."
         },
         {
             "trigger": "vertexattriblist(surface_node)",
-            "contents": "vertexattriblist(${1:surface_node})"
+            "contents": "vertexattriblist(${1:surface_node})",
+            "kind": "function",
+            "details": "Returns a space-separated list of vertex attribute names."
         },
         {
             "trigger": "vertexattribsize(surface_node, attribute)",
-            "contents": "vertexattribsize(${1:surface_node}, ${2:attribute})"
+            "contents": "vertexattribsize(${1:surface_node}, ${2:attribute})",
+            "kind": "function",
+            "details": "Returns the number of components in a vertex attribute."
         },
         {
             "trigger": "vertexattribtype(surface_node, attribute)",
-            "contents": "vertexattribtype(${1:surface_node}, ${2:attribute})"
+            "contents": "vertexattribtype(${1:surface_node}, ${2:attribute})",
+            "kind": "function",
+            "details": "Returns the type of a vertex attribute."
         },
         {
             "trigger": "vertexgrouplist(surface_node)",
-            "contents": "vertexgrouplist(${1:surface_node})"
+            "contents": "vertexgrouplist(${1:surface_node})",
+            "kind": "function",
+            "details": "Returns the list of vertex groups in a surface node."
         },
         {
             "trigger": "vertexgroupmask(surface_node, pattern)",
-            "contents": "vertexgroupmask(${1:surface_node}, ${2:pattern})"
+            "contents": "vertexgroupmask(${1:surface_node}, ${2:pattern})",
+            "kind": "function",
+            "details": "Returns the list of vertex groups matching a pattern in a surface node."
         },
         {
             "trigger": "vertexs(surface_node, primitive_number, vertex_number, attribute)",
-            "contents": "vertexs(${1:surface_node}, ${2:primitive_number}, ${3:vertex_number}, ${4:attribute})"
+            "contents": "vertexs(${1:surface_node}, ${2:primitive_number}, ${3:vertex_number}, ${4:attribute})",
+            "kind": "function",
+            "details": "Returns the string value of a vertex attribute."
         },
         {
             "trigger": "vertexsmap(surface_node, attribute, index)",
-            "contents": "vertexsmap(${1:surface_node}, ${2:attribute}, ${3:index})"
+            "contents": "vertexsmap(${1:surface_node}, ${2:attribute}, ${3:index})",
+            "kind": "function",
+            "details": "Returns a string from a list of strings in a vertex attribute."
         },
         {
             "trigger": "vertexsnummap(surface_node, attribute)",
-            "contents": "vertexsnummap(${1:surface_node}, ${2:attribute})"
+            "contents": "vertexsnummap(${1:surface_node}, ${2:attribute})",
+            "kind": "function",
+            "details": "Returns the number of unique strings bound to a point attribute."
+        },
+        {
+            "trigger": "vertexvals(surface_node, primitive_number, vertex_num, attrib_name, component)",
+            "contents": "vertexvals(${1:surface_node}, ${2:primitive_number}, ${3:vertex_num}, ${4:attrib_name}, ${5:component})",
+            "kind": "function",
+            "details": "Returns components of a string array attribute."
         },
         {
             "trigger": "vlength(vec)",
-            "contents": "vlength(${1:vec})"
+            "contents": "vlength(${1:vec})",
+            "kind": "function",
+            "details": "Returns the length of a vector."
         },
         {
             "trigger": "vlength2(vec)",
-            "contents": "vlength2(${1:vec})"
+            "contents": "vlength2(${1:vec})",
+            "kind": "function",
+            "details": ""
         },
         {
             "trigger": "vmatch()",
-            "contents": "vmatch()"
+            "contents": "vmatch()",
+            "kind": "function",
+            "details": "Channel segment function: matches the incoming and outgoing slopes."
         },
         {
             "trigger": "vmatchin()",
-            "contents": "vmatchin()"
+            "contents": "vmatchin()",
+            "kind": "function",
+            "details": "Channel segment function: matches the incoming slope."
         },
         {
             "trigger": "vmatchout()",
-            "contents": "vmatchout()"
+            "contents": "vmatchout()",
+            "kind": "function",
+            "details": "Channel segment function: matches the outgoing slope."
         },
         {
             "trigger": "volumeaverage(surface_node, prim_id)",
-            "contents": "volumeaverage(${1:surface_node}, ${2:prim_id})"
+            "contents": "volumeaverage(${1:surface_node}, ${2:prim_id})",
+            "kind": "function",
+            "details": "Returns the average value of all the voxels in a volume."
         },
         {
             "trigger": "volumegradient(surface_node, prim_id, x, y, z, axis)",
-            "contents": "volumegradient(${1:surface_node}, ${2:prim_id}, ${3:x}, ${4:y}, ${5:z}, ${6:axis})"
+            "contents": "volumegradient(${1:surface_node}, ${2:prim_id}, ${3:x}, ${4:y}, ${5:z}, ${6:axis})",
+            "kind": "function",
+            "details": "Returns the gradient of a volume primitive at a specified location."
         },
         {
             "trigger": "volumeindex(surface_node, prim_id, ix, iy, iz)",
-            "contents": "volumeindex(${1:surface_node}, ${2:prim_id}, ${3:ix}, ${4:iy}, ${5:iz})"
+            "contents": "volumeindex(${1:surface_node}, ${2:prim_id}, ${3:ix}, ${4:iy}, ${5:iz})",
+            "kind": "function",
+            "details": "Returns the value of a volume primitive at a specified voxel."
         },
         {
             "trigger": "volumeindextopos(surface_node, prim_id, ix, iy, iz, axis)",
-            "contents": "volumeindextopos(${1:surface_node}, ${2:prim_id}, ${3:ix}, ${4:iy}, ${5:iz}, ${6:axis})"
+            "contents": "volumeindextopos(${1:surface_node}, ${2:prim_id}, ${3:ix}, ${4:iy}, ${5:iz}, ${6:axis})",
+            "kind": "function",
+            "details": "Converts volume voxel coordinates to world-space coordinates."
         },
         {
             "trigger": "volumemax(surface_node, prim_id)",
-            "contents": "volumemax(${1:surface_node}, ${2:prim_id})"
+            "contents": "volumemax(${1:surface_node}, ${2:prim_id})",
+            "kind": "function",
+            "details": "Returns the maximum value of all voxels in a volume."
         },
         {
             "trigger": "volumemin(surface_node, prim_id)",
-            "contents": "volumemin(${1:surface_node}, ${2:prim_id})"
+            "contents": "volumemin(${1:surface_node}, ${2:prim_id})",
+            "kind": "function",
+            "details": "Returns the minimum value of all voxels in a volume."
         },
         {
             "trigger": "volumepostoindex(surface_node, prim_id, x, y, z, axis)",
-            "contents": "volumepostoindex(${1:surface_node}, ${2:prim_id}, ${3:x}, ${4:y}, ${5:z}, ${6:axis})"
+            "contents": "volumepostoindex(${1:surface_node}, ${2:prim_id}, ${3:x}, ${4:y}, ${5:z}, ${6:axis})",
+            "kind": "function",
+            "details": "Converts world space coordinates to volume voxel coordinates."
         },
         {
             "trigger": "volumeres(surface_node, prim_id, axis)",
-            "contents": "volumeres(${1:surface_node}, ${2:prim_id}, ${3:axis})"
+            "contents": "volumeres(${1:surface_node}, ${2:prim_id}, ${3:axis})",
+            "kind": "function",
+            "details": "Returns the resolution of a volume."
         },
         {
             "trigger": "volumesample(surface_node, prim_id, x, y, z)",
-            "contents": "volumesample(${1:surface_node}, ${2:prim_id}, ${3:x}, ${4:y}, ${5:z})"
+            "contents": "volumesample(${1:surface_node}, ${2:prim_id}, ${3:x}, ${4:y}, ${5:z})",
+            "kind": "function",
+            "details": "Returns the value of a volume at a specified position."
         },
         {
             "trigger": "volumevoxeldiameter(surface_node, prim_id)",
-            "contents": "volumevoxeldiameter(${1:surface_node}, ${2:prim_id})"
+            "contents": "volumevoxeldiameter(${1:surface_node}, ${2:prim_id})",
+            "kind": "function",
+            "details": "Returns the approximage diameter of a volume voxel in world space."
         },
         {
             "trigger": "vorigin(obj1, obj2)",
-            "contents": "vorigin(${1:obj1}, ${2:obj2})"
+            "contents": "vorigin(${1:obj1}, ${2:obj2})",
+            "kind": "function",
+            "details": "Returns a vector of an objects' transforms."
         },
         {
             "trigger": "vpname(viewer, viewport_quadrant_number)",
-            "contents": "vpname(${1:viewer}, ${2:viewport_quadrant_number})"
+            "contents": "vpname(${1:viewer}, ${2:viewport_quadrant_number})",
+            "kind": "function",
+            "details": "Takes a viewer name and a viewport number and returns the viewport's"
         },
         {
             "trigger": "vrorigin(obj1, obj2)",
-            "contents": "vrorigin(${1:obj1}, ${2:obj2})"
+            "contents": "vrorigin(${1:obj1}, ${2:obj2})",
+            "kind": "function",
+            "details": "Returns a vector of an object's rotations."
         },
         {
             "trigger": "vscale(vec, scale)",
-            "contents": "vscale(${1:vec}, ${2:scale})"
+            "contents": "vscale(${1:vec}, ${2:scale})",
+            "kind": "function",
+            "details": "Multiplies a vector by a scaling factor."
         },
         {
             "trigger": "vset(size, value)",
-            "contents": "vset(${1:size}, ${2:value})"
+            "contents": "vset(${1:size}, ${2:value})",
+            "kind": "function",
+            "details": "Creates a vector with each component set to the same value."
         },
         {
             "trigger": "vsize(vec)",
-            "contents": "vsize(${1:vec})"
+            "contents": "vsize(${1:vec})",
+            "kind": "function",
+            "details": "Returns the number of elements in a vector."
         },
         {
             "trigger": "vtorigin(obj1, obj2)",
-            "contents": "vtorigin(${1:obj1}, ${2:obj2})"
+            "contents": "vtorigin(${1:obj1}, ${2:obj2})",
+            "kind": "function",
+            "details": "Returns a vector of an object's translations."
         },
         {
             "trigger": "wrap(value, minimum, maximum)",
-            "contents": "wrap(${1:value}, ${2:minimum}, ${3:maximum})"
+            "contents": "wrap(${1:value}, ${2:minimum}, ${3:maximum})",
+            "kind": "function",
+            "details": "Wraps a value between a minimum and maximum."
         },
         {
             "trigger": "xyzdist(x, y, z, surface_node, prim_num, return_type)",
-            "contents": "xyzdist(${1:x}, ${2:y}, ${3:z}, ${4:surface_node}, ${5:prim_num}, ${6:return_type})"
+            "contents": "xyzdist(${1:x}, ${2:y}, ${3:z}, ${4:surface_node}, ${5:prim_num}, ${6:return_type})",
+            "kind": "function",
+            "details": "Returns the distance between a 3D coordinate and a primitive."
         }
     ]
 }

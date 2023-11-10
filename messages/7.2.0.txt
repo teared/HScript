@@ -1,0 +1,38 @@
+Houdini add-on for Sublime Text:
+    https://github.com/teared/HScript
+
+
+Release 7.2.0
+
+
+1. Updated for Houdini 20.0.
+
+2. Added short descriptions of functions in the completions window.
+
+3. New expression functions added:
+
+    efit
+    trim
+    ltrim
+    rtrim
+    pointvals
+    vertexvals
+    primvals
+    detailvals
+
+    Tip: to read about new functions quickly,
+    copy the list into an empty Sublime Text document,
+    set the HScript syntax, and check the documentation helpcards (Ctrl+Alt+D).
+
+4. New commands added:
+
+    geospreadsheet
+    reloadseq
+    viewcharacteropts
+    viewrotovideo
+
+5. Fixed broken documentation links for functions in helpcards.
+
+
+Open issues for bug reports, requests, suggestions, etc:
+    https://github.com/teared/HScript/issues
